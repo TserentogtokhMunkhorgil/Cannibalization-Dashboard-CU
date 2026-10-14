@@ -1,0 +1,33 @@
+# Python cache
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+secrets/
+credentials.json
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary files and logs
+*.log
+*.tmp
+
+# Local data and model outputs
+data/
+outputs/
+*.parquet
+*.csv
+*.xlsx
+*.xls
+*.db
+*.sqlite
