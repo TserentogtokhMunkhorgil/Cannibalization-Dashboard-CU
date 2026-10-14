@@ -340,7 +340,7 @@ def _location_features(
     matrices: dict[str, pd.DataFrame],
 ) -> dict[str, float | str]:
     month = pd.Timestamp(open_date).to_period("M")
-    prior_position = int(periods.searchsorted(month, side="left") - 1)
+    prior_position = int(periods.asi8.searchsorted(month.ordinal, side="left") - 1)
     eligible = (
         store_meta["coordinate_valid"]
         & store_meta["open_date"].notna()
@@ -406,6 +406,7 @@ def _feature_matrix(frame: pd.DataFrame) -> pd.DataFrame:
     numeric = frame.reindex(columns=NUMERIC_FEATURES).apply(
         pd.to_numeric, errors="coerce"
     )
+    numeric = np.log1p(numeric.clip(lower=0.0))
     category = frame.get(
         "demand_region", pd.Series("Rural", index=frame.index)
     ).astype("string")
@@ -493,7 +494,12 @@ def _fit_demand_models(
         target_transform = np.log(target[train_valid])
         model = _fit_ridge(features.loc[train_valid], target_transform)
         validation_log = _predict_ridge(model, features.loc[test_valid])
-        validation_prediction = np.exp(validation_log)
+        training_values = target[train_valid]
+        support_lower, support_upper = np.quantile(training_values, [0.01, 0.99])
+        raw_validation_prediction = np.exp(validation_log)
+        validation_prediction = np.clip(
+            raw_validation_prediction, support_lower, support_upper
+        )
         actual = target[test_valid]
         baseline_by_region = (
             training.loc[train_valid]
@@ -547,27 +553,72 @@ def _fit_demand_models(
         all_valid = valid_target
         final_model = _fit_ridge(features.loc[all_valid], np.log(target[all_valid]))
         final_log = _predict_ridge(final_model, candidate_x)
-        final_prediction = np.exp(final_log)
+        final_raw_prediction = np.exp(final_log)
+        support_lower, support_upper = np.quantile(target[all_valid], [0.01, 0.99])
+        final_prediction = np.clip(
+            final_raw_prediction, support_lower, support_upper
+        )
         residuals = validation_log - np.log(actual)
         residual_sd = float(np.std(residuals, ddof=1)) if len(residuals) > 1 else 0.0
-        lower = np.exp(final_log - 1.96 * residual_sd)
-        upper = np.exp(final_log + 1.96 * residual_sd)
+        lower = np.clip(
+            np.exp(final_log - 1.96 * residual_sd), support_lower, support_upper
+        )
+        upper = np.clip(
+            np.exp(final_log + 1.96 * residual_sd), support_lower, support_upper
+        )
         predictions[outcome] = {
             "prediction": final_prediction,
+            "raw_prediction": final_raw_prediction,
             "lower": lower,
             "upper": upper,
+            "support_lower": float(support_lower),
+            "support_upper": float(support_upper),
             "validation_log_residual_sd": residual_sd,
             "model": final_model,
         }
     candidate_predictions = candidates.copy()
+    for feature in NUMERIC_FEATURES:
+        candidate_predictions[feature] = candidate_features[feature]
     for outcome in OUTCOMES:
         candidate_predictions[f"predicted_APSD_{outcome}"] = predictions[outcome][
             "prediction"
         ]
+        candidate_predictions[f"raw_predicted_APSD_{outcome}"] = predictions[
+            outcome
+        ]["raw_prediction"]
         candidate_predictions[f"predicted_APSD_{outcome}_lower_95"] = predictions[
             outcome
         ]["lower"]
-        candidate_predictions[f"predicted_APSD_{outcome}_upper_95"] = predictions[
+        candidate_predictions[f"predicted_APSD_{outcome}_upper_95"        ]
+    training_features = _feature_matrix(training)
+    candidate_model_features = _feature_matrix(candidate_features)
+    feature_support = pd.DataFrame(
+        {
+            feature: candidate_model_features[feature].lt(
+                training_features[feature].min()
+            )
+            | candidate_model_features[feature].gt(training_features[feature].max())
+            for feature in training_features.columns
+        }
+    )
+    candidate_predictions["outside_training_feature_range"] = feature_support.any(
+        axis=1
+    )
+    candidate_predictions["prediction_clipped_to_training_support"] = np.logical_or.reduce(
+        [
+            ~np.isclose(
+            predictions[outcome]["prediction"],
+            predictions[outcome]["raw_prediction"],
+            )
+            for outcome in OUTCOMES
+        ]
+    )
+    candidate_predictions["demand_prediction_support"] = np.where(
+        candidate_predictions["outside_training_feature_range"]
+        | candidate_predictions["prediction_clipped_to_training_support"],
+        "Extrapolative / clipped to historical outcome range",
+        "Within training feature and outcome range",
+    ) = predictions[
             outcome
         ]["upper"]
     return (
@@ -1224,19 +1275,28 @@ def _scenario_outputs(
         opening_day,
         cannibalization_scale,
     )
-    open_month_by_candidate = dict(zip(selected, [date.month - 1 for date in dates]))
-    selected_set = set(selected)
     selected_output = candidates.iloc[selected].copy().reset_index(drop=True)
     selected_output["selection_rank"] = np.arange(1, len(selected) + 1)
-    selected_output["assumed_opening_date"] = dates
+    selected_output["assumed_opening_date"] = pd.to_datetime(dates)
     selected_output["greedy_marginal_network_sales_2027_mnt"] = marginal
     selected_output["scenario_target"] = target
 
-    baseline_active = np.where(np.isfinite(sales_matrix), active_days[:, None], 0.0)
-    simulated_sales_apsd = sales_matrix * np.exp(existing_log_sales)
-    simulated_sales_apsd = np.where(baseline_active > 0, simulated_sales_apsd, 0.0)
+    simulated_sales_apsd = np.where(
+        np.isfinite(sales_matrix),
+        sales_matrix * np.exp(existing_log_sales),
+        np.nan,
+    )
     simulated_customers_apsd = baseline["customers"].copy()
     customer_log = np.zeros_like(existing_log_sales)
+    customer_tensor = _beta_tensor(
+        beta_models["customers"],
+        existing["analysis_region"].fillna("All Regions").astype(str),
+    )
+    customer_codes = pd.Categorical(
+        existing["analysis_region"].fillna("All Regions").astype(str),
+        categories=beta_models["customers"]["regions"],
+    ).codes
+    customer_codes = np.where(customer_codes < 0, 0, customer_codes)
     for candidate, opening_date in zip(selected, dates):
         open_month = opening_date.month - 1
         for month in range(open_month, 12):
@@ -1244,20 +1304,14 @@ def _scenario_outputs(
             valid = existing_bands[candidate] >= 0
             if valid.any():
                 bands = existing_bands[candidate, valid]
-                regions = existing.loc[valid, "analysis_region"].fillna(
-                    "All Regions"
-                ).astype(str)
-                tensor = _beta_tensor(beta_models["customers"], regions)
-                codes = pd.Categorical(
-                    regions, categories=beta_models["customers"]["regions"]
-                ).codes
-                codes = np.where(codes < 0, 0, codes)
                 customer_log[month, valid] += (
-                    tensor[codes, bands, event_time] * cannibalization_scale
+                    customer_tensor[customer_codes[valid], bands, event_time]
+                    * cannibalization_scale
                 )
-    simulated_customers_apsd *= np.exp(customer_log)
     simulated_customers_apsd = np.where(
-        baseline_active > 0, simulated_customers_apsd, 0.0
+        np.isfinite(simulated_customers_apsd),
+        simulated_customers_apsd * np.exp(customer_log),
+        np.nan,
     )
 
     existing_rows: list[pd.DataFrame] = []
@@ -1295,6 +1349,15 @@ def _scenario_outputs(
         (simulated_customers_apsd - baseline["customers"]) * active_days[:, None],
         axis=0,
     )
+    existing_summary["sales_change_pct_2027"] = np.divide(
+        existing_summary["sales_change_2027_mnt"],
+        existing_summary["baseline_sales_2027_mnt"],
+        out=np.full(len(existing_summary), np.nan),
+        where=existing_summary["baseline_sales_2027_mnt"].to_numpy() > 0,
+    ) * 100.0
+    existing_summary["affected_by_selected_opening_within_1km"] = (
+        (existing_bands[selected] >= 0).any(axis=0) if selected else False
+    )
     existing_summary = existing_summary.sort_values(
         "sales_change_2027_mnt", kind="stable"
     ).reset_index(drop=True)
@@ -1308,6 +1371,7 @@ def _scenario_outputs(
     candidate_customer_equiv = np.zeros(12, dtype=float)
     candidate_sales_apsd = np.full((12, len(candidates)), np.nan, dtype=float)
     candidate_customer_apsd = np.full((12, len(candidates)), np.nan, dtype=float)
+    candidate_sales_revenue = np.zeros((12, len(candidates)), dtype=float)
     for index, (candidate, opening_date) in enumerate(zip(selected, dates)):
         open_month = opening_date.month - 1
         selected_month[open_month:] += 1
@@ -1336,6 +1400,11 @@ def _scenario_outputs(
                 ))
             )
             candidate_revenue[month] += (
+                candidate_sales_apsd[month, candidate]
+                * new_active_days[month]
+                * fraction
+            )
+            candidate_sales_revenue[month, candidate] = (
                 candidate_sales_apsd[month, candidate]
                 * new_active_days[month]
                 * fraction
@@ -1399,6 +1468,43 @@ def _scenario_outputs(
     selected_output["scenario_opening_month"] = selected_output[
         "assumed_opening_date"
     ].dt.month
+    selected_gross_sales: list[float] = []
+    selected_actual_sales: list[float] = []
+    for candidate, opening_date in zip(selected, dates):
+        open_month = opening_date.month - 1
+        gross = 0.0
+        for month in range(open_month, 12):
+            age = month - open_month
+            fraction = 1.0
+            if month == open_month:
+                month_days = pd.Timestamp(
+                    forecast_year, open_month + 1, opening_day
+                ).days_in_month
+                fraction = (month_days - opening_day + 1) / month_days
+            gross += (
+                predictions["sales"][candidate]
+                * maturity["sales"].get(age, 1.0)
+                * new_active_days[month]
+                * fraction
+            )
+        selected_gross_sales.append(gross)
+        selected_actual_sales.append(float(candidate_sales_revenue[:, candidate].sum()))
+    selected_output["estimated_gross_sales_2027_mnt"] = selected_gross_sales
+    selected_output["estimated_competition_loss_2027_mnt"] = (
+        np.asarray(selected_actual_sales) - np.asarray(selected_gross_sales)
+    )
+    for band_index, label in enumerate(
+        ("0_100m", "100_250m", "250_500m", "500_1000m")
+    ):
+        selected_output[f"selected_candidates_within_{label}"] = [
+            int(
+                np.count_nonzero(
+                    (pair_bands[candidate, selected] == band_index)
+                    & (np.asarray(selected) != candidate)
+                )
+            )
+            for candidate in selected
+        ]
 
     # Event-level contributions are allocated in the greedy selection order.
     pair_impacts = _pair_impact_rows(
@@ -1407,6 +1513,7 @@ def _scenario_outputs(
         selected,
         dates,
         existing_bands,
+        existing_distances,
         baseline,
         active_days,
         beta_models,
@@ -1460,12 +1567,13 @@ def _scenario_outputs(
         candidate_summary.index.map(dict(zip(selected, marginal)))
     )
     candidate_summary["scenario_gross_sales_2027_mnt"] = np.nan
-    candidate_summary.loc[selected, "scenario_gross_sales_2027_mnt"] = [
-        float(candidate_revenue.sum() * 0 + np.nansum(
-            candidate_sales_apsd[:, candidate] * new_active_days
-        ))
-        for candidate in selected
-    ]
+    candidate_summary.loc[selected, "scenario_gross_sales_2027_mnt"] = (
+        selected_gross_sales
+    )
+    candidate_summary["estimated_competition_loss_2027_mnt"] = np.nan
+    candidate_summary.loc[selected, "estimated_competition_loss_2027_mnt"] = (
+        np.asarray(selected_actual_sales) - np.asarray(selected_gross_sales)
+    )
 
     summary = {
         "scenario_target": target,
@@ -1962,41 +2070,50 @@ def run_expansion_simulation(
     candidate_existing_distances["distance_band"] = (
         candidate_existing_distances["distance_band"].astype("string")
     )
-    regional_rows = (
-        ranking.loc[ranking["selected_180"] | ranking["selected_400"]]
-        .melt(
-            id_vars=["potential_store_id", "area_type"],
-            value_vars=["selected_180", "selected_400"],
-            var_name="scenario",
-            value_name="selected",
+    for target in (180, 400):
+        selected_column = f"selected_{target}"
+        if selected_column not in ranking:
+            ranking[selected_column] = False
+        rank_column = f"portfolio_rank_{target}"
+        if rank_column not in ranking:
+            ranking[rank_column] = np.nan
+    regional_parts: list[pd.DataFrame] = []
+    for target, result in results_by_target.items():
+        selected_frame = result["selection"].copy()
+        if selected_frame.empty:
+            continue
+        regional_parts.append(
+            selected_frame.groupby("area_type", dropna=False)
+            .agg(
+                selected_candidates=("potential_store_id", "nunique"),
+                mean_predicted_APSD_sales=("predicted_APSD_sales", "mean"),
+                mean_predicted_APSD_customers=("predicted_APSD_customers", "mean"),
+                mean_standalone_network_sales_mnt=(
+                    "standalone_net_network_sales_2027_mnt_jan_open",
+                    "mean",
+                ),
+                sum_greedy_marginal_network_sales_mnt=(
+                    "greedy_marginal_network_sales_2027_mnt",
+                    "sum",
+                ),
+            )
+            .reset_index()
+            .assign(scenario_target=target)
         )
-        .loc[lambda frame: frame["selected"]]
-        .groupby(["scenario", "area_type"], dropna=False)
-        .agg(selected_candidates=("potential_store_id", "nunique"))
-        .reset_index()
-    )
-    regional_scenario = regional_rows.merge(
-        ranking.melt(
-            id_vars=["potential_store_id", "area_type"],
-            value_vars=[
-                "predicted_APSD_sales",
-                "predicted_APSD_customers",
-                "standalone_net_network_sales_2027_mnt_jan_open",
-            ],
-            var_name="metric",
-            value_name="value",
+    regional_scenario = (
+        pd.concat(regional_parts, ignore_index=True)
+        if regional_parts
+        else pd.DataFrame(
+            columns=[
+                "area_type",
+                "selected_candidates",
+                "mean_predicted_APSD_sales",
+                "mean_predicted_APSD_customers",
+                "mean_standalone_network_sales_mnt",
+                "sum_greedy_marginal_network_sales_mnt",
+                "scenario_target",
+            ]
         )
-        .merge(
-            regional_rows[["scenario", "area_type"]],
-            on="area_type",
-            how="inner",
-        )
-        .groupby(["scenario", "area_type", "metric"])["value"]
-        .mean()
-        .unstack("metric")
-        .reset_index(),
-        on=["scenario", "area_type"],
-        how="left",
     )
 
     quality_rows = [
