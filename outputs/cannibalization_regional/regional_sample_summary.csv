@@ -1,0 +1,5 @@
+region,existing_stores,store_month_observations,stores_with_positive_sales,stores_with_positive_customers,exposed_stores_within_1km,new_store_pair_events,new_store_openings,established_pair_events
+City Center,110,4122,110,110,110,2746,208,1721
+City Outskirts,213,8033,213,213,209,3162,310,1788
+Far / Outer Areas,248,7529,248,248,168,908,222,498
+Rural,127,2531,127,127,52,84,52,10

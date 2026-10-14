@@ -1,0 +1,2361 @@
+region,outcome,sample,time_kind,event_period,distance_band,distinct_pair_events,distinct_new_store_openings,exposed_existing_stores,pair_month_observations,store_month_observations
+All Regions,sales,all qualifying openings,monthly,-12,0_100,21,20,20,21,21
+All Regions,sales,all qualifying openings,monthly,-11,0_100,21,20,20,21,21
+All Regions,sales,all qualifying openings,monthly,-10,0_100,21,20,20,21,21
+All Regions,sales,all qualifying openings,monthly,-9,0_100,21,20,20,21,21
+All Regions,sales,all qualifying openings,monthly,-8,0_100,20,19,19,20,20
+All Regions,sales,all qualifying openings,monthly,-7,0_100,21,20,20,21,21
+All Regions,sales,all qualifying openings,monthly,-6,0_100,22,21,21,22,22
+All Regions,sales,all qualifying openings,monthly,-5,0_100,24,23,23,24,24
+All Regions,sales,all qualifying openings,monthly,-4,0_100,24,23,23,24,24
+All Regions,sales,all qualifying openings,monthly,-3,0_100,24,23,23,24,24
+All Regions,sales,all qualifying openings,monthly,-2,0_100,27,26,26,27,27
+All Regions,sales,all qualifying openings,monthly,-1,0_100,28,27,27,28,28
+All Regions,sales,all qualifying openings,monthly,0,0_100,29,28,28,29,29
+All Regions,sales,all qualifying openings,monthly,1,0_100,30,29,29,30,30
+All Regions,sales,all qualifying openings,monthly,2,0_100,31,29,31,31,31
+All Regions,sales,all qualifying openings,monthly,3,0_100,30,28,30,30,30
+All Regions,sales,all qualifying openings,monthly,4,0_100,34,32,33,34,34
+All Regions,sales,all qualifying openings,monthly,5,0_100,35,32,34,35,35
+All Regions,sales,all qualifying openings,monthly,6,0_100,32,29,31,32,32
+All Regions,sales,all qualifying openings,monthly,7,0_100,34,31,33,34,34
+All Regions,sales,all qualifying openings,monthly,8,0_100,34,31,33,34,34
+All Regions,sales,all qualifying openings,monthly,9,0_100,34,31,33,34,34
+All Regions,sales,all qualifying openings,monthly,10,0_100,34,31,33,34,34
+All Regions,sales,all qualifying openings,monthly,11,0_100,34,31,33,34,34
+All Regions,sales,all qualifying openings,monthly,12,0_100,30,28,29,30,30
+All Regions,sales,all qualifying openings,monthly,13,0_100,30,28,29,30,30
+All Regions,sales,all qualifying openings,monthly,14,0_100,30,28,29,30,30
+All Regions,sales,all qualifying openings,monthly,15,0_100,30,28,29,30,30
+All Regions,sales,all qualifying openings,monthly,16,0_100,29,27,28,29,29
+All Regions,sales,all qualifying openings,monthly,17,0_100,28,26,27,28,28
+All Regions,sales,all qualifying openings,monthly,18,0_100,27,25,26,27,27
+All Regions,sales,all qualifying openings,monthly,19,0_100,27,25,26,27,27
+All Regions,sales,all qualifying openings,monthly,20,0_100,27,25,26,27,27
+All Regions,sales,all qualifying openings,monthly,21,0_100,27,25,26,27,27
+All Regions,sales,all qualifying openings,monthly,22,0_100,25,23,24,25,25
+All Regions,sales,all qualifying openings,monthly,23,0_100,24,23,23,24,24
+All Regions,sales,all qualifying openings,monthly,24,0_100,24,23,23,24,24
+All Regions,sales,all qualifying openings,binned,−12 to −7,0_100,22,21,21,125,125
+All Regions,sales,established,binned,−12 to −7,0_100,19,18,18,114,114
+All Regions,sales,all qualifying openings,binned,−6 to −3,0_100,25,24,24,94,94
+All Regions,sales,established,binned,−6 to −3,0_100,19,18,18,75,75
+All Regions,sales,all qualifying openings,binned,−2,0_100,27,26,26,27,27
+All Regions,sales,established,binned,−2,0_100,18,17,17,18,18
+All Regions,sales,all qualifying openings,binned,−1 (reference),0_100,28,27,27,28,28
+All Regions,sales,established,binned,−1 (reference),0_100,18,17,17,18,18
+All Regions,sales,all qualifying openings,binned,0,0_100,29,28,28,29,29
+All Regions,sales,established,binned,0,0_100,18,17,17,18,18
+All Regions,sales,all qualifying openings,binned,+1 to +3,0_100,33,31,32,91,91
+All Regions,sales,established,binned,+1 to +3,0_100,19,18,18,53,53
+All Regions,sales,all qualifying openings,binned,+4 to +6,0_100,38,35,37,101,101
+All Regions,sales,established,binned,+4 to +6,0_100,23,22,22,58,58
+All Regions,sales,all qualifying openings,binned,+7 to +12,0_100,34,31,33,200,197
+All Regions,sales,established,binned,+7 to +12,0_100,18,17,17,104,101
+All Regions,sales,all qualifying openings,binned,+13 to +18,0_100,30,28,29,174,171
+All Regions,sales,established,binned,+13 to +18,0_100,14,14,13,81,78
+All Regions,sales,all qualifying openings,binned,+19 to +24,0_100,27,25,26,154,151
+All Regions,sales,established,binned,+19 to +24,0_100,12,12,11,70,67
+All Regions,sales,all qualifying openings,binned,+25 months onward,0_100,25,24,24,584,556
+All Regions,sales,established,binned,+25 months onward,0_100,11,11,10,271,243
+All Regions,sales,all qualifying openings,monthly,-12,100_250,217,121,167,217,214
+All Regions,sales,all qualifying openings,monthly,-11,100_250,224,124,171,224,221
+All Regions,sales,all qualifying openings,monthly,-10,100_250,224,124,171,224,221
+All Regions,sales,all qualifying openings,monthly,-9,100_250,225,125,173,225,222
+All Regions,sales,all qualifying openings,monthly,-8,100_250,227,127,173,227,224
+All Regions,sales,all qualifying openings,monthly,-7,100_250,232,130,175,232,229
+All Regions,sales,all qualifying openings,monthly,-6,100_250,240,136,176,240,237
+All Regions,sales,all qualifying openings,monthly,-5,100_250,246,139,180,246,242
+All Regions,sales,all qualifying openings,monthly,-4,100_250,255,145,187,255,251
+All Regions,sales,all qualifying openings,monthly,-3,100_250,263,149,191,263,259
+All Regions,sales,all qualifying openings,monthly,-2,100_250,268,150,194,268,264
+All Regions,sales,all qualifying openings,monthly,-1,100_250,278,156,199,278,274
+All Regions,sales,all qualifying openings,monthly,0,100_250,294,167,208,294,290
+All Regions,sales,all qualifying openings,monthly,1,100_250,294,164,207,294,290
+All Regions,sales,all qualifying openings,monthly,2,100_250,275,157,196,275,273
+All Regions,sales,all qualifying openings,monthly,3,100_250,260,151,185,260,258
+All Regions,sales,all qualifying openings,monthly,4,100_250,266,156,186,266,264
+All Regions,sales,all qualifying openings,monthly,5,100_250,249,150,176,249,247
+All Regions,sales,all qualifying openings,monthly,6,100_250,245,147,171,245,243
+All Regions,sales,all qualifying openings,monthly,7,100_250,247,150,170,247,245
+All Regions,sales,all qualifying openings,monthly,8,100_250,243,148,169,243,241
+All Regions,sales,all qualifying openings,monthly,9,100_250,239,147,166,239,237
+All Regions,sales,all qualifying openings,monthly,10,100_250,238,145,164,238,236
+All Regions,sales,all qualifying openings,monthly,11,100_250,229,142,162,229,227
+All Regions,sales,all qualifying openings,monthly,12,100_250,222,140,161,222,220
+All Regions,sales,all qualifying openings,monthly,13,100_250,218,139,158,218,216
+All Regions,sales,all qualifying openings,monthly,14,100_250,211,136,155,211,209
+All Regions,sales,all qualifying openings,monthly,15,100_250,209,135,154,209,207
+All Regions,sales,all qualifying openings,monthly,16,100_250,207,133,151,207,205
+All Regions,sales,all qualifying openings,monthly,17,100_250,199,129,145,199,197
+All Regions,sales,all qualifying openings,monthly,18,100_250,193,124,141,193,191
+All Regions,sales,all qualifying openings,monthly,19,100_250,191,123,140,191,189
+All Regions,sales,all qualifying openings,monthly,20,100_250,187,120,137,187,185
+All Regions,sales,all qualifying openings,monthly,21,100_250,184,117,135,184,182
+All Regions,sales,all qualifying openings,monthly,22,100_250,183,117,133,183,181
+All Regions,sales,all qualifying openings,monthly,23,100_250,180,116,131,180,178
+All Regions,sales,all qualifying openings,monthly,24,100_250,178,116,128,178,176
+All Regions,sales,all qualifying openings,binned,−12 to −7,100_250,234,130,176,1349,1241
+All Regions,sales,established,binned,−12 to −7,100_250,199,107,151,1177,1074
+All Regions,sales,all qualifying openings,binned,−6 to −3,100_250,263,149,191,1004,942
+All Regions,sales,established,binned,−6 to −3,100_250,208,116,152,820,762
+All Regions,sales,all qualifying openings,binned,−2,100_250,268,150,194,268,264
+All Regions,sales,established,binned,−2,100_250,208,116,152,208,204
+All Regions,sales,all qualifying openings,binned,−1 (reference),100_250,278,156,199,278,274
+All Regions,sales,established,binned,−1 (reference),100_250,207,116,151,207,203
+All Regions,sales,all qualifying openings,binned,0,100_250,294,167,208,294,290
+All Regions,sales,established,binned,0,100_250,212,121,152,212,208
+All Regions,sales,all qualifying openings,binned,+1 to +3,100_250,311,174,210,829,800
+All Regions,sales,established,binned,+1 to +3,100_250,211,122,147,556,527
+All Regions,sales,all qualifying openings,binned,+4 to +6,100_250,282,165,193,760,737
+All Regions,sales,established,binned,+4 to +6,100_250,169,105,119,451,430
+All Regions,sales,all qualifying openings,binned,+7 to +12,100_250,254,155,174,1418,1344
+All Regions,sales,established,binned,+7 to +12,100_250,143,93,101,768,722
+All Regions,sales,all qualifying openings,binned,+13 to +18,100_250,221,140,158,1237,1181
+All Regions,sales,established,binned,+13 to +18,100_250,111,79,80,592,563
+All Regions,sales,all qualifying openings,binned,+19 to +24,100_250,195,127,142,1103,1051
+All Regions,sales,established,binned,+19 to +24,100_250,88,65,61,506,479
+All Regions,sales,all qualifying openings,binned,+25 months onward,100_250,186,124,127,4527,3349
+All Regions,sales,established,binned,+25 months onward,100_250,78,58,53,1505,1195
+All Regions,sales,all qualifying openings,monthly,-12,250_500,682,181,312,682,645
+All Regions,sales,all qualifying openings,monthly,-11,250_500,697,187,315,697,659
+All Regions,sales,all qualifying openings,monthly,-10,250_500,720,189,318,720,678
+All Regions,sales,all qualifying openings,monthly,-9,250_500,727,190,320,727,685
+All Regions,sales,all qualifying openings,monthly,-8,250_500,750,196,324,750,706
+All Regions,sales,all qualifying openings,monthly,-7,250_500,765,201,327,765,721
+All Regions,sales,all qualifying openings,monthly,-6,250_500,792,208,334,792,748
+All Regions,sales,all qualifying openings,monthly,-5,250_500,822,212,342,822,777
+All Regions,sales,all qualifying openings,monthly,-4,250_500,852,220,353,852,807
+All Regions,sales,all qualifying openings,monthly,-3,250_500,876,225,360,876,828
+All Regions,sales,all qualifying openings,monthly,-2,250_500,893,231,366,893,845
+All Regions,sales,all qualifying openings,monthly,-1,250_500,938,242,373,938,889
+All Regions,sales,all qualifying openings,monthly,0,250_500,977,252,379,977,926
+All Regions,sales,all qualifying openings,monthly,1,250_500,998,255,372,998,943
+All Regions,sales,all qualifying openings,monthly,2,250_500,963,251,363,963,925
+All Regions,sales,all qualifying openings,monthly,3,250_500,929,247,357,929,892
+All Regions,sales,all qualifying openings,monthly,4,250_500,941,253,351,941,893
+All Regions,sales,all qualifying openings,monthly,5,250_500,901,245,340,901,862
+All Regions,sales,all qualifying openings,monthly,6,250_500,870,243,328,870,831
+All Regions,sales,all qualifying openings,monthly,7,250_500,858,252,327,858,819
+All Regions,sales,all qualifying openings,monthly,8,250_500,854,252,320,854,814
+All Regions,sales,all qualifying openings,monthly,9,250_500,851,251,318,851,811
+All Regions,sales,all qualifying openings,monthly,10,250_500,832,247,314,832,792
+All Regions,sales,all qualifying openings,monthly,11,250_500,811,243,309,811,771
+All Regions,sales,all qualifying openings,monthly,12,250_500,792,242,305,792,752
+All Regions,sales,all qualifying openings,monthly,13,250_500,813,249,303,813,770
+All Regions,sales,all qualifying openings,monthly,14,250_500,801,245,299,801,757
+All Regions,sales,all qualifying openings,monthly,15,250_500,795,244,297,795,751
+All Regions,sales,all qualifying openings,monthly,16,250_500,789,240,292,789,746
+All Regions,sales,all qualifying openings,monthly,17,250_500,769,235,289,769,726
+All Regions,sales,all qualifying openings,monthly,18,250_500,747,231,279,747,704
+All Regions,sales,all qualifying openings,monthly,19,250_500,744,229,278,744,701
+All Regions,sales,all qualifying openings,monthly,20,250_500,737,229,274,737,694
+All Regions,sales,all qualifying openings,monthly,21,250_500,741,230,272,741,698
+All Regions,sales,all qualifying openings,monthly,22,250_500,745,231,269,745,702
+All Regions,sales,all qualifying openings,monthly,23,250_500,743,228,259,743,700
+All Regions,sales,all qualifying openings,monthly,24,250_500,748,231,259,748,705
+All Regions,sales,all qualifying openings,binned,−12 to −7,250_500,777,201,331,4341,3492
+All Regions,sales,established,binned,−12 to −7,250_500,611,170,276,3539,2809
+All Regions,sales,all qualifying openings,binned,−6 to −3,250_500,888,225,362,3342,2861
+All Regions,sales,established,binned,−6 to −3,250_500,625,182,274,2445,2062
+All Regions,sales,all qualifying openings,binned,−2,250_500,893,231,366,893,845
+All Regions,sales,established,binned,−2,250_500,617,186,270,617,580
+All Regions,sales,all qualifying openings,binned,−1 (reference),250_500,938,242,373,938,889
+All Regions,sales,established,binned,−1 (reference),250_500,624,193,269,624,587
+All Regions,sales,all qualifying openings,binned,0,250_500,977,252,379,977,926
+All Regions,sales,established,binned,0,250_500,635,201,268,635,597
+All Regions,sales,all qualifying openings,binned,+1 to +3,250_500,1056,270,375,2890,2541
+All Regions,sales,established,binned,+1 to +3,250_500,658,211,263,1797,1562
+All Regions,sales,all qualifying openings,binned,+4 to +6,250_500,985,268,352,2712,2376
+All Regions,sales,established,binned,+4 to +6,250_500,585,203,238,1586,1368
+All Regions,sales,all qualifying openings,binned,+7 to +12,250_500,890,265,327,4998,3952
+All Regions,sales,established,binned,+7 to +12,250_500,490,190,205,2674,2078
+All Regions,sales,all qualifying openings,binned,+13 to +18,250_500,838,256,305,4714,3688
+All Regions,sales,established,binned,+13 to +18,250_500,424,175,170,2315,1755
+All Regions,sales,all qualifying openings,binned,+19 to +24,250_500,782,247,279,4458,3447
+All Regions,sales,established,binned,+19 to +24,250_500,353,153,133,2063,1529
+All Regions,sales,all qualifying openings,binned,+25 months onward,250_500,795,261,254,20240,6949
+All Regions,sales,established,binned,+25 months onward,250_500,328,140,116,7295,2585
+All Regions,sales,all qualifying openings,monthly,-12,500_1000,2402,216,398,2402,2061
+All Regions,sales,all qualifying openings,monthly,-11,500_1000,2503,221,403,2503,2144
+All Regions,sales,all qualifying openings,monthly,-10,500_1000,2570,225,409,2570,2203
+All Regions,sales,all qualifying openings,monthly,-9,500_1000,2601,230,413,2601,2235
+All Regions,sales,all qualifying openings,monthly,-8,500_1000,2655,236,420,2655,2285
+All Regions,sales,all qualifying openings,monthly,-7,500_1000,2720,244,423,2720,2345
+All Regions,sales,all qualifying openings,monthly,-6,500_1000,2801,253,432,2801,2420
+All Regions,sales,all qualifying openings,monthly,-5,500_1000,2892,258,440,2892,2498
+All Regions,sales,all qualifying openings,monthly,-4,500_1000,2999,272,448,2999,2586
+All Regions,sales,all qualifying openings,monthly,-3,500_1000,3111,285,463,3111,2684
+All Regions,sales,all qualifying openings,monthly,-2,500_1000,3174,294,478,3174,2736
+All Regions,sales,all qualifying openings,monthly,-1,500_1000,3282,309,497,3282,2831
+All Regions,sales,all qualifying openings,monthly,0,500_1000,3419,321,503,3419,2939
+All Regions,sales,all qualifying openings,monthly,1,500_1000,3449,324,498,3449,2953
+All Regions,sales,all qualifying openings,monthly,2,500_1000,3315,314,477,3315,2859
+All Regions,sales,all qualifying openings,monthly,3,500_1000,3171,308,457,3171,2741
+All Regions,sales,all qualifying openings,monthly,4,500_1000,3247,313,448,3247,2741
+All Regions,sales,all qualifying openings,monthly,5,500_1000,3130,302,433,3130,2665
+All Regions,sales,all qualifying openings,monthly,6,500_1000,3033,304,426,3033,2605
+All Regions,sales,all qualifying openings,monthly,7,500_1000,3010,311,414,3010,2558
+All Regions,sales,all qualifying openings,monthly,8,500_1000,2974,313,406,2974,2514
+All Regions,sales,all qualifying openings,monthly,9,500_1000,2941,309,401,2941,2486
+All Regions,sales,all qualifying openings,monthly,10,500_1000,2881,306,395,2881,2431
+All Regions,sales,all qualifying openings,monthly,11,500_1000,2812,300,385,2812,2365
+All Regions,sales,all qualifying openings,monthly,12,500_1000,2749,295,376,2749,2309
+All Regions,sales,all qualifying openings,monthly,13,500_1000,2762,299,364,2762,2292
+All Regions,sales,all qualifying openings,monthly,14,500_1000,2723,296,357,2723,2247
+All Regions,sales,all qualifying openings,monthly,15,500_1000,2711,294,352,2711,2235
+All Regions,sales,all qualifying openings,monthly,16,500_1000,2675,291,346,2675,2205
+All Regions,sales,all qualifying openings,monthly,17,500_1000,2612,285,339,2612,2143
+All Regions,sales,all qualifying openings,monthly,18,500_1000,2544,279,331,2544,2084
+All Regions,sales,all qualifying openings,monthly,19,500_1000,2539,277,329,2539,2080
+All Regions,sales,all qualifying openings,monthly,20,500_1000,2528,274,327,2528,2069
+All Regions,sales,all qualifying openings,monthly,21,500_1000,2526,278,324,2526,2069
+All Regions,sales,all qualifying openings,monthly,22,500_1000,2529,277,316,2529,2073
+All Regions,sales,all qualifying openings,monthly,23,500_1000,2517,275,311,2517,2056
+All Regions,sales,all qualifying openings,monthly,24,500_1000,2533,276,308,2533,2070
+All Regions,sales,all qualifying openings,binned,−12 to −7,500_1000,2771,245,425,15451,8051
+All Regions,sales,established,binned,−12 to −7,500_1000,2154,214,350,12495,6360
+All Regions,sales,all qualifying openings,binned,−6 to −3,500_1000,3143,285,468,11803,7323
+All Regions,sales,established,binned,−6 to −3,500_1000,2211,235,344,8615,5203
+All Regions,sales,all qualifying openings,binned,−2,500_1000,3174,294,478,3174,2736
+All Regions,sales,established,binned,−2,500_1000,2191,236,337,2191,1879
+All Regions,sales,all qualifying openings,binned,−1 (reference),500_1000,3282,309,497,3282,2831
+All Regions,sales,established,binned,−1 (reference),500_1000,2210,246,335,2210,1896
+All Regions,sales,all qualifying openings,binned,0,500_1000,3419,321,503,3419,2939
+All Regions,sales,established,binned,0,500_1000,2246,254,334,2246,1919
+All Regions,sales,all qualifying openings,binned,+1 to +3,500_1000,3676,343,498,9935,6683
+All Regions,sales,established,binned,+1 to +3,500_1000,2328,274,330,6267,4164
+All Regions,sales,all qualifying openings,binned,+4 to +6,500_1000,3413,330,448,9410,6246
+All Regions,sales,established,binned,+4 to +6,500_1000,2029,260,311,5508,3689
+All Regions,sales,all qualifying openings,binned,+7 to +12,500_1000,3148,330,414,17367,8786
+All Regions,sales,established,binned,+7 to +12,500_1000,1714,255,288,9176,4792
+All Regions,sales,all qualifying openings,binned,+13 to +18,500_1000,2849,310,365,16027,7901
+All Regions,sales,established,binned,+13 to +18,500_1000,1419,241,243,7734,3907
+All Regions,sales,all qualifying openings,binned,+19 to +24,500_1000,2649,298,330,15172,7245
+All Regions,sales,established,binned,+19 to +24,500_1000,1194,221,186,6937,3285
+All Regions,sales,all qualifying openings,binned,+25 months onward,500_1000,2711,324,299,69911,8998
+All Regions,sales,established,binned,+25 months onward,500_1000,1104,207,160,24620,3539
+All Regions,customers,all qualifying openings,monthly,-12,0_100,21,20,20,21,21
+All Regions,customers,all qualifying openings,monthly,-11,0_100,21,20,20,21,21
+All Regions,customers,all qualifying openings,monthly,-10,0_100,21,20,20,21,21
+All Regions,customers,all qualifying openings,monthly,-9,0_100,21,20,20,21,21
+All Regions,customers,all qualifying openings,monthly,-8,0_100,20,19,19,20,20
+All Regions,customers,all qualifying openings,monthly,-7,0_100,21,20,20,21,21
+All Regions,customers,all qualifying openings,monthly,-6,0_100,22,21,21,22,22
+All Regions,customers,all qualifying openings,monthly,-5,0_100,24,23,23,24,24
+All Regions,customers,all qualifying openings,monthly,-4,0_100,24,23,23,24,24
+All Regions,customers,all qualifying openings,monthly,-3,0_100,24,23,23,24,24
+All Regions,customers,all qualifying openings,monthly,-2,0_100,27,26,26,27,27
+All Regions,customers,all qualifying openings,monthly,-1,0_100,28,27,27,28,28
+All Regions,customers,all qualifying openings,monthly,0,0_100,29,28,28,29,29
+All Regions,customers,all qualifying openings,monthly,1,0_100,30,29,29,30,30
+All Regions,customers,all qualifying openings,monthly,2,0_100,31,29,31,31,31
+All Regions,customers,all qualifying openings,monthly,3,0_100,30,28,30,30,30
+All Regions,customers,all qualifying openings,monthly,4,0_100,34,32,33,34,34
+All Regions,customers,all qualifying openings,monthly,5,0_100,35,32,34,35,35
+All Regions,customers,all qualifying openings,monthly,6,0_100,32,29,31,32,32
+All Regions,customers,all qualifying openings,monthly,7,0_100,34,31,33,34,34
+All Regions,customers,all qualifying openings,monthly,8,0_100,34,31,33,34,34
+All Regions,customers,all qualifying openings,monthly,9,0_100,34,31,33,34,34
+All Regions,customers,all qualifying openings,monthly,10,0_100,34,31,33,34,34
+All Regions,customers,all qualifying openings,monthly,11,0_100,34,31,33,34,34
+All Regions,customers,all qualifying openings,monthly,12,0_100,30,28,29,30,30
+All Regions,customers,all qualifying openings,monthly,13,0_100,30,28,29,30,30
+All Regions,customers,all qualifying openings,monthly,14,0_100,30,28,29,30,30
+All Regions,customers,all qualifying openings,monthly,15,0_100,30,28,29,30,30
+All Regions,customers,all qualifying openings,monthly,16,0_100,29,27,28,29,29
+All Regions,customers,all qualifying openings,monthly,17,0_100,28,26,27,28,28
+All Regions,customers,all qualifying openings,monthly,18,0_100,27,25,26,27,27
+All Regions,customers,all qualifying openings,monthly,19,0_100,27,25,26,27,27
+All Regions,customers,all qualifying openings,monthly,20,0_100,27,25,26,27,27
+All Regions,customers,all qualifying openings,monthly,21,0_100,27,25,26,27,27
+All Regions,customers,all qualifying openings,monthly,22,0_100,25,23,24,25,25
+All Regions,customers,all qualifying openings,monthly,23,0_100,24,23,23,24,24
+All Regions,customers,all qualifying openings,monthly,24,0_100,24,23,23,24,24
+All Regions,customers,all qualifying openings,binned,−12 to −7,0_100,22,21,21,125,125
+All Regions,customers,established,binned,−12 to −7,0_100,19,18,18,114,114
+All Regions,customers,all qualifying openings,binned,−6 to −3,0_100,25,24,24,94,94
+All Regions,customers,established,binned,−6 to −3,0_100,19,18,18,75,75
+All Regions,customers,all qualifying openings,binned,−2,0_100,27,26,26,27,27
+All Regions,customers,established,binned,−2,0_100,18,17,17,18,18
+All Regions,customers,all qualifying openings,binned,−1 (reference),0_100,28,27,27,28,28
+All Regions,customers,established,binned,−1 (reference),0_100,18,17,17,18,18
+All Regions,customers,all qualifying openings,binned,0,0_100,29,28,28,29,29
+All Regions,customers,established,binned,0,0_100,18,17,17,18,18
+All Regions,customers,all qualifying openings,binned,+1 to +3,0_100,33,31,32,91,91
+All Regions,customers,established,binned,+1 to +3,0_100,19,18,18,53,53
+All Regions,customers,all qualifying openings,binned,+4 to +6,0_100,38,35,37,101,101
+All Regions,customers,established,binned,+4 to +6,0_100,23,22,22,58,58
+All Regions,customers,all qualifying openings,binned,+7 to +12,0_100,34,31,33,200,197
+All Regions,customers,established,binned,+7 to +12,0_100,18,17,17,104,101
+All Regions,customers,all qualifying openings,binned,+13 to +18,0_100,30,28,29,174,171
+All Regions,customers,established,binned,+13 to +18,0_100,14,14,13,81,78
+All Regions,customers,all qualifying openings,binned,+19 to +24,0_100,27,25,26,154,151
+All Regions,customers,established,binned,+19 to +24,0_100,12,12,11,70,67
+All Regions,customers,all qualifying openings,binned,+25 months onward,0_100,25,24,24,584,556
+All Regions,customers,established,binned,+25 months onward,0_100,11,11,10,271,243
+All Regions,customers,all qualifying openings,monthly,-12,100_250,217,121,167,217,214
+All Regions,customers,all qualifying openings,monthly,-11,100_250,224,124,171,224,221
+All Regions,customers,all qualifying openings,monthly,-10,100_250,224,124,171,224,221
+All Regions,customers,all qualifying openings,monthly,-9,100_250,225,125,173,225,222
+All Regions,customers,all qualifying openings,monthly,-8,100_250,227,127,173,227,224
+All Regions,customers,all qualifying openings,monthly,-7,100_250,232,130,175,232,229
+All Regions,customers,all qualifying openings,monthly,-6,100_250,240,136,176,240,237
+All Regions,customers,all qualifying openings,monthly,-5,100_250,246,139,180,246,242
+All Regions,customers,all qualifying openings,monthly,-4,100_250,255,145,187,255,251
+All Regions,customers,all qualifying openings,monthly,-3,100_250,263,149,191,263,259
+All Regions,customers,all qualifying openings,monthly,-2,100_250,268,150,194,268,264
+All Regions,customers,all qualifying openings,monthly,-1,100_250,278,156,199,278,274
+All Regions,customers,all qualifying openings,monthly,0,100_250,294,167,208,294,290
+All Regions,customers,all qualifying openings,monthly,1,100_250,294,164,207,294,290
+All Regions,customers,all qualifying openings,monthly,2,100_250,275,157,196,275,273
+All Regions,customers,all qualifying openings,monthly,3,100_250,260,151,185,260,258
+All Regions,customers,all qualifying openings,monthly,4,100_250,266,156,186,266,264
+All Regions,customers,all qualifying openings,monthly,5,100_250,249,150,176,249,247
+All Regions,customers,all qualifying openings,monthly,6,100_250,245,147,171,245,243
+All Regions,customers,all qualifying openings,monthly,7,100_250,247,150,170,247,245
+All Regions,customers,all qualifying openings,monthly,8,100_250,243,148,169,243,241
+All Regions,customers,all qualifying openings,monthly,9,100_250,239,147,166,239,237
+All Regions,customers,all qualifying openings,monthly,10,100_250,238,145,164,238,236
+All Regions,customers,all qualifying openings,monthly,11,100_250,229,142,162,229,227
+All Regions,customers,all qualifying openings,monthly,12,100_250,222,140,161,222,220
+All Regions,customers,all qualifying openings,monthly,13,100_250,218,139,158,218,216
+All Regions,customers,all qualifying openings,monthly,14,100_250,211,136,155,211,209
+All Regions,customers,all qualifying openings,monthly,15,100_250,209,135,154,209,207
+All Regions,customers,all qualifying openings,monthly,16,100_250,207,133,151,207,205
+All Regions,customers,all qualifying openings,monthly,17,100_250,199,129,145,199,197
+All Regions,customers,all qualifying openings,monthly,18,100_250,193,124,141,193,191
+All Regions,customers,all qualifying openings,monthly,19,100_250,191,123,140,191,189
+All Regions,customers,all qualifying openings,monthly,20,100_250,187,120,137,187,185
+All Regions,customers,all qualifying openings,monthly,21,100_250,184,117,135,184,182
+All Regions,customers,all qualifying openings,monthly,22,100_250,183,117,133,183,181
+All Regions,customers,all qualifying openings,monthly,23,100_250,180,116,131,180,178
+All Regions,customers,all qualifying openings,monthly,24,100_250,178,116,128,178,176
+All Regions,customers,all qualifying openings,binned,−12 to −7,100_250,234,130,176,1349,1241
+All Regions,customers,established,binned,−12 to −7,100_250,199,107,151,1177,1074
+All Regions,customers,all qualifying openings,binned,−6 to −3,100_250,263,149,191,1004,942
+All Regions,customers,established,binned,−6 to −3,100_250,208,116,152,820,762
+All Regions,customers,all qualifying openings,binned,−2,100_250,268,150,194,268,264
+All Regions,customers,established,binned,−2,100_250,208,116,152,208,204
+All Regions,customers,all qualifying openings,binned,−1 (reference),100_250,278,156,199,278,274
+All Regions,customers,established,binned,−1 (reference),100_250,207,116,151,207,203
+All Regions,customers,all qualifying openings,binned,0,100_250,294,167,208,294,290
+All Regions,customers,established,binned,0,100_250,212,121,152,212,208
+All Regions,customers,all qualifying openings,binned,+1 to +3,100_250,311,174,210,829,800
+All Regions,customers,established,binned,+1 to +3,100_250,211,122,147,556,527
+All Regions,customers,all qualifying openings,binned,+4 to +6,100_250,282,165,193,760,737
+All Regions,customers,established,binned,+4 to +6,100_250,169,105,119,451,430
+All Regions,customers,all qualifying openings,binned,+7 to +12,100_250,254,155,174,1418,1344
+All Regions,customers,established,binned,+7 to +12,100_250,143,93,101,768,722
+All Regions,customers,all qualifying openings,binned,+13 to +18,100_250,221,140,158,1237,1181
+All Regions,customers,established,binned,+13 to +18,100_250,111,79,80,592,563
+All Regions,customers,all qualifying openings,binned,+19 to +24,100_250,195,127,142,1103,1051
+All Regions,customers,established,binned,+19 to +24,100_250,88,65,61,506,479
+All Regions,customers,all qualifying openings,binned,+25 months onward,100_250,186,124,127,4527,3349
+All Regions,customers,established,binned,+25 months onward,100_250,78,58,53,1505,1195
+All Regions,customers,all qualifying openings,monthly,-12,250_500,682,181,312,682,645
+All Regions,customers,all qualifying openings,monthly,-11,250_500,697,187,315,697,659
+All Regions,customers,all qualifying openings,monthly,-10,250_500,720,189,318,720,678
+All Regions,customers,all qualifying openings,monthly,-9,250_500,727,190,320,727,685
+All Regions,customers,all qualifying openings,monthly,-8,250_500,750,196,324,750,706
+All Regions,customers,all qualifying openings,monthly,-7,250_500,765,201,327,765,721
+All Regions,customers,all qualifying openings,monthly,-6,250_500,792,208,334,792,748
+All Regions,customers,all qualifying openings,monthly,-5,250_500,822,212,342,822,777
+All Regions,customers,all qualifying openings,monthly,-4,250_500,852,220,353,852,807
+All Regions,customers,all qualifying openings,monthly,-3,250_500,876,225,360,876,828
+All Regions,customers,all qualifying openings,monthly,-2,250_500,893,231,366,893,845
+All Regions,customers,all qualifying openings,monthly,-1,250_500,938,242,373,938,889
+All Regions,customers,all qualifying openings,monthly,0,250_500,977,252,379,977,926
+All Regions,customers,all qualifying openings,monthly,1,250_500,998,255,372,998,943
+All Regions,customers,all qualifying openings,monthly,2,250_500,963,251,363,963,925
+All Regions,customers,all qualifying openings,monthly,3,250_500,929,247,357,929,892
+All Regions,customers,all qualifying openings,monthly,4,250_500,941,253,351,941,893
+All Regions,customers,all qualifying openings,monthly,5,250_500,901,245,340,901,862
+All Regions,customers,all qualifying openings,monthly,6,250_500,870,243,328,870,831
+All Regions,customers,all qualifying openings,monthly,7,250_500,858,252,327,858,819
+All Regions,customers,all qualifying openings,monthly,8,250_500,854,252,320,854,814
+All Regions,customers,all qualifying openings,monthly,9,250_500,851,251,318,851,811
+All Regions,customers,all qualifying openings,monthly,10,250_500,832,247,314,832,792
+All Regions,customers,all qualifying openings,monthly,11,250_500,811,243,309,811,771
+All Regions,customers,all qualifying openings,monthly,12,250_500,792,242,305,792,752
+All Regions,customers,all qualifying openings,monthly,13,250_500,813,249,303,813,770
+All Regions,customers,all qualifying openings,monthly,14,250_500,801,245,299,801,757
+All Regions,customers,all qualifying openings,monthly,15,250_500,795,244,297,795,751
+All Regions,customers,all qualifying openings,monthly,16,250_500,789,240,292,789,746
+All Regions,customers,all qualifying openings,monthly,17,250_500,769,235,289,769,726
+All Regions,customers,all qualifying openings,monthly,18,250_500,747,231,279,747,704
+All Regions,customers,all qualifying openings,monthly,19,250_500,744,229,278,744,701
+All Regions,customers,all qualifying openings,monthly,20,250_500,737,229,274,737,694
+All Regions,customers,all qualifying openings,monthly,21,250_500,741,230,272,741,698
+All Regions,customers,all qualifying openings,monthly,22,250_500,745,231,269,745,702
+All Regions,customers,all qualifying openings,monthly,23,250_500,743,228,259,743,700
+All Regions,customers,all qualifying openings,monthly,24,250_500,748,231,259,748,705
+All Regions,customers,all qualifying openings,binned,−12 to −7,250_500,777,201,331,4341,3492
+All Regions,customers,established,binned,−12 to −7,250_500,611,170,276,3539,2809
+All Regions,customers,all qualifying openings,binned,−6 to −3,250_500,888,225,362,3342,2861
+All Regions,customers,established,binned,−6 to −3,250_500,625,182,274,2445,2062
+All Regions,customers,all qualifying openings,binned,−2,250_500,893,231,366,893,845
+All Regions,customers,established,binned,−2,250_500,617,186,270,617,580
+All Regions,customers,all qualifying openings,binned,−1 (reference),250_500,938,242,373,938,889
+All Regions,customers,established,binned,−1 (reference),250_500,624,193,269,624,587
+All Regions,customers,all qualifying openings,binned,0,250_500,977,252,379,977,926
+All Regions,customers,established,binned,0,250_500,635,201,268,635,597
+All Regions,customers,all qualifying openings,binned,+1 to +3,250_500,1056,270,375,2890,2541
+All Regions,customers,established,binned,+1 to +3,250_500,658,211,263,1797,1562
+All Regions,customers,all qualifying openings,binned,+4 to +6,250_500,985,268,352,2712,2376
+All Regions,customers,established,binned,+4 to +6,250_500,585,203,238,1586,1368
+All Regions,customers,all qualifying openings,binned,+7 to +12,250_500,890,265,327,4998,3952
+All Regions,customers,established,binned,+7 to +12,250_500,490,190,205,2674,2078
+All Regions,customers,all qualifying openings,binned,+13 to +18,250_500,838,256,305,4714,3688
+All Regions,customers,established,binned,+13 to +18,250_500,424,175,170,2315,1755
+All Regions,customers,all qualifying openings,binned,+19 to +24,250_500,782,247,279,4458,3447
+All Regions,customers,established,binned,+19 to +24,250_500,353,153,133,2063,1529
+All Regions,customers,all qualifying openings,binned,+25 months onward,250_500,795,261,254,20240,6949
+All Regions,customers,established,binned,+25 months onward,250_500,328,140,116,7295,2585
+All Regions,customers,all qualifying openings,monthly,-12,500_1000,2402,216,398,2402,2061
+All Regions,customers,all qualifying openings,monthly,-11,500_1000,2503,221,403,2503,2144
+All Regions,customers,all qualifying openings,monthly,-10,500_1000,2570,225,409,2570,2203
+All Regions,customers,all qualifying openings,monthly,-9,500_1000,2601,230,413,2601,2235
+All Regions,customers,all qualifying openings,monthly,-8,500_1000,2655,236,420,2655,2285
+All Regions,customers,all qualifying openings,monthly,-7,500_1000,2720,244,423,2720,2345
+All Regions,customers,all qualifying openings,monthly,-6,500_1000,2801,253,432,2801,2420
+All Regions,customers,all qualifying openings,monthly,-5,500_1000,2892,258,440,2892,2498
+All Regions,customers,all qualifying openings,monthly,-4,500_1000,2999,272,448,2999,2586
+All Regions,customers,all qualifying openings,monthly,-3,500_1000,3111,285,463,3111,2684
+All Regions,customers,all qualifying openings,monthly,-2,500_1000,3174,294,478,3174,2736
+All Regions,customers,all qualifying openings,monthly,-1,500_1000,3282,309,497,3282,2831
+All Regions,customers,all qualifying openings,monthly,0,500_1000,3419,321,503,3419,2939
+All Regions,customers,all qualifying openings,monthly,1,500_1000,3449,324,498,3449,2953
+All Regions,customers,all qualifying openings,monthly,2,500_1000,3315,314,477,3315,2859
+All Regions,customers,all qualifying openings,monthly,3,500_1000,3171,308,457,3171,2741
+All Regions,customers,all qualifying openings,monthly,4,500_1000,3247,313,448,3247,2741
+All Regions,customers,all qualifying openings,monthly,5,500_1000,3130,302,433,3130,2665
+All Regions,customers,all qualifying openings,monthly,6,500_1000,3033,304,426,3033,2605
+All Regions,customers,all qualifying openings,monthly,7,500_1000,3010,311,414,3010,2558
+All Regions,customers,all qualifying openings,monthly,8,500_1000,2974,313,406,2974,2514
+All Regions,customers,all qualifying openings,monthly,9,500_1000,2941,309,401,2941,2486
+All Regions,customers,all qualifying openings,monthly,10,500_1000,2881,306,395,2881,2431
+All Regions,customers,all qualifying openings,monthly,11,500_1000,2812,300,385,2812,2365
+All Regions,customers,all qualifying openings,monthly,12,500_1000,2749,295,376,2749,2309
+All Regions,customers,all qualifying openings,monthly,13,500_1000,2762,299,364,2762,2292
+All Regions,customers,all qualifying openings,monthly,14,500_1000,2723,296,357,2723,2247
+All Regions,customers,all qualifying openings,monthly,15,500_1000,2711,294,352,2711,2235
+All Regions,customers,all qualifying openings,monthly,16,500_1000,2675,291,346,2675,2205
+All Regions,customers,all qualifying openings,monthly,17,500_1000,2612,285,339,2612,2143
+All Regions,customers,all qualifying openings,monthly,18,500_1000,2544,279,331,2544,2084
+All Regions,customers,all qualifying openings,monthly,19,500_1000,2539,277,329,2539,2080
+All Regions,customers,all qualifying openings,monthly,20,500_1000,2528,274,327,2528,2069
+All Regions,customers,all qualifying openings,monthly,21,500_1000,2526,278,324,2526,2069
+All Regions,customers,all qualifying openings,monthly,22,500_1000,2529,277,316,2529,2073
+All Regions,customers,all qualifying openings,monthly,23,500_1000,2517,275,311,2517,2056
+All Regions,customers,all qualifying openings,monthly,24,500_1000,2533,276,308,2533,2070
+All Regions,customers,all qualifying openings,binned,−12 to −7,500_1000,2771,245,425,15451,8051
+All Regions,customers,established,binned,−12 to −7,500_1000,2154,214,350,12495,6360
+All Regions,customers,all qualifying openings,binned,−6 to −3,500_1000,3143,285,468,11803,7323
+All Regions,customers,established,binned,−6 to −3,500_1000,2211,235,344,8615,5203
+All Regions,customers,all qualifying openings,binned,−2,500_1000,3174,294,478,3174,2736
+All Regions,customers,established,binned,−2,500_1000,2191,236,337,2191,1879
+All Regions,customers,all qualifying openings,binned,−1 (reference),500_1000,3282,309,497,3282,2831
+All Regions,customers,established,binned,−1 (reference),500_1000,2210,246,335,2210,1896
+All Regions,customers,all qualifying openings,binned,0,500_1000,3419,321,503,3419,2939
+All Regions,customers,established,binned,0,500_1000,2246,254,334,2246,1919
+All Regions,customers,all qualifying openings,binned,+1 to +3,500_1000,3676,343,498,9935,6683
+All Regions,customers,established,binned,+1 to +3,500_1000,2328,274,330,6267,4164
+All Regions,customers,all qualifying openings,binned,+4 to +6,500_1000,3413,330,448,9410,6246
+All Regions,customers,established,binned,+4 to +6,500_1000,2029,260,311,5508,3689
+All Regions,customers,all qualifying openings,binned,+7 to +12,500_1000,3148,330,414,17367,8786
+All Regions,customers,established,binned,+7 to +12,500_1000,1714,255,288,9176,4792
+All Regions,customers,all qualifying openings,binned,+13 to +18,500_1000,2849,310,365,16027,7901
+All Regions,customers,established,binned,+13 to +18,500_1000,1419,241,243,7734,3907
+All Regions,customers,all qualifying openings,binned,+19 to +24,500_1000,2649,298,330,15172,7245
+All Regions,customers,established,binned,+19 to +24,500_1000,1194,221,186,6937,3285
+All Regions,customers,all qualifying openings,binned,+25 months onward,500_1000,2711,324,299,69911,8998
+All Regions,customers,established,binned,+25 months onward,500_1000,1104,207,160,24620,3539
+City Center,sales,all qualifying openings,monthly,-12,0_100,7,7,7,7,7
+City Center,sales,all qualifying openings,monthly,-11,0_100,7,7,7,7,7
+City Center,sales,all qualifying openings,monthly,-10,0_100,7,7,7,7,7
+City Center,sales,all qualifying openings,monthly,-9,0_100,7,7,7,7,7
+City Center,sales,all qualifying openings,monthly,-8,0_100,7,7,7,7,7
+City Center,sales,all qualifying openings,monthly,-7,0_100,7,7,7,7,7
+City Center,sales,all qualifying openings,monthly,-6,0_100,7,7,7,7,7
+City Center,sales,all qualifying openings,monthly,-5,0_100,9,9,9,9,9
+City Center,sales,all qualifying openings,monthly,-4,0_100,9,9,9,9,9
+City Center,sales,all qualifying openings,monthly,-3,0_100,8,8,8,8,8
+City Center,sales,all qualifying openings,monthly,-2,0_100,8,8,8,8,8
+City Center,sales,all qualifying openings,monthly,-1,0_100,8,8,8,8,8
+City Center,sales,all qualifying openings,monthly,0,0_100,9,9,9,9,9
+City Center,sales,all qualifying openings,monthly,1,0_100,10,10,10,10,10
+City Center,sales,all qualifying openings,monthly,2,0_100,10,9,10,10,10
+City Center,sales,all qualifying openings,monthly,3,0_100,10,9,10,10,10
+City Center,sales,all qualifying openings,monthly,4,0_100,13,12,12,13,13
+City Center,sales,all qualifying openings,monthly,5,0_100,13,11,12,13,13
+City Center,sales,all qualifying openings,monthly,6,0_100,12,10,11,12,12
+City Center,sales,all qualifying openings,monthly,7,0_100,13,11,12,13,13
+City Center,sales,all qualifying openings,monthly,8,0_100,13,11,12,13,13
+City Center,sales,all qualifying openings,monthly,9,0_100,13,11,12,13,13
+City Center,sales,all qualifying openings,monthly,10,0_100,13,11,12,13,13
+City Center,sales,all qualifying openings,monthly,11,0_100,13,11,12,13,13
+City Center,sales,all qualifying openings,monthly,12,0_100,12,10,11,12,12
+City Center,sales,all qualifying openings,monthly,13,0_100,12,10,11,12,12
+City Center,sales,all qualifying openings,monthly,14,0_100,12,10,11,12,12
+City Center,sales,all qualifying openings,monthly,15,0_100,12,10,11,12,12
+City Center,sales,all qualifying openings,monthly,16,0_100,12,10,11,12,12
+City Center,sales,all qualifying openings,monthly,17,0_100,11,9,10,11,11
+City Center,sales,all qualifying openings,monthly,18,0_100,11,9,10,11,11
+City Center,sales,all qualifying openings,monthly,19,0_100,11,9,10,11,11
+City Center,sales,all qualifying openings,monthly,20,0_100,11,9,10,11,11
+City Center,sales,all qualifying openings,monthly,21,0_100,11,9,10,11,11
+City Center,sales,all qualifying openings,monthly,22,0_100,11,9,10,11,11
+City Center,sales,all qualifying openings,monthly,23,0_100,10,9,9,10,10
+City Center,sales,all qualifying openings,monthly,24,0_100,10,9,9,10,10
+City Center,sales,all qualifying openings,binned,−12 to −7,0_100,7,7,7,42,42
+City Center,sales,established,binned,−12 to −7,0_100,6,6,6,36,36
+City Center,sales,all qualifying openings,binned,−6 to −3,0_100,9,9,9,33,33
+City Center,sales,established,binned,−6 to −3,0_100,6,6,6,23,23
+City Center,sales,all qualifying openings,binned,−2,0_100,8,8,8,8,8
+City Center,sales,established,binned,−2,0_100,5,5,5,5,5
+City Center,sales,all qualifying openings,binned,−1 (reference),0_100,8,8,8,8,8
+City Center,sales,established,binned,−1 (reference),0_100,5,5,5,5,5
+City Center,sales,all qualifying openings,binned,0,0_100,9,9,9,9,9
+City Center,sales,established,binned,0,0_100,5,5,5,5,5
+City Center,sales,all qualifying openings,binned,+1 to +3,0_100,11,10,11,30,30
+City Center,sales,established,binned,+1 to +3,0_100,6,6,6,18,18
+City Center,sales,all qualifying openings,binned,+4 to +6,0_100,15,13,14,38,38
+City Center,sales,established,binned,+4 to +6,0_100,9,9,8,22,22
+City Center,sales,all qualifying openings,binned,+7 to +12,0_100,13,11,12,77,74
+City Center,sales,established,binned,+7 to +12,0_100,7,7,6,41,38
+City Center,sales,all qualifying openings,binned,+13 to +18,0_100,12,10,11,70,67
+City Center,sales,established,binned,+13 to +18,0_100,6,6,5,34,31
+City Center,sales,all qualifying openings,binned,+19 to +24,0_100,11,9,10,64,61
+City Center,sales,established,binned,+19 to +24,0_100,5,5,4,30,27
+City Center,sales,all qualifying openings,binned,+25 months onward,0_100,11,10,10,294,266
+City Center,sales,established,binned,+25 months onward,0_100,5,5,4,148,120
+City Center,sales,all qualifying openings,monthly,-12,100_250,72,33,49,72,70
+City Center,sales,all qualifying openings,monthly,-11,100_250,77,35,51,77,75
+City Center,sales,all qualifying openings,monthly,-10,100_250,77,35,51,77,75
+City Center,sales,all qualifying openings,monthly,-9,100_250,76,35,51,76,74
+City Center,sales,all qualifying openings,monthly,-8,100_250,78,37,51,78,76
+City Center,sales,all qualifying openings,monthly,-7,100_250,82,38,54,82,80
+City Center,sales,all qualifying openings,monthly,-6,100_250,85,39,54,85,83
+City Center,sales,all qualifying openings,monthly,-5,100_250,85,39,54,85,83
+City Center,sales,all qualifying openings,monthly,-4,100_250,85,39,54,85,83
+City Center,sales,all qualifying openings,monthly,-3,100_250,87,40,55,87,85
+City Center,sales,all qualifying openings,monthly,-2,100_250,88,40,56,88,86
+City Center,sales,all qualifying openings,monthly,-1,100_250,91,41,58,91,89
+City Center,sales,all qualifying openings,monthly,0,100_250,95,44,60,95,93
+City Center,sales,all qualifying openings,monthly,1,100_250,97,44,62,97,95
+City Center,sales,all qualifying openings,monthly,2,100_250,92,44,60,92,92
+City Center,sales,all qualifying openings,monthly,3,100_250,81,39,55,81,81
+City Center,sales,all qualifying openings,monthly,4,100_250,86,41,58,86,86
+City Center,sales,all qualifying openings,monthly,5,100_250,79,39,55,79,79
+City Center,sales,all qualifying openings,monthly,6,100_250,77,38,53,77,77
+City Center,sales,all qualifying openings,monthly,7,100_250,77,38,53,77,77
+City Center,sales,all qualifying openings,monthly,8,100_250,74,37,52,74,74
+City Center,sales,all qualifying openings,monthly,9,100_250,70,36,50,70,70
+City Center,sales,all qualifying openings,monthly,10,100_250,70,35,49,70,70
+City Center,sales,all qualifying openings,monthly,11,100_250,67,34,48,67,67
+City Center,sales,all qualifying openings,monthly,12,100_250,66,33,47,66,66
+City Center,sales,all qualifying openings,monthly,13,100_250,66,33,47,66,66
+City Center,sales,all qualifying openings,monthly,14,100_250,62,31,46,62,62
+City Center,sales,all qualifying openings,monthly,15,100_250,62,31,46,62,62
+City Center,sales,all qualifying openings,monthly,16,100_250,62,31,45,62,62
+City Center,sales,all qualifying openings,monthly,17,100_250,58,30,42,58,58
+City Center,sales,all qualifying openings,monthly,18,100_250,58,30,42,58,58
+City Center,sales,all qualifying openings,monthly,19,100_250,58,30,42,58,58
+City Center,sales,all qualifying openings,monthly,20,100_250,58,30,42,58,58
+City Center,sales,all qualifying openings,monthly,21,100_250,58,30,42,58,58
+City Center,sales,all qualifying openings,monthly,22,100_250,58,31,41,58,58
+City Center,sales,all qualifying openings,monthly,23,100_250,58,32,41,58,58
+City Center,sales,all qualifying openings,monthly,24,100_250,57,32,40,57,57
+City Center,sales,all qualifying openings,binned,−12 to −7,100_250,83,38,54,462,405
+City Center,sales,established,binned,−12 to −7,100_250,75,36,50,434,377
+City Center,sales,all qualifying openings,binned,−6 to −3,100_250,87,40,55,342,312
+City Center,sales,established,binned,−6 to −3,100_250,76,37,49,304,274
+City Center,sales,all qualifying openings,binned,−2,100_250,88,40,56,88,86
+City Center,sales,established,binned,−2,100_250,76,37,49,76,74
+City Center,sales,all qualifying openings,binned,−1 (reference),100_250,91,41,58,91,89
+City Center,sales,established,binned,−1 (reference),100_250,76,37,49,76,74
+City Center,sales,all qualifying openings,binned,0,100_250,95,44,60,95,93
+City Center,sales,established,binned,0,100_250,79,40,50,79,77
+City Center,sales,all qualifying openings,binned,+1 to +3,100_250,102,47,62,270,258
+City Center,sales,established,binned,+1 to +3,100_250,79,41,49,206,194
+City Center,sales,all qualifying openings,binned,+4 to +6,100_250,91,44,60,242,231
+City Center,sales,established,binned,+4 to +6,100_250,63,36,42,165,156
+City Center,sales,all qualifying openings,binned,+7 to +12,100_250,80,40,55,424,397
+City Center,sales,established,binned,+7 to +12,100_250,54,32,37,272,253
+City Center,sales,all qualifying openings,binned,+13 to +18,100_250,69,34,47,368,350
+City Center,sales,established,binned,+13 to +18,100_250,42,26,28,214,204
+City Center,sales,all qualifying openings,binned,+19 to +24,100_250,60,32,43,347,329
+City Center,sales,established,binned,+19 to +24,100_250,33,22,22,197,187
+City Center,sales,all qualifying openings,binned,+25 months onward,100_250,66,40,41,1803,1241
+City Center,sales,established,binned,+25 months onward,100_250,32,22,21,701,542
+City Center,sales,all qualifying openings,monthly,-12,250_500,211,48,83,211,188
+City Center,sales,all qualifying openings,monthly,-11,250_500,221,50,84,221,197
+City Center,sales,all qualifying openings,monthly,-10,250_500,233,50,85,233,206
+City Center,sales,all qualifying openings,monthly,-9,250_500,232,50,84,232,205
+City Center,sales,all qualifying openings,monthly,-8,250_500,244,52,84,244,215
+City Center,sales,all qualifying openings,monthly,-7,250_500,247,53,85,247,218
+City Center,sales,all qualifying openings,monthly,-6,250_500,258,54,86,258,229
+City Center,sales,all qualifying openings,monthly,-5,250_500,274,56,88,274,244
+City Center,sales,all qualifying openings,monthly,-4,250_500,277,56,91,277,248
+City Center,sales,all qualifying openings,monthly,-3,250_500,286,57,94,286,254
+City Center,sales,all qualifying openings,monthly,-2,250_500,286,58,94,286,254
+City Center,sales,all qualifying openings,monthly,-1,250_500,300,60,96,300,268
+City Center,sales,all qualifying openings,monthly,0,250_500,316,64,96,316,284
+City Center,sales,all qualifying openings,monthly,1,250_500,332,66,96,332,298
+City Center,sales,all qualifying openings,monthly,2,250_500,310,65,91,310,290
+City Center,sales,all qualifying openings,monthly,3,250_500,294,61,88,294,277
+City Center,sales,all qualifying openings,monthly,4,250_500,317,68,88,317,289
+City Center,sales,all qualifying openings,monthly,5,250_500,298,64,85,298,279
+City Center,sales,all qualifying openings,monthly,6,250_500,289,63,84,289,270
+City Center,sales,all qualifying openings,monthly,7,250_500,297,67,85,297,278
+City Center,sales,all qualifying openings,monthly,8,250_500,290,65,83,290,271
+City Center,sales,all qualifying openings,monthly,9,250_500,285,65,83,285,266
+City Center,sales,all qualifying openings,monthly,10,250_500,275,64,81,275,256
+City Center,sales,all qualifying openings,monthly,11,250_500,270,63,80,270,251
+City Center,sales,all qualifying openings,monthly,12,250_500,263,63,80,263,244
+City Center,sales,all qualifying openings,monthly,13,250_500,274,65,78,274,253
+City Center,sales,all qualifying openings,monthly,14,250_500,269,64,77,269,248
+City Center,sales,all qualifying openings,monthly,15,250_500,271,65,77,271,250
+City Center,sales,all qualifying openings,monthly,16,250_500,274,65,77,274,253
+City Center,sales,all qualifying openings,monthly,17,250_500,265,64,77,265,244
+City Center,sales,all qualifying openings,monthly,18,250_500,267,64,77,267,246
+City Center,sales,all qualifying openings,monthly,19,250_500,268,64,78,268,247
+City Center,sales,all qualifying openings,monthly,20,250_500,265,64,76,265,244
+City Center,sales,all qualifying openings,monthly,21,250_500,270,65,76,270,249
+City Center,sales,all qualifying openings,monthly,22,250_500,270,66,76,270,249
+City Center,sales,all qualifying openings,monthly,23,250_500,278,68,75,278,256
+City Center,sales,all qualifying openings,monthly,24,250_500,280,69,75,280,258
+City Center,sales,all qualifying openings,binned,−12 to −7,250_500,252,54,86,1388,1012
+City Center,sales,established,binned,−12 to −7,250_500,216,51,79,1234,879
+City Center,sales,all qualifying openings,binned,−6 to −3,250_500,294,57,94,1095,859
+City Center,sales,established,binned,−6 to −3,250_500,223,55,77,868,670
+City Center,sales,all qualifying openings,binned,−2,250_500,286,58,94,286,254
+City Center,sales,established,binned,−2,250_500,214,56,75,214,190
+City Center,sales,all qualifying openings,binned,−1 (reference),250_500,300,60,96,300,268
+City Center,sales,established,binned,−1 (reference),250_500,216,58,75,216,192
+City Center,sales,all qualifying openings,binned,0,250_500,316,64,96,316,284
+City Center,sales,established,binned,0,250_500,220,61,74,220,196
+City Center,sales,all qualifying openings,binned,+1 to +3,250_500,350,70,96,936,780
+City Center,sales,established,binned,+1 to +3,250_500,239,67,73,635,521
+City Center,sales,all qualifying openings,binned,+4 to +6,250_500,334,71,88,904,754
+City Center,sales,established,binned,+4 to +6,250_500,231,68,70,613,492
+City Center,sales,all qualifying openings,binned,+7 to +12,250_500,302,70,85,1680,1239
+City Center,sales,established,binned,+7 to +12,250_500,205,65,64,1108,776
+City Center,sales,all qualifying openings,binned,+13 to +18,250_500,290,69,79,1620,1188
+City Center,sales,established,binned,+13 to +18,250_500,184,62,52,998,684
+City Center,sales,all qualifying openings,binned,+19 to +24,250_500,285,69,78,1631,1192
+City Center,sales,established,binned,+19 to +24,250_500,165,59,42,984,669
+City Center,sales,all qualifying openings,binned,+25 months onward,250_500,321,92,74,9208,2406
+City Center,sales,established,binned,+25 months onward,250_500,164,59,41,4273,1183
+City Center,sales,all qualifying openings,monthly,-12,500_1000,862,78,88,862,701
+City Center,sales,all qualifying openings,monthly,-11,500_1000,919,81,90,919,744
+City Center,sales,all qualifying openings,monthly,-10,500_1000,942,82,92,942,762
+City Center,sales,all qualifying openings,monthly,-9,500_1000,944,82,92,944,766
+City Center,sales,all qualifying openings,monthly,-8,500_1000,975,84,95,975,793
+City Center,sales,all qualifying openings,monthly,-7,500_1000,997,86,95,997,811
+City Center,sales,all qualifying openings,monthly,-6,500_1000,1035,89,97,1035,844
+City Center,sales,all qualifying openings,monthly,-5,500_1000,1074,92,97,1074,878
+City Center,sales,all qualifying openings,monthly,-4,500_1000,1100,94,98,1100,898
+City Center,sales,all qualifying openings,monthly,-3,500_1000,1126,97,102,1126,918
+City Center,sales,all qualifying openings,monthly,-2,500_1000,1148,97,103,1148,934
+City Center,sales,all qualifying openings,monthly,-1,500_1000,1172,99,108,1172,953
+City Center,sales,all qualifying openings,monthly,0,500_1000,1224,105,110,1224,989
+City Center,sales,all qualifying openings,monthly,1,500_1000,1269,106,110,1269,1021
+City Center,sales,all qualifying openings,monthly,2,500_1000,1208,106,106,1208,992
+City Center,sales,all qualifying openings,monthly,3,500_1000,1157,105,102,1157,956
+City Center,sales,all qualifying openings,monthly,4,500_1000,1234,112,101,1234,971
+City Center,sales,all qualifying openings,monthly,5,500_1000,1184,109,94,1184,944
+City Center,sales,all qualifying openings,monthly,6,500_1000,1122,109,92,1122,913
+City Center,sales,all qualifying openings,monthly,7,500_1000,1145,114,90,1145,923
+City Center,sales,all qualifying openings,monthly,8,500_1000,1124,115,88,1124,901
+City Center,sales,all qualifying openings,monthly,9,500_1000,1114,113,88,1114,890
+City Center,sales,all qualifying openings,monthly,10,500_1000,1089,112,88,1089,870
+City Center,sales,all qualifying openings,monthly,11,500_1000,1073,111,87,1073,854
+City Center,sales,all qualifying openings,monthly,12,500_1000,1039,108,85,1039,823
+City Center,sales,all qualifying openings,monthly,13,500_1000,1058,112,85,1058,824
+City Center,sales,all qualifying openings,monthly,14,500_1000,1038,111,82,1038,802
+City Center,sales,all qualifying openings,monthly,15,500_1000,1045,113,82,1045,809
+City Center,sales,all qualifying openings,monthly,16,500_1000,1036,114,82,1036,803
+City Center,sales,all qualifying openings,monthly,17,500_1000,1015,113,82,1015,781
+City Center,sales,all qualifying openings,monthly,18,500_1000,1007,110,82,1007,775
+City Center,sales,all qualifying openings,monthly,19,500_1000,1006,111,82,1006,775
+City Center,sales,all qualifying openings,monthly,20,500_1000,1004,110,82,1004,773
+City Center,sales,all qualifying openings,monthly,21,500_1000,1009,112,82,1009,781
+City Center,sales,all qualifying openings,monthly,22,500_1000,1010,113,82,1010,783
+City Center,sales,all qualifying openings,monthly,23,500_1000,1023,115,81,1023,792
+City Center,sales,all qualifying openings,monthly,24,500_1000,1034,117,81,1034,801
+City Center,sales,all qualifying openings,binned,−12 to −7,500_1000,1030,86,95,5639,2305
+City Center,sales,established,binned,−12 to −7,500_1000,861,85,85,4893,1988
+City Center,sales,all qualifying openings,binned,−6 to −3,500_1000,1144,97,102,4335,2233
+City Center,sales,established,binned,−6 to −3,500_1000,873,95,85,3406,1738
+City Center,sales,all qualifying openings,binned,−2,500_1000,1148,97,103,1148,934
+City Center,sales,established,binned,−2,500_1000,861,95,83,861,699
+City Center,sales,all qualifying openings,binned,−1 (reference),500_1000,1172,99,108,1172,953
+City Center,sales,established,binned,−1 (reference),500_1000,860,97,81,860,698
+City Center,sales,all qualifying openings,binned,0,500_1000,1224,105,110,1224,989
+City Center,sales,established,binned,0,500_1000,881,102,81,881,710
+City Center,sales,all qualifying openings,binned,+1 to +3,500_1000,1370,116,110,3634,2098
+City Center,sales,established,binned,+1 to +3,500_1000,947,112,80,2508,1455
+City Center,sales,all qualifying openings,binned,+4 to +6,500_1000,1306,118,101,3540,1982
+City Center,sales,established,binned,+4 to +6,500_1000,853,114,80,2270,1324
+City Center,sales,all qualifying openings,binned,+7 to +12,500_1000,1197,120,90,6584,2581
+City Center,sales,established,binned,+7 to +12,500_1000,735,114,77,3933,1656
+City Center,sales,all qualifying openings,binned,+13 to +18,500_1000,1109,118,85,6199,2364
+City Center,sales,established,binned,+13 to +18,500_1000,628,111,63,3434,1397
+City Center,sales,all qualifying openings,binned,+19 to +24,500_1000,1059,120,82,6086,2294
+City Center,sales,established,binned,+19 to +24,500_1000,559,107,50,3290,1286
+City Center,sales,all qualifying openings,binned,+25 months onward,500_1000,1189,152,81,33330,2744
+City Center,sales,established,binned,+25 months onward,500_1000,552,104,49,13673,1443
+City Center,customers,all qualifying openings,monthly,-12,0_100,7,7,7,7,7
+City Center,customers,all qualifying openings,monthly,-11,0_100,7,7,7,7,7
+City Center,customers,all qualifying openings,monthly,-10,0_100,7,7,7,7,7
+City Center,customers,all qualifying openings,monthly,-9,0_100,7,7,7,7,7
+City Center,customers,all qualifying openings,monthly,-8,0_100,7,7,7,7,7
+City Center,customers,all qualifying openings,monthly,-7,0_100,7,7,7,7,7
+City Center,customers,all qualifying openings,monthly,-6,0_100,7,7,7,7,7
+City Center,customers,all qualifying openings,monthly,-5,0_100,9,9,9,9,9
+City Center,customers,all qualifying openings,monthly,-4,0_100,9,9,9,9,9
+City Center,customers,all qualifying openings,monthly,-3,0_100,8,8,8,8,8
+City Center,customers,all qualifying openings,monthly,-2,0_100,8,8,8,8,8
+City Center,customers,all qualifying openings,monthly,-1,0_100,8,8,8,8,8
+City Center,customers,all qualifying openings,monthly,0,0_100,9,9,9,9,9
+City Center,customers,all qualifying openings,monthly,1,0_100,10,10,10,10,10
+City Center,customers,all qualifying openings,monthly,2,0_100,10,9,10,10,10
+City Center,customers,all qualifying openings,monthly,3,0_100,10,9,10,10,10
+City Center,customers,all qualifying openings,monthly,4,0_100,13,12,12,13,13
+City Center,customers,all qualifying openings,monthly,5,0_100,13,11,12,13,13
+City Center,customers,all qualifying openings,monthly,6,0_100,12,10,11,12,12
+City Center,customers,all qualifying openings,monthly,7,0_100,13,11,12,13,13
+City Center,customers,all qualifying openings,monthly,8,0_100,13,11,12,13,13
+City Center,customers,all qualifying openings,monthly,9,0_100,13,11,12,13,13
+City Center,customers,all qualifying openings,monthly,10,0_100,13,11,12,13,13
+City Center,customers,all qualifying openings,monthly,11,0_100,13,11,12,13,13
+City Center,customers,all qualifying openings,monthly,12,0_100,12,10,11,12,12
+City Center,customers,all qualifying openings,monthly,13,0_100,12,10,11,12,12
+City Center,customers,all qualifying openings,monthly,14,0_100,12,10,11,12,12
+City Center,customers,all qualifying openings,monthly,15,0_100,12,10,11,12,12
+City Center,customers,all qualifying openings,monthly,16,0_100,12,10,11,12,12
+City Center,customers,all qualifying openings,monthly,17,0_100,11,9,10,11,11
+City Center,customers,all qualifying openings,monthly,18,0_100,11,9,10,11,11
+City Center,customers,all qualifying openings,monthly,19,0_100,11,9,10,11,11
+City Center,customers,all qualifying openings,monthly,20,0_100,11,9,10,11,11
+City Center,customers,all qualifying openings,monthly,21,0_100,11,9,10,11,11
+City Center,customers,all qualifying openings,monthly,22,0_100,11,9,10,11,11
+City Center,customers,all qualifying openings,monthly,23,0_100,10,9,9,10,10
+City Center,customers,all qualifying openings,monthly,24,0_100,10,9,9,10,10
+City Center,customers,all qualifying openings,binned,−12 to −7,0_100,7,7,7,42,42
+City Center,customers,established,binned,−12 to −7,0_100,6,6,6,36,36
+City Center,customers,all qualifying openings,binned,−6 to −3,0_100,9,9,9,33,33
+City Center,customers,established,binned,−6 to −3,0_100,6,6,6,23,23
+City Center,customers,all qualifying openings,binned,−2,0_100,8,8,8,8,8
+City Center,customers,established,binned,−2,0_100,5,5,5,5,5
+City Center,customers,all qualifying openings,binned,−1 (reference),0_100,8,8,8,8,8
+City Center,customers,established,binned,−1 (reference),0_100,5,5,5,5,5
+City Center,customers,all qualifying openings,binned,0,0_100,9,9,9,9,9
+City Center,customers,established,binned,0,0_100,5,5,5,5,5
+City Center,customers,all qualifying openings,binned,+1 to +3,0_100,11,10,11,30,30
+City Center,customers,established,binned,+1 to +3,0_100,6,6,6,18,18
+City Center,customers,all qualifying openings,binned,+4 to +6,0_100,15,13,14,38,38
+City Center,customers,established,binned,+4 to +6,0_100,9,9,8,22,22
+City Center,customers,all qualifying openings,binned,+7 to +12,0_100,13,11,12,77,74
+City Center,customers,established,binned,+7 to +12,0_100,7,7,6,41,38
+City Center,customers,all qualifying openings,binned,+13 to +18,0_100,12,10,11,70,67
+City Center,customers,established,binned,+13 to +18,0_100,6,6,5,34,31
+City Center,customers,all qualifying openings,binned,+19 to +24,0_100,11,9,10,64,61
+City Center,customers,established,binned,+19 to +24,0_100,5,5,4,30,27
+City Center,customers,all qualifying openings,binned,+25 months onward,0_100,11,10,10,294,266
+City Center,customers,established,binned,+25 months onward,0_100,5,5,4,148,120
+City Center,customers,all qualifying openings,monthly,-12,100_250,72,33,49,72,70
+City Center,customers,all qualifying openings,monthly,-11,100_250,77,35,51,77,75
+City Center,customers,all qualifying openings,monthly,-10,100_250,77,35,51,77,75
+City Center,customers,all qualifying openings,monthly,-9,100_250,76,35,51,76,74
+City Center,customers,all qualifying openings,monthly,-8,100_250,78,37,51,78,76
+City Center,customers,all qualifying openings,monthly,-7,100_250,82,38,54,82,80
+City Center,customers,all qualifying openings,monthly,-6,100_250,85,39,54,85,83
+City Center,customers,all qualifying openings,monthly,-5,100_250,85,39,54,85,83
+City Center,customers,all qualifying openings,monthly,-4,100_250,85,39,54,85,83
+City Center,customers,all qualifying openings,monthly,-3,100_250,87,40,55,87,85
+City Center,customers,all qualifying openings,monthly,-2,100_250,88,40,56,88,86
+City Center,customers,all qualifying openings,monthly,-1,100_250,91,41,58,91,89
+City Center,customers,all qualifying openings,monthly,0,100_250,95,44,60,95,93
+City Center,customers,all qualifying openings,monthly,1,100_250,97,44,62,97,95
+City Center,customers,all qualifying openings,monthly,2,100_250,92,44,60,92,92
+City Center,customers,all qualifying openings,monthly,3,100_250,81,39,55,81,81
+City Center,customers,all qualifying openings,monthly,4,100_250,86,41,58,86,86
+City Center,customers,all qualifying openings,monthly,5,100_250,79,39,55,79,79
+City Center,customers,all qualifying openings,monthly,6,100_250,77,38,53,77,77
+City Center,customers,all qualifying openings,monthly,7,100_250,77,38,53,77,77
+City Center,customers,all qualifying openings,monthly,8,100_250,74,37,52,74,74
+City Center,customers,all qualifying openings,monthly,9,100_250,70,36,50,70,70
+City Center,customers,all qualifying openings,monthly,10,100_250,70,35,49,70,70
+City Center,customers,all qualifying openings,monthly,11,100_250,67,34,48,67,67
+City Center,customers,all qualifying openings,monthly,12,100_250,66,33,47,66,66
+City Center,customers,all qualifying openings,monthly,13,100_250,66,33,47,66,66
+City Center,customers,all qualifying openings,monthly,14,100_250,62,31,46,62,62
+City Center,customers,all qualifying openings,monthly,15,100_250,62,31,46,62,62
+City Center,customers,all qualifying openings,monthly,16,100_250,62,31,45,62,62
+City Center,customers,all qualifying openings,monthly,17,100_250,58,30,42,58,58
+City Center,customers,all qualifying openings,monthly,18,100_250,58,30,42,58,58
+City Center,customers,all qualifying openings,monthly,19,100_250,58,30,42,58,58
+City Center,customers,all qualifying openings,monthly,20,100_250,58,30,42,58,58
+City Center,customers,all qualifying openings,monthly,21,100_250,58,30,42,58,58
+City Center,customers,all qualifying openings,monthly,22,100_250,58,31,41,58,58
+City Center,customers,all qualifying openings,monthly,23,100_250,58,32,41,58,58
+City Center,customers,all qualifying openings,monthly,24,100_250,57,32,40,57,57
+City Center,customers,all qualifying openings,binned,−12 to −7,100_250,83,38,54,462,405
+City Center,customers,established,binned,−12 to −7,100_250,75,36,50,434,377
+City Center,customers,all qualifying openings,binned,−6 to −3,100_250,87,40,55,342,312
+City Center,customers,established,binned,−6 to −3,100_250,76,37,49,304,274
+City Center,customers,all qualifying openings,binned,−2,100_250,88,40,56,88,86
+City Center,customers,established,binned,−2,100_250,76,37,49,76,74
+City Center,customers,all qualifying openings,binned,−1 (reference),100_250,91,41,58,91,89
+City Center,customers,established,binned,−1 (reference),100_250,76,37,49,76,74
+City Center,customers,all qualifying openings,binned,0,100_250,95,44,60,95,93
+City Center,customers,established,binned,0,100_250,79,40,50,79,77
+City Center,customers,all qualifying openings,binned,+1 to +3,100_250,102,47,62,270,258
+City Center,customers,established,binned,+1 to +3,100_250,79,41,49,206,194
+City Center,customers,all qualifying openings,binned,+4 to +6,100_250,91,44,60,242,231
+City Center,customers,established,binned,+4 to +6,100_250,63,36,42,165,156
+City Center,customers,all qualifying openings,binned,+7 to +12,100_250,80,40,55,424,397
+City Center,customers,established,binned,+7 to +12,100_250,54,32,37,272,253
+City Center,customers,all qualifying openings,binned,+13 to +18,100_250,69,34,47,368,350
+City Center,customers,established,binned,+13 to +18,100_250,42,26,28,214,204
+City Center,customers,all qualifying openings,binned,+19 to +24,100_250,60,32,43,347,329
+City Center,customers,established,binned,+19 to +24,100_250,33,22,22,197,187
+City Center,customers,all qualifying openings,binned,+25 months onward,100_250,66,40,41,1803,1241
+City Center,customers,established,binned,+25 months onward,100_250,32,22,21,701,542
+City Center,customers,all qualifying openings,monthly,-12,250_500,211,48,83,211,188
+City Center,customers,all qualifying openings,monthly,-11,250_500,221,50,84,221,197
+City Center,customers,all qualifying openings,monthly,-10,250_500,233,50,85,233,206
+City Center,customers,all qualifying openings,monthly,-9,250_500,232,50,84,232,205
+City Center,customers,all qualifying openings,monthly,-8,250_500,244,52,84,244,215
+City Center,customers,all qualifying openings,monthly,-7,250_500,247,53,85,247,218
+City Center,customers,all qualifying openings,monthly,-6,250_500,258,54,86,258,229
+City Center,customers,all qualifying openings,monthly,-5,250_500,274,56,88,274,244
+City Center,customers,all qualifying openings,monthly,-4,250_500,277,56,91,277,248
+City Center,customers,all qualifying openings,monthly,-3,250_500,286,57,94,286,254
+City Center,customers,all qualifying openings,monthly,-2,250_500,286,58,94,286,254
+City Center,customers,all qualifying openings,monthly,-1,250_500,300,60,96,300,268
+City Center,customers,all qualifying openings,monthly,0,250_500,316,64,96,316,284
+City Center,customers,all qualifying openings,monthly,1,250_500,332,66,96,332,298
+City Center,customers,all qualifying openings,monthly,2,250_500,310,65,91,310,290
+City Center,customers,all qualifying openings,monthly,3,250_500,294,61,88,294,277
+City Center,customers,all qualifying openings,monthly,4,250_500,317,68,88,317,289
+City Center,customers,all qualifying openings,monthly,5,250_500,298,64,85,298,279
+City Center,customers,all qualifying openings,monthly,6,250_500,289,63,84,289,270
+City Center,customers,all qualifying openings,monthly,7,250_500,297,67,85,297,278
+City Center,customers,all qualifying openings,monthly,8,250_500,290,65,83,290,271
+City Center,customers,all qualifying openings,monthly,9,250_500,285,65,83,285,266
+City Center,customers,all qualifying openings,monthly,10,250_500,275,64,81,275,256
+City Center,customers,all qualifying openings,monthly,11,250_500,270,63,80,270,251
+City Center,customers,all qualifying openings,monthly,12,250_500,263,63,80,263,244
+City Center,customers,all qualifying openings,monthly,13,250_500,274,65,78,274,253
+City Center,customers,all qualifying openings,monthly,14,250_500,269,64,77,269,248
+City Center,customers,all qualifying openings,monthly,15,250_500,271,65,77,271,250
+City Center,customers,all qualifying openings,monthly,16,250_500,274,65,77,274,253
+City Center,customers,all qualifying openings,monthly,17,250_500,265,64,77,265,244
+City Center,customers,all qualifying openings,monthly,18,250_500,267,64,77,267,246
+City Center,customers,all qualifying openings,monthly,19,250_500,268,64,78,268,247
+City Center,customers,all qualifying openings,monthly,20,250_500,265,64,76,265,244
+City Center,customers,all qualifying openings,monthly,21,250_500,270,65,76,270,249
+City Center,customers,all qualifying openings,monthly,22,250_500,270,66,76,270,249
+City Center,customers,all qualifying openings,monthly,23,250_500,278,68,75,278,256
+City Center,customers,all qualifying openings,monthly,24,250_500,280,69,75,280,258
+City Center,customers,all qualifying openings,binned,−12 to −7,250_500,252,54,86,1388,1012
+City Center,customers,established,binned,−12 to −7,250_500,216,51,79,1234,879
+City Center,customers,all qualifying openings,binned,−6 to −3,250_500,294,57,94,1095,859
+City Center,customers,established,binned,−6 to −3,250_500,223,55,77,868,670
+City Center,customers,all qualifying openings,binned,−2,250_500,286,58,94,286,254
+City Center,customers,established,binned,−2,250_500,214,56,75,214,190
+City Center,customers,all qualifying openings,binned,−1 (reference),250_500,300,60,96,300,268
+City Center,customers,established,binned,−1 (reference),250_500,216,58,75,216,192
+City Center,customers,all qualifying openings,binned,0,250_500,316,64,96,316,284
+City Center,customers,established,binned,0,250_500,220,61,74,220,196
+City Center,customers,all qualifying openings,binned,+1 to +3,250_500,350,70,96,936,780
+City Center,customers,established,binned,+1 to +3,250_500,239,67,73,635,521
+City Center,customers,all qualifying openings,binned,+4 to +6,250_500,334,71,88,904,754
+City Center,customers,established,binned,+4 to +6,250_500,231,68,70,613,492
+City Center,customers,all qualifying openings,binned,+7 to +12,250_500,302,70,85,1680,1239
+City Center,customers,established,binned,+7 to +12,250_500,205,65,64,1108,776
+City Center,customers,all qualifying openings,binned,+13 to +18,250_500,290,69,79,1620,1188
+City Center,customers,established,binned,+13 to +18,250_500,184,62,52,998,684
+City Center,customers,all qualifying openings,binned,+19 to +24,250_500,285,69,78,1631,1192
+City Center,customers,established,binned,+19 to +24,250_500,165,59,42,984,669
+City Center,customers,all qualifying openings,binned,+25 months onward,250_500,321,92,74,9208,2406
+City Center,customers,established,binned,+25 months onward,250_500,164,59,41,4273,1183
+City Center,customers,all qualifying openings,monthly,-12,500_1000,862,78,88,862,701
+City Center,customers,all qualifying openings,monthly,-11,500_1000,919,81,90,919,744
+City Center,customers,all qualifying openings,monthly,-10,500_1000,942,82,92,942,762
+City Center,customers,all qualifying openings,monthly,-9,500_1000,944,82,92,944,766
+City Center,customers,all qualifying openings,monthly,-8,500_1000,975,84,95,975,793
+City Center,customers,all qualifying openings,monthly,-7,500_1000,997,86,95,997,811
+City Center,customers,all qualifying openings,monthly,-6,500_1000,1035,89,97,1035,844
+City Center,customers,all qualifying openings,monthly,-5,500_1000,1074,92,97,1074,878
+City Center,customers,all qualifying openings,monthly,-4,500_1000,1100,94,98,1100,898
+City Center,customers,all qualifying openings,monthly,-3,500_1000,1126,97,102,1126,918
+City Center,customers,all qualifying openings,monthly,-2,500_1000,1148,97,103,1148,934
+City Center,customers,all qualifying openings,monthly,-1,500_1000,1172,99,108,1172,953
+City Center,customers,all qualifying openings,monthly,0,500_1000,1224,105,110,1224,989
+City Center,customers,all qualifying openings,monthly,1,500_1000,1269,106,110,1269,1021
+City Center,customers,all qualifying openings,monthly,2,500_1000,1208,106,106,1208,992
+City Center,customers,all qualifying openings,monthly,3,500_1000,1157,105,102,1157,956
+City Center,customers,all qualifying openings,monthly,4,500_1000,1234,112,101,1234,971
+City Center,customers,all qualifying openings,monthly,5,500_1000,1184,109,94,1184,944
+City Center,customers,all qualifying openings,monthly,6,500_1000,1122,109,92,1122,913
+City Center,customers,all qualifying openings,monthly,7,500_1000,1145,114,90,1145,923
+City Center,customers,all qualifying openings,monthly,8,500_1000,1124,115,88,1124,901
+City Center,customers,all qualifying openings,monthly,9,500_1000,1114,113,88,1114,890
+City Center,customers,all qualifying openings,monthly,10,500_1000,1089,112,88,1089,870
+City Center,customers,all qualifying openings,monthly,11,500_1000,1073,111,87,1073,854
+City Center,customers,all qualifying openings,monthly,12,500_1000,1039,108,85,1039,823
+City Center,customers,all qualifying openings,monthly,13,500_1000,1058,112,85,1058,824
+City Center,customers,all qualifying openings,monthly,14,500_1000,1038,111,82,1038,802
+City Center,customers,all qualifying openings,monthly,15,500_1000,1045,113,82,1045,809
+City Center,customers,all qualifying openings,monthly,16,500_1000,1036,114,82,1036,803
+City Center,customers,all qualifying openings,monthly,17,500_1000,1015,113,82,1015,781
+City Center,customers,all qualifying openings,monthly,18,500_1000,1007,110,82,1007,775
+City Center,customers,all qualifying openings,monthly,19,500_1000,1006,111,82,1006,775
+City Center,customers,all qualifying openings,monthly,20,500_1000,1004,110,82,1004,773
+City Center,customers,all qualifying openings,monthly,21,500_1000,1009,112,82,1009,781
+City Center,customers,all qualifying openings,monthly,22,500_1000,1010,113,82,1010,783
+City Center,customers,all qualifying openings,monthly,23,500_1000,1023,115,81,1023,792
+City Center,customers,all qualifying openings,monthly,24,500_1000,1034,117,81,1034,801
+City Center,customers,all qualifying openings,binned,−12 to −7,500_1000,1030,86,95,5639,2305
+City Center,customers,established,binned,−12 to −7,500_1000,861,85,85,4893,1988
+City Center,customers,all qualifying openings,binned,−6 to −3,500_1000,1144,97,102,4335,2233
+City Center,customers,established,binned,−6 to −3,500_1000,873,95,85,3406,1738
+City Center,customers,all qualifying openings,binned,−2,500_1000,1148,97,103,1148,934
+City Center,customers,established,binned,−2,500_1000,861,95,83,861,699
+City Center,customers,all qualifying openings,binned,−1 (reference),500_1000,1172,99,108,1172,953
+City Center,customers,established,binned,−1 (reference),500_1000,860,97,81,860,698
+City Center,customers,all qualifying openings,binned,0,500_1000,1224,105,110,1224,989
+City Center,customers,established,binned,0,500_1000,881,102,81,881,710
+City Center,customers,all qualifying openings,binned,+1 to +3,500_1000,1370,116,110,3634,2098
+City Center,customers,established,binned,+1 to +3,500_1000,947,112,80,2508,1455
+City Center,customers,all qualifying openings,binned,+4 to +6,500_1000,1306,118,101,3540,1982
+City Center,customers,established,binned,+4 to +6,500_1000,853,114,80,2270,1324
+City Center,customers,all qualifying openings,binned,+7 to +12,500_1000,1197,120,90,6584,2581
+City Center,customers,established,binned,+7 to +12,500_1000,735,114,77,3933,1656
+City Center,customers,all qualifying openings,binned,+13 to +18,500_1000,1109,118,85,6199,2364
+City Center,customers,established,binned,+13 to +18,500_1000,628,111,63,3434,1397
+City Center,customers,all qualifying openings,binned,+19 to +24,500_1000,1059,120,82,6086,2294
+City Center,customers,established,binned,+19 to +24,500_1000,559,107,50,3290,1286
+City Center,customers,all qualifying openings,binned,+25 months onward,500_1000,1189,152,81,33330,2744
+City Center,customers,established,binned,+25 months onward,500_1000,552,104,49,13673,1443
+City Outskirts,sales,all qualifying openings,monthly,-12,0_100,10,9,10,10,10
+City Outskirts,sales,all qualifying openings,monthly,-11,0_100,10,9,10,10,10
+City Outskirts,sales,all qualifying openings,monthly,-10,0_100,10,9,10,10,10
+City Outskirts,sales,all qualifying openings,monthly,-9,0_100,10,9,10,10,10
+City Outskirts,sales,all qualifying openings,monthly,-8,0_100,9,8,9,9,9
+City Outskirts,sales,all qualifying openings,monthly,-7,0_100,9,8,9,9,9
+City Outskirts,sales,all qualifying openings,monthly,-6,0_100,9,8,9,9,9
+City Outskirts,sales,all qualifying openings,monthly,-5,0_100,9,8,9,9,9
+City Outskirts,sales,all qualifying openings,monthly,-4,0_100,9,8,9,9,9
+City Outskirts,sales,all qualifying openings,monthly,-3,0_100,9,8,9,9,9
+City Outskirts,sales,all qualifying openings,monthly,-2,0_100,9,8,9,9,9
+City Outskirts,sales,all qualifying openings,monthly,-1,0_100,9,8,9,9,9
+City Outskirts,sales,all qualifying openings,monthly,0,0_100,9,8,9,9,9
+City Outskirts,sales,all qualifying openings,monthly,1,0_100,9,8,9,9,9
+City Outskirts,sales,all qualifying openings,monthly,2,0_100,10,9,10,10,10
+City Outskirts,sales,all qualifying openings,monthly,3,0_100,9,8,9,9,9
+City Outskirts,sales,all qualifying openings,monthly,4,0_100,10,9,10,10,10
+City Outskirts,sales,all qualifying openings,monthly,5,0_100,11,10,11,11,11
+City Outskirts,sales,all qualifying openings,monthly,6,0_100,10,9,10,10,10
+City Outskirts,sales,all qualifying openings,monthly,7,0_100,11,10,11,11,11
+City Outskirts,sales,all qualifying openings,monthly,8,0_100,11,10,11,11,11
+City Outskirts,sales,all qualifying openings,monthly,9,0_100,11,10,11,11,11
+City Outskirts,sales,all qualifying openings,monthly,10,0_100,11,10,11,11,11
+City Outskirts,sales,all qualifying openings,monthly,11,0_100,11,10,11,11,11
+City Outskirts,sales,all qualifying openings,monthly,12,0_100,8,8,8,8,8
+City Outskirts,sales,all qualifying openings,monthly,13,0_100,8,8,8,8,8
+City Outskirts,sales,all qualifying openings,monthly,14,0_100,8,8,8,8,8
+City Outskirts,sales,all qualifying openings,monthly,15,0_100,8,8,8,8,8
+City Outskirts,sales,all qualifying openings,monthly,16,0_100,8,8,8,8,8
+City Outskirts,sales,all qualifying openings,monthly,17,0_100,8,8,8,8,8
+City Outskirts,sales,all qualifying openings,monthly,18,0_100,7,7,7,7,7
+City Outskirts,sales,all qualifying openings,monthly,19,0_100,7,7,7,7,7
+City Outskirts,sales,all qualifying openings,monthly,20,0_100,7,7,7,7,7
+City Outskirts,sales,all qualifying openings,monthly,21,0_100,7,7,7,7,7
+City Outskirts,sales,all qualifying openings,monthly,22,0_100,7,7,7,7,7
+City Outskirts,sales,all qualifying openings,monthly,23,0_100,7,7,7,7,7
+City Outskirts,sales,all qualifying openings,monthly,24,0_100,7,7,7,7,7
+City Outskirts,sales,all qualifying openings,binned,−12 to −7,0_100,10,9,10,58,58
+City Outskirts,sales,established,binned,−12 to −7,0_100,9,8,9,54,54
+City Outskirts,sales,all qualifying openings,binned,−6 to −3,0_100,9,8,9,36,36
+City Outskirts,sales,established,binned,−6 to −3,0_100,9,8,9,36,36
+City Outskirts,sales,all qualifying openings,binned,−2,0_100,9,8,9,9,9
+City Outskirts,sales,established,binned,−2,0_100,9,8,9,9,9
+City Outskirts,sales,all qualifying openings,binned,−1 (reference),0_100,9,8,9,9,9
+City Outskirts,sales,established,binned,−1 (reference),0_100,9,8,9,9,9
+City Outskirts,sales,all qualifying openings,binned,0,0_100,9,8,9,9,9
+City Outskirts,sales,established,binned,0,0_100,9,8,9,9,9
+City Outskirts,sales,all qualifying openings,binned,+1 to +3,0_100,10,9,10,28,28
+City Outskirts,sales,established,binned,+1 to +3,0_100,9,8,9,25,25
+City Outskirts,sales,all qualifying openings,binned,+4 to +6,0_100,12,11,12,31,31
+City Outskirts,sales,established,binned,+4 to +6,0_100,11,10,11,28,28
+City Outskirts,sales,all qualifying openings,binned,+7 to +12,0_100,11,10,11,63,63
+City Outskirts,sales,established,binned,+7 to +12,0_100,9,8,9,51,51
+City Outskirts,sales,all qualifying openings,binned,+13 to +18,0_100,8,8,8,47,47
+City Outskirts,sales,established,binned,+13 to +18,0_100,6,6,6,35,35
+City Outskirts,sales,all qualifying openings,binned,+19 to +24,0_100,7,7,7,42,42
+City Outskirts,sales,established,binned,+19 to +24,0_100,5,5,5,30,30
+City Outskirts,sales,all qualifying openings,binned,+25 months onward,0_100,7,7,7,173,173
+City Outskirts,sales,established,binned,+25 months onward,0_100,5,5,5,112,112
+City Outskirts,sales,all qualifying openings,monthly,-12,100_250,96,53,74,96,95
+City Outskirts,sales,all qualifying openings,monthly,-11,100_250,97,53,75,97,96
+City Outskirts,sales,all qualifying openings,monthly,-10,100_250,97,53,75,97,96
+City Outskirts,sales,all qualifying openings,monthly,-9,100_250,99,54,77,99,98
+City Outskirts,sales,all qualifying openings,monthly,-8,100_250,99,54,77,99,98
+City Outskirts,sales,all qualifying openings,monthly,-7,100_250,100,56,76,100,99
+City Outskirts,sales,all qualifying openings,monthly,-6,100_250,103,59,77,103,102
+City Outskirts,sales,all qualifying openings,monthly,-5,100_250,105,59,78,105,104
+City Outskirts,sales,all qualifying openings,monthly,-4,100_250,111,63,82,111,110
+City Outskirts,sales,all qualifying openings,monthly,-3,100_250,115,65,83,115,114
+City Outskirts,sales,all qualifying openings,monthly,-2,100_250,117,66,83,117,116
+City Outskirts,sales,all qualifying openings,monthly,-1,100_250,120,68,82,120,119
+City Outskirts,sales,all qualifying openings,monthly,0,100_250,128,72,86,128,127
+City Outskirts,sales,all qualifying openings,monthly,1,100_250,131,73,87,131,130
+City Outskirts,sales,all qualifying openings,monthly,2,100_250,124,71,85,124,123
+City Outskirts,sales,all qualifying openings,monthly,3,100_250,123,72,83,123,122
+City Outskirts,sales,all qualifying openings,monthly,4,100_250,126,76,83,126,125
+City Outskirts,sales,all qualifying openings,monthly,5,100_250,119,75,79,119,118
+City Outskirts,sales,all qualifying openings,monthly,6,100_250,119,74,76,119,118
+City Outskirts,sales,all qualifying openings,monthly,7,100_250,119,75,74,119,118
+City Outskirts,sales,all qualifying openings,monthly,8,100_250,117,74,73,117,116
+City Outskirts,sales,all qualifying openings,monthly,9,100_250,118,75,73,118,117
+City Outskirts,sales,all qualifying openings,monthly,10,100_250,119,76,74,119,118
+City Outskirts,sales,all qualifying openings,monthly,11,100_250,113,74,73,113,112
+City Outskirts,sales,all qualifying openings,monthly,12,100_250,106,72,73,106,105
+City Outskirts,sales,all qualifying openings,monthly,13,100_250,106,72,73,106,105
+City Outskirts,sales,all qualifying openings,monthly,14,100_250,103,70,71,103,102
+City Outskirts,sales,all qualifying openings,monthly,15,100_250,102,70,71,102,101
+City Outskirts,sales,all qualifying openings,monthly,16,100_250,102,70,71,102,101
+City Outskirts,sales,all qualifying openings,monthly,17,100_250,98,67,68,98,97
+City Outskirts,sales,all qualifying openings,monthly,18,100_250,93,63,65,93,92
+City Outskirts,sales,all qualifying openings,monthly,19,100_250,93,63,65,93,92
+City Outskirts,sales,all qualifying openings,monthly,20,100_250,91,62,64,91,90
+City Outskirts,sales,all qualifying openings,monthly,21,100_250,90,61,64,90,89
+City Outskirts,sales,all qualifying openings,monthly,22,100_250,90,61,64,90,89
+City Outskirts,sales,all qualifying openings,monthly,23,100_250,90,61,65,90,89
+City Outskirts,sales,all qualifying openings,monthly,24,100_250,89,61,63,89,88
+City Outskirts,sales,all qualifying openings,binned,−12 to −7,100_250,101,56,77,588,549
+City Outskirts,sales,established,binned,−12 to −7,100_250,87,47,67,521,482
+City Outskirts,sales,all qualifying openings,binned,−6 to −3,100_250,115,65,83,434,411
+City Outskirts,sales,established,binned,−6 to −3,100_250,92,52,68,358,336
+City Outskirts,sales,all qualifying openings,binned,−2,100_250,117,66,83,117,116
+City Outskirts,sales,established,binned,−2,100_250,92,52,68,92,91
+City Outskirts,sales,all qualifying openings,binned,−1 (reference),100_250,120,68,82,120,119
+City Outskirts,sales,established,binned,−1 (reference),100_250,91,52,67,91,90
+City Outskirts,sales,all qualifying openings,binned,0,100_250,128,72,86,128,127
+City Outskirts,sales,established,binned,0,100_250,93,54,67,93,92
+City Outskirts,sales,all qualifying openings,binned,+1 to +3,100_250,141,79,90,378,365
+City Outskirts,sales,established,binned,+1 to +3,100_250,94,55,66,250,237
+City Outskirts,sales,all qualifying openings,binned,+4 to +6,100_250,135,81,86,364,355
+City Outskirts,sales,established,binned,+4 to +6,100_250,78,49,54,210,201
+City Outskirts,sales,all qualifying openings,binned,+7 to +12,100_250,121,77,75,692,656
+City Outskirts,sales,established,binned,+7 to +12,100_250,64,42,44,358,339
+City Outskirts,sales,all qualifying openings,binned,+13 to +18,100_250,106,72,73,604,577
+City Outskirts,sales,established,binned,+13 to +18,100_250,50,37,38,274,263
+City Outskirts,sales,all qualifying openings,binned,+19 to +24,100_250,95,65,66,543,518
+City Outskirts,sales,established,binned,+19 to +24,100_250,40,30,28,223,212
+City Outskirts,sales,all qualifying openings,binned,+25 months onward,100_250,90,63,63,2134,1616
+City Outskirts,sales,established,binned,+25 months onward,100_250,33,25,23,604,488
+City Outskirts,sales,all qualifying openings,monthly,-12,250_500,336,94,143,336,325
+City Outskirts,sales,all qualifying openings,monthly,-11,250_500,336,96,143,336,325
+City Outskirts,sales,all qualifying openings,monthly,-10,250_500,343,97,145,343,331
+City Outskirts,sales,all qualifying openings,monthly,-9,250_500,346,97,145,346,334
+City Outskirts,sales,all qualifying openings,monthly,-8,250_500,354,98,147,354,342
+City Outskirts,sales,all qualifying openings,monthly,-7,250_500,362,101,147,362,350
+City Outskirts,sales,all qualifying openings,monthly,-6,250_500,373,104,150,373,361
+City Outskirts,sales,all qualifying openings,monthly,-5,250_500,385,105,155,385,373
+City Outskirts,sales,all qualifying openings,monthly,-4,250_500,400,110,158,400,388
+City Outskirts,sales,all qualifying openings,monthly,-3,250_500,409,113,160,409,397
+City Outskirts,sales,all qualifying openings,monthly,-2,250_500,419,115,162,419,407
+City Outskirts,sales,all qualifying openings,monthly,-1,250_500,443,123,164,443,430
+City Outskirts,sales,all qualifying openings,monthly,0,250_500,460,128,167,460,445
+City Outskirts,sales,all qualifying openings,monthly,1,250_500,467,129,162,467,450
+City Outskirts,sales,all qualifying openings,monthly,2,250_500,459,129,159,459,444
+City Outskirts,sales,all qualifying openings,monthly,3,250_500,456,127,159,456,440
+City Outskirts,sales,all qualifying openings,monthly,4,250_500,450,128,155,450,434
+City Outskirts,sales,all qualifying openings,monthly,5,250_500,441,128,154,441,425
+City Outskirts,sales,all qualifying openings,monthly,6,250_500,428,129,150,428,412
+City Outskirts,sales,all qualifying openings,monthly,7,250_500,413,135,148,413,397
+City Outskirts,sales,all qualifying openings,monthly,8,250_500,416,136,145,416,399
+City Outskirts,sales,all qualifying openings,monthly,9,250_500,419,136,144,419,402
+City Outskirts,sales,all qualifying openings,monthly,10,250_500,415,135,143,415,398
+City Outskirts,sales,all qualifying openings,monthly,11,250_500,403,134,140,403,386
+City Outskirts,sales,all qualifying openings,monthly,12,250_500,392,133,137,392,375
+City Outskirts,sales,all qualifying openings,monthly,13,250_500,402,138,137,402,384
+City Outskirts,sales,all qualifying openings,monthly,14,250_500,398,136,136,398,379
+City Outskirts,sales,all qualifying openings,monthly,15,250_500,392,136,134,392,373
+City Outskirts,sales,all qualifying openings,monthly,16,250_500,392,136,133,392,373
+City Outskirts,sales,all qualifying openings,monthly,17,250_500,382,133,131,382,363
+City Outskirts,sales,all qualifying openings,monthly,18,250_500,364,129,125,364,345
+City Outskirts,sales,all qualifying openings,monthly,19,250_500,364,129,125,364,345
+City Outskirts,sales,all qualifying openings,monthly,20,250_500,360,129,123,360,341
+City Outskirts,sales,all qualifying openings,monthly,21,250_500,360,130,122,360,341
+City Outskirts,sales,all qualifying openings,monthly,22,250_500,365,132,122,365,346
+City Outskirts,sales,all qualifying openings,monthly,23,250_500,364,133,120,364,345
+City Outskirts,sales,all qualifying openings,monthly,24,250_500,367,135,120,367,348
+City Outskirts,sales,all qualifying openings,binned,−12 to −7,250_500,368,101,149,2077,1696
+City Outskirts,sales,established,binned,−12 to −7,250_500,292,92,131,1696,1382
+City Outskirts,sales,all qualifying openings,binned,−6 to −3,250_500,413,113,162,1567,1371
+City Outskirts,sales,established,binned,−6 to −3,250_500,297,97,132,1164,1009
+City Outskirts,sales,all qualifying openings,binned,−2,250_500,419,115,162,419,407
+City Outskirts,sales,established,binned,−2,250_500,297,99,130,297,288
+City Outskirts,sales,all qualifying openings,binned,−1 (reference),250_500,443,123,164,443,430
+City Outskirts,sales,established,binned,−1 (reference),250_500,301,103,129,301,292
+City Outskirts,sales,all qualifying openings,binned,0,250_500,460,128,167,460,445
+City Outskirts,sales,established,binned,0,250_500,307,109,129,307,297
+City Outskirts,sales,all qualifying openings,binned,+1 to +3,250_500,499,138,164,1382,1219
+City Outskirts,sales,established,binned,+1 to +3,250_500,309,112,127,868,769
+City Outskirts,sales,all qualifying openings,binned,+4 to +6,250_500,473,139,156,1319,1156
+City Outskirts,sales,established,binned,+4 to +6,250_500,269,105,115,739,660
+City Outskirts,sales,all qualifying openings,binned,+7 to +12,250_500,437,145,148,2458,1927
+City Outskirts,sales,established,binned,+7 to +12,250_500,218,101,97,1196,985
+City Outskirts,sales,all qualifying openings,binned,+13 to +18,250_500,410,141,138,2330,1806
+City Outskirts,sales,established,binned,+13 to +18,250_500,185,91,84,1023,826
+City Outskirts,sales,all qualifying openings,binned,+19 to +24,250_500,381,140,125,2180,1670
+City Outskirts,sales,established,binned,+19 to +24,250_500,148,79,68,850,674
+City Outskirts,sales,all qualifying openings,binned,+25 months onward,250_500,378,146,119,9162,3389
+City Outskirts,sales,established,binned,+25 months onward,250_500,135,73,60,2471,1143
+City Outskirts,sales,all qualifying openings,monthly,-12,500_1000,1186,127,171,1186,1017
+City Outskirts,sales,all qualifying openings,monthly,-11,500_1000,1214,131,173,1214,1042
+City Outskirts,sales,all qualifying openings,monthly,-10,500_1000,1245,132,175,1245,1072
+City Outskirts,sales,all qualifying openings,monthly,-9,500_1000,1260,134,176,1260,1086
+City Outskirts,sales,all qualifying openings,monthly,-8,500_1000,1281,137,179,1281,1106
+City Outskirts,sales,all qualifying openings,monthly,-7,500_1000,1312,141,179,1312,1136
+City Outskirts,sales,all qualifying openings,monthly,-6,500_1000,1341,144,181,1341,1164
+City Outskirts,sales,all qualifying openings,monthly,-5,500_1000,1383,148,187,1383,1200
+City Outskirts,sales,all qualifying openings,monthly,-4,500_1000,1441,153,190,1441,1249
+City Outskirts,sales,all qualifying openings,monthly,-3,500_1000,1501,158,192,1501,1303
+City Outskirts,sales,all qualifying openings,monthly,-2,500_1000,1523,159,198,1523,1320
+City Outskirts,sales,all qualifying openings,monthly,-1,500_1000,1585,168,205,1585,1374
+City Outskirts,sales,all qualifying openings,monthly,0,500_1000,1656,176,208,1656,1433
+City Outskirts,sales,all qualifying openings,monthly,1,500_1000,1660,180,206,1660,1435
+City Outskirts,sales,all qualifying openings,monthly,2,500_1000,1613,176,199,1613,1396
+City Outskirts,sales,all qualifying openings,monthly,3,500_1000,1531,177,193,1531,1327
+City Outskirts,sales,all qualifying openings,monthly,4,500_1000,1534,180,190,1534,1318
+City Outskirts,sales,all qualifying openings,monthly,5,500_1000,1489,174,185,1489,1289
+City Outskirts,sales,all qualifying openings,monthly,6,500_1000,1461,174,182,1461,1267
+City Outskirts,sales,all qualifying openings,monthly,7,500_1000,1424,181,175,1424,1220
+City Outskirts,sales,all qualifying openings,monthly,8,500_1000,1407,182,171,1407,1196
+City Outskirts,sales,all qualifying openings,monthly,9,500_1000,1389,179,168,1389,1184
+City Outskirts,sales,all qualifying openings,monthly,10,500_1000,1374,177,166,1374,1169
+City Outskirts,sales,all qualifying openings,monthly,11,500_1000,1333,175,165,1333,1131
+City Outskirts,sales,all qualifying openings,monthly,12,500_1000,1310,175,163,1310,1111
+City Outskirts,sales,all qualifying openings,monthly,13,500_1000,1316,182,160,1316,1107
+City Outskirts,sales,all qualifying openings,monthly,14,500_1000,1303,180,158,1303,1090
+City Outskirts,sales,all qualifying openings,monthly,15,500_1000,1296,180,158,1296,1083
+City Outskirts,sales,all qualifying openings,monthly,16,500_1000,1294,181,158,1294,1081
+City Outskirts,sales,all qualifying openings,monthly,17,500_1000,1256,178,154,1256,1045
+City Outskirts,sales,all qualifying openings,monthly,18,500_1000,1205,175,151,1205,1001
+City Outskirts,sales,all qualifying openings,monthly,19,500_1000,1207,176,151,1207,1003
+City Outskirts,sales,all qualifying openings,monthly,20,500_1000,1197,176,150,1197,993
+City Outskirts,sales,all qualifying openings,monthly,21,500_1000,1188,178,148,1188,984
+City Outskirts,sales,all qualifying openings,monthly,22,500_1000,1199,181,147,1199,995
+City Outskirts,sales,all qualifying openings,monthly,23,500_1000,1194,184,147,1194,986
+City Outskirts,sales,all qualifying openings,monthly,24,500_1000,1200,186,147,1200,991
+City Outskirts,sales,all qualifying openings,binned,−12 to −7,500_1000,1325,141,180,7498,3925
+City Outskirts,sales,established,binned,−12 to −7,500_1000,1017,133,155,5983,3102
+City Outskirts,sales,all qualifying openings,binned,−6 to −3,500_1000,1511,158,194,5666,3570
+City Outskirts,sales,established,binned,−6 to −3,500_1000,1056,147,153,4109,2539
+City Outskirts,sales,all qualifying openings,binned,−2,500_1000,1523,159,198,1523,1320
+City Outskirts,sales,established,binned,−2,500_1000,1051,147,151,1051,912
+City Outskirts,sales,all qualifying openings,binned,−1 (reference),500_1000,1585,168,205,1585,1374
+City Outskirts,sales,established,binned,−1 (reference),500_1000,1064,155,150,1064,923
+City Outskirts,sales,all qualifying openings,binned,0,500_1000,1656,176,208,1656,1433
+City Outskirts,sales,established,binned,0,500_1000,1080,160,149,1080,934
+City Outskirts,sales,all qualifying openings,binned,+1 to +3,500_1000,1761,196,206,4804,3286
+City Outskirts,sales,established,binned,+1 to +3,500_1000,1099,175,149,2992,2036
+City Outskirts,sales,all qualifying openings,binned,+4 to +6,500_1000,1615,191,190,4484,3079
+City Outskirts,sales,established,binned,+4 to +6,500_1000,932,168,145,2561,1780
+City Outskirts,sales,all qualifying openings,binned,+7 to +12,500_1000,1496,194,175,8237,4327
+City Outskirts,sales,established,binned,+7 to +12,500_1000,771,167,135,4095,2268
+City Outskirts,sales,all qualifying openings,binned,+13 to +18,500_1000,1347,189,160,7670,4002
+City Outskirts,sales,established,binned,+13 to +18,500_1000,620,158,123,3408,1876
+City Outskirts,sales,all qualifying openings,binned,+19 to +24,500_1000,1255,190,151,7185,3638
+City Outskirts,sales,established,binned,+19 to +24,500_1000,507,148,98,2909,1500
+City Outskirts,sales,all qualifying openings,binned,+25 months onward,500_1000,1242,213,143,30429,4437
+City Outskirts,sales,established,binned,+25 months onward,500_1000,453,140,83,9045,1573
+City Outskirts,customers,all qualifying openings,monthly,-12,0_100,10,9,10,10,10
+City Outskirts,customers,all qualifying openings,monthly,-11,0_100,10,9,10,10,10
+City Outskirts,customers,all qualifying openings,monthly,-10,0_100,10,9,10,10,10
+City Outskirts,customers,all qualifying openings,monthly,-9,0_100,10,9,10,10,10
+City Outskirts,customers,all qualifying openings,monthly,-8,0_100,9,8,9,9,9
+City Outskirts,customers,all qualifying openings,monthly,-7,0_100,9,8,9,9,9
+City Outskirts,customers,all qualifying openings,monthly,-6,0_100,9,8,9,9,9
+City Outskirts,customers,all qualifying openings,monthly,-5,0_100,9,8,9,9,9
+City Outskirts,customers,all qualifying openings,monthly,-4,0_100,9,8,9,9,9
+City Outskirts,customers,all qualifying openings,monthly,-3,0_100,9,8,9,9,9
+City Outskirts,customers,all qualifying openings,monthly,-2,0_100,9,8,9,9,9
+City Outskirts,customers,all qualifying openings,monthly,-1,0_100,9,8,9,9,9
+City Outskirts,customers,all qualifying openings,monthly,0,0_100,9,8,9,9,9
+City Outskirts,customers,all qualifying openings,monthly,1,0_100,9,8,9,9,9
+City Outskirts,customers,all qualifying openings,monthly,2,0_100,10,9,10,10,10
+City Outskirts,customers,all qualifying openings,monthly,3,0_100,9,8,9,9,9
+City Outskirts,customers,all qualifying openings,monthly,4,0_100,10,9,10,10,10
+City Outskirts,customers,all qualifying openings,monthly,5,0_100,11,10,11,11,11
+City Outskirts,customers,all qualifying openings,monthly,6,0_100,10,9,10,10,10
+City Outskirts,customers,all qualifying openings,monthly,7,0_100,11,10,11,11,11
+City Outskirts,customers,all qualifying openings,monthly,8,0_100,11,10,11,11,11
+City Outskirts,customers,all qualifying openings,monthly,9,0_100,11,10,11,11,11
+City Outskirts,customers,all qualifying openings,monthly,10,0_100,11,10,11,11,11
+City Outskirts,customers,all qualifying openings,monthly,11,0_100,11,10,11,11,11
+City Outskirts,customers,all qualifying openings,monthly,12,0_100,8,8,8,8,8
+City Outskirts,customers,all qualifying openings,monthly,13,0_100,8,8,8,8,8
+City Outskirts,customers,all qualifying openings,monthly,14,0_100,8,8,8,8,8
+City Outskirts,customers,all qualifying openings,monthly,15,0_100,8,8,8,8,8
+City Outskirts,customers,all qualifying openings,monthly,16,0_100,8,8,8,8,8
+City Outskirts,customers,all qualifying openings,monthly,17,0_100,8,8,8,8,8
+City Outskirts,customers,all qualifying openings,monthly,18,0_100,7,7,7,7,7
+City Outskirts,customers,all qualifying openings,monthly,19,0_100,7,7,7,7,7
+City Outskirts,customers,all qualifying openings,monthly,20,0_100,7,7,7,7,7
+City Outskirts,customers,all qualifying openings,monthly,21,0_100,7,7,7,7,7
+City Outskirts,customers,all qualifying openings,monthly,22,0_100,7,7,7,7,7
+City Outskirts,customers,all qualifying openings,monthly,23,0_100,7,7,7,7,7
+City Outskirts,customers,all qualifying openings,monthly,24,0_100,7,7,7,7,7
+City Outskirts,customers,all qualifying openings,binned,−12 to −7,0_100,10,9,10,58,58
+City Outskirts,customers,established,binned,−12 to −7,0_100,9,8,9,54,54
+City Outskirts,customers,all qualifying openings,binned,−6 to −3,0_100,9,8,9,36,36
+City Outskirts,customers,established,binned,−6 to −3,0_100,9,8,9,36,36
+City Outskirts,customers,all qualifying openings,binned,−2,0_100,9,8,9,9,9
+City Outskirts,customers,established,binned,−2,0_100,9,8,9,9,9
+City Outskirts,customers,all qualifying openings,binned,−1 (reference),0_100,9,8,9,9,9
+City Outskirts,customers,established,binned,−1 (reference),0_100,9,8,9,9,9
+City Outskirts,customers,all qualifying openings,binned,0,0_100,9,8,9,9,9
+City Outskirts,customers,established,binned,0,0_100,9,8,9,9,9
+City Outskirts,customers,all qualifying openings,binned,+1 to +3,0_100,10,9,10,28,28
+City Outskirts,customers,established,binned,+1 to +3,0_100,9,8,9,25,25
+City Outskirts,customers,all qualifying openings,binned,+4 to +6,0_100,12,11,12,31,31
+City Outskirts,customers,established,binned,+4 to +6,0_100,11,10,11,28,28
+City Outskirts,customers,all qualifying openings,binned,+7 to +12,0_100,11,10,11,63,63
+City Outskirts,customers,established,binned,+7 to +12,0_100,9,8,9,51,51
+City Outskirts,customers,all qualifying openings,binned,+13 to +18,0_100,8,8,8,47,47
+City Outskirts,customers,established,binned,+13 to +18,0_100,6,6,6,35,35
+City Outskirts,customers,all qualifying openings,binned,+19 to +24,0_100,7,7,7,42,42
+City Outskirts,customers,established,binned,+19 to +24,0_100,5,5,5,30,30
+City Outskirts,customers,all qualifying openings,binned,+25 months onward,0_100,7,7,7,173,173
+City Outskirts,customers,established,binned,+25 months onward,0_100,5,5,5,112,112
+City Outskirts,customers,all qualifying openings,monthly,-12,100_250,96,53,74,96,95
+City Outskirts,customers,all qualifying openings,monthly,-11,100_250,97,53,75,97,96
+City Outskirts,customers,all qualifying openings,monthly,-10,100_250,97,53,75,97,96
+City Outskirts,customers,all qualifying openings,monthly,-9,100_250,99,54,77,99,98
+City Outskirts,customers,all qualifying openings,monthly,-8,100_250,99,54,77,99,98
+City Outskirts,customers,all qualifying openings,monthly,-7,100_250,100,56,76,100,99
+City Outskirts,customers,all qualifying openings,monthly,-6,100_250,103,59,77,103,102
+City Outskirts,customers,all qualifying openings,monthly,-5,100_250,105,59,78,105,104
+City Outskirts,customers,all qualifying openings,monthly,-4,100_250,111,63,82,111,110
+City Outskirts,customers,all qualifying openings,monthly,-3,100_250,115,65,83,115,114
+City Outskirts,customers,all qualifying openings,monthly,-2,100_250,117,66,83,117,116
+City Outskirts,customers,all qualifying openings,monthly,-1,100_250,120,68,82,120,119
+City Outskirts,customers,all qualifying openings,monthly,0,100_250,128,72,86,128,127
+City Outskirts,customers,all qualifying openings,monthly,1,100_250,131,73,87,131,130
+City Outskirts,customers,all qualifying openings,monthly,2,100_250,124,71,85,124,123
+City Outskirts,customers,all qualifying openings,monthly,3,100_250,123,72,83,123,122
+City Outskirts,customers,all qualifying openings,monthly,4,100_250,126,76,83,126,125
+City Outskirts,customers,all qualifying openings,monthly,5,100_250,119,75,79,119,118
+City Outskirts,customers,all qualifying openings,monthly,6,100_250,119,74,76,119,118
+City Outskirts,customers,all qualifying openings,monthly,7,100_250,119,75,74,119,118
+City Outskirts,customers,all qualifying openings,monthly,8,100_250,117,74,73,117,116
+City Outskirts,customers,all qualifying openings,monthly,9,100_250,118,75,73,118,117
+City Outskirts,customers,all qualifying openings,monthly,10,100_250,119,76,74,119,118
+City Outskirts,customers,all qualifying openings,monthly,11,100_250,113,74,73,113,112
+City Outskirts,customers,all qualifying openings,monthly,12,100_250,106,72,73,106,105
+City Outskirts,customers,all qualifying openings,monthly,13,100_250,106,72,73,106,105
+City Outskirts,customers,all qualifying openings,monthly,14,100_250,103,70,71,103,102
+City Outskirts,customers,all qualifying openings,monthly,15,100_250,102,70,71,102,101
+City Outskirts,customers,all qualifying openings,monthly,16,100_250,102,70,71,102,101
+City Outskirts,customers,all qualifying openings,monthly,17,100_250,98,67,68,98,97
+City Outskirts,customers,all qualifying openings,monthly,18,100_250,93,63,65,93,92
+City Outskirts,customers,all qualifying openings,monthly,19,100_250,93,63,65,93,92
+City Outskirts,customers,all qualifying openings,monthly,20,100_250,91,62,64,91,90
+City Outskirts,customers,all qualifying openings,monthly,21,100_250,90,61,64,90,89
+City Outskirts,customers,all qualifying openings,monthly,22,100_250,90,61,64,90,89
+City Outskirts,customers,all qualifying openings,monthly,23,100_250,90,61,65,90,89
+City Outskirts,customers,all qualifying openings,monthly,24,100_250,89,61,63,89,88
+City Outskirts,customers,all qualifying openings,binned,−12 to −7,100_250,101,56,77,588,549
+City Outskirts,customers,established,binned,−12 to −7,100_250,87,47,67,521,482
+City Outskirts,customers,all qualifying openings,binned,−6 to −3,100_250,115,65,83,434,411
+City Outskirts,customers,established,binned,−6 to −3,100_250,92,52,68,358,336
+City Outskirts,customers,all qualifying openings,binned,−2,100_250,117,66,83,117,116
+City Outskirts,customers,established,binned,−2,100_250,92,52,68,92,91
+City Outskirts,customers,all qualifying openings,binned,−1 (reference),100_250,120,68,82,120,119
+City Outskirts,customers,established,binned,−1 (reference),100_250,91,52,67,91,90
+City Outskirts,customers,all qualifying openings,binned,0,100_250,128,72,86,128,127
+City Outskirts,customers,established,binned,0,100_250,93,54,67,93,92
+City Outskirts,customers,all qualifying openings,binned,+1 to +3,100_250,141,79,90,378,365
+City Outskirts,customers,established,binned,+1 to +3,100_250,94,55,66,250,237
+City Outskirts,customers,all qualifying openings,binned,+4 to +6,100_250,135,81,86,364,355
+City Outskirts,customers,established,binned,+4 to +6,100_250,78,49,54,210,201
+City Outskirts,customers,all qualifying openings,binned,+7 to +12,100_250,121,77,75,692,656
+City Outskirts,customers,established,binned,+7 to +12,100_250,64,42,44,358,339
+City Outskirts,customers,all qualifying openings,binned,+13 to +18,100_250,106,72,73,604,577
+City Outskirts,customers,established,binned,+13 to +18,100_250,50,37,38,274,263
+City Outskirts,customers,all qualifying openings,binned,+19 to +24,100_250,95,65,66,543,518
+City Outskirts,customers,established,binned,+19 to +24,100_250,40,30,28,223,212
+City Outskirts,customers,all qualifying openings,binned,+25 months onward,100_250,90,63,63,2134,1616
+City Outskirts,customers,established,binned,+25 months onward,100_250,33,25,23,604,488
+City Outskirts,customers,all qualifying openings,monthly,-12,250_500,336,94,143,336,325
+City Outskirts,customers,all qualifying openings,monthly,-11,250_500,336,96,143,336,325
+City Outskirts,customers,all qualifying openings,monthly,-10,250_500,343,97,145,343,331
+City Outskirts,customers,all qualifying openings,monthly,-9,250_500,346,97,145,346,334
+City Outskirts,customers,all qualifying openings,monthly,-8,250_500,354,98,147,354,342
+City Outskirts,customers,all qualifying openings,monthly,-7,250_500,362,101,147,362,350
+City Outskirts,customers,all qualifying openings,monthly,-6,250_500,373,104,150,373,361
+City Outskirts,customers,all qualifying openings,monthly,-5,250_500,385,105,155,385,373
+City Outskirts,customers,all qualifying openings,monthly,-4,250_500,400,110,158,400,388
+City Outskirts,customers,all qualifying openings,monthly,-3,250_500,409,113,160,409,397
+City Outskirts,customers,all qualifying openings,monthly,-2,250_500,419,115,162,419,407
+City Outskirts,customers,all qualifying openings,monthly,-1,250_500,443,123,164,443,430
+City Outskirts,customers,all qualifying openings,monthly,0,250_500,460,128,167,460,445
+City Outskirts,customers,all qualifying openings,monthly,1,250_500,467,129,162,467,450
+City Outskirts,customers,all qualifying openings,monthly,2,250_500,459,129,159,459,444
+City Outskirts,customers,all qualifying openings,monthly,3,250_500,456,127,159,456,440
+City Outskirts,customers,all qualifying openings,monthly,4,250_500,450,128,155,450,434
+City Outskirts,customers,all qualifying openings,monthly,5,250_500,441,128,154,441,425
+City Outskirts,customers,all qualifying openings,monthly,6,250_500,428,129,150,428,412
+City Outskirts,customers,all qualifying openings,monthly,7,250_500,413,135,148,413,397
+City Outskirts,customers,all qualifying openings,monthly,8,250_500,416,136,145,416,399
+City Outskirts,customers,all qualifying openings,monthly,9,250_500,419,136,144,419,402
+City Outskirts,customers,all qualifying openings,monthly,10,250_500,415,135,143,415,398
+City Outskirts,customers,all qualifying openings,monthly,11,250_500,403,134,140,403,386
+City Outskirts,customers,all qualifying openings,monthly,12,250_500,392,133,137,392,375
+City Outskirts,customers,all qualifying openings,monthly,13,250_500,402,138,137,402,384
+City Outskirts,customers,all qualifying openings,monthly,14,250_500,398,136,136,398,379
+City Outskirts,customers,all qualifying openings,monthly,15,250_500,392,136,134,392,373
+City Outskirts,customers,all qualifying openings,monthly,16,250_500,392,136,133,392,373
+City Outskirts,customers,all qualifying openings,monthly,17,250_500,382,133,131,382,363
+City Outskirts,customers,all qualifying openings,monthly,18,250_500,364,129,125,364,345
+City Outskirts,customers,all qualifying openings,monthly,19,250_500,364,129,125,364,345
+City Outskirts,customers,all qualifying openings,monthly,20,250_500,360,129,123,360,341
+City Outskirts,customers,all qualifying openings,monthly,21,250_500,360,130,122,360,341
+City Outskirts,customers,all qualifying openings,monthly,22,250_500,365,132,122,365,346
+City Outskirts,customers,all qualifying openings,monthly,23,250_500,364,133,120,364,345
+City Outskirts,customers,all qualifying openings,monthly,24,250_500,367,135,120,367,348
+City Outskirts,customers,all qualifying openings,binned,−12 to −7,250_500,368,101,149,2077,1696
+City Outskirts,customers,established,binned,−12 to −7,250_500,292,92,131,1696,1382
+City Outskirts,customers,all qualifying openings,binned,−6 to −3,250_500,413,113,162,1567,1371
+City Outskirts,customers,established,binned,−6 to −3,250_500,297,97,132,1164,1009
+City Outskirts,customers,all qualifying openings,binned,−2,250_500,419,115,162,419,407
+City Outskirts,customers,established,binned,−2,250_500,297,99,130,297,288
+City Outskirts,customers,all qualifying openings,binned,−1 (reference),250_500,443,123,164,443,430
+City Outskirts,customers,established,binned,−1 (reference),250_500,301,103,129,301,292
+City Outskirts,customers,all qualifying openings,binned,0,250_500,460,128,167,460,445
+City Outskirts,customers,established,binned,0,250_500,307,109,129,307,297
+City Outskirts,customers,all qualifying openings,binned,+1 to +3,250_500,499,138,164,1382,1219
+City Outskirts,customers,established,binned,+1 to +3,250_500,309,112,127,868,769
+City Outskirts,customers,all qualifying openings,binned,+4 to +6,250_500,473,139,156,1319,1156
+City Outskirts,customers,established,binned,+4 to +6,250_500,269,105,115,739,660
+City Outskirts,customers,all qualifying openings,binned,+7 to +12,250_500,437,145,148,2458,1927
+City Outskirts,customers,established,binned,+7 to +12,250_500,218,101,97,1196,985
+City Outskirts,customers,all qualifying openings,binned,+13 to +18,250_500,410,141,138,2330,1806
+City Outskirts,customers,established,binned,+13 to +18,250_500,185,91,84,1023,826
+City Outskirts,customers,all qualifying openings,binned,+19 to +24,250_500,381,140,125,2180,1670
+City Outskirts,customers,established,binned,+19 to +24,250_500,148,79,68,850,674
+City Outskirts,customers,all qualifying openings,binned,+25 months onward,250_500,378,146,119,9162,3389
+City Outskirts,customers,established,binned,+25 months onward,250_500,135,73,60,2471,1143
+City Outskirts,customers,all qualifying openings,monthly,-12,500_1000,1186,127,171,1186,1017
+City Outskirts,customers,all qualifying openings,monthly,-11,500_1000,1214,131,173,1214,1042
+City Outskirts,customers,all qualifying openings,monthly,-10,500_1000,1245,132,175,1245,1072
+City Outskirts,customers,all qualifying openings,monthly,-9,500_1000,1260,134,176,1260,1086
+City Outskirts,customers,all qualifying openings,monthly,-8,500_1000,1281,137,179,1281,1106
+City Outskirts,customers,all qualifying openings,monthly,-7,500_1000,1312,141,179,1312,1136
+City Outskirts,customers,all qualifying openings,monthly,-6,500_1000,1341,144,181,1341,1164
+City Outskirts,customers,all qualifying openings,monthly,-5,500_1000,1383,148,187,1383,1200
+City Outskirts,customers,all qualifying openings,monthly,-4,500_1000,1441,153,190,1441,1249
+City Outskirts,customers,all qualifying openings,monthly,-3,500_1000,1501,158,192,1501,1303
+City Outskirts,customers,all qualifying openings,monthly,-2,500_1000,1523,159,198,1523,1320
+City Outskirts,customers,all qualifying openings,monthly,-1,500_1000,1585,168,205,1585,1374
+City Outskirts,customers,all qualifying openings,monthly,0,500_1000,1656,176,208,1656,1433
+City Outskirts,customers,all qualifying openings,monthly,1,500_1000,1660,180,206,1660,1435
+City Outskirts,customers,all qualifying openings,monthly,2,500_1000,1613,176,199,1613,1396
+City Outskirts,customers,all qualifying openings,monthly,3,500_1000,1531,177,193,1531,1327
+City Outskirts,customers,all qualifying openings,monthly,4,500_1000,1534,180,190,1534,1318
+City Outskirts,customers,all qualifying openings,monthly,5,500_1000,1489,174,185,1489,1289
+City Outskirts,customers,all qualifying openings,monthly,6,500_1000,1461,174,182,1461,1267
+City Outskirts,customers,all qualifying openings,monthly,7,500_1000,1424,181,175,1424,1220
+City Outskirts,customers,all qualifying openings,monthly,8,500_1000,1407,182,171,1407,1196
+City Outskirts,customers,all qualifying openings,monthly,9,500_1000,1389,179,168,1389,1184
+City Outskirts,customers,all qualifying openings,monthly,10,500_1000,1374,177,166,1374,1169
+City Outskirts,customers,all qualifying openings,monthly,11,500_1000,1333,175,165,1333,1131
+City Outskirts,customers,all qualifying openings,monthly,12,500_1000,1310,175,163,1310,1111
+City Outskirts,customers,all qualifying openings,monthly,13,500_1000,1316,182,160,1316,1107
+City Outskirts,customers,all qualifying openings,monthly,14,500_1000,1303,180,158,1303,1090
+City Outskirts,customers,all qualifying openings,monthly,15,500_1000,1296,180,158,1296,1083
+City Outskirts,customers,all qualifying openings,monthly,16,500_1000,1294,181,158,1294,1081
+City Outskirts,customers,all qualifying openings,monthly,17,500_1000,1256,178,154,1256,1045
+City Outskirts,customers,all qualifying openings,monthly,18,500_1000,1205,175,151,1205,1001
+City Outskirts,customers,all qualifying openings,monthly,19,500_1000,1207,176,151,1207,1003
+City Outskirts,customers,all qualifying openings,monthly,20,500_1000,1197,176,150,1197,993
+City Outskirts,customers,all qualifying openings,monthly,21,500_1000,1188,178,148,1188,984
+City Outskirts,customers,all qualifying openings,monthly,22,500_1000,1199,181,147,1199,995
+City Outskirts,customers,all qualifying openings,monthly,23,500_1000,1194,184,147,1194,986
+City Outskirts,customers,all qualifying openings,monthly,24,500_1000,1200,186,147,1200,991
+City Outskirts,customers,all qualifying openings,binned,−12 to −7,500_1000,1325,141,180,7498,3925
+City Outskirts,customers,established,binned,−12 to −7,500_1000,1017,133,155,5983,3102
+City Outskirts,customers,all qualifying openings,binned,−6 to −3,500_1000,1511,158,194,5666,3570
+City Outskirts,customers,established,binned,−6 to −3,500_1000,1056,147,153,4109,2539
+City Outskirts,customers,all qualifying openings,binned,−2,500_1000,1523,159,198,1523,1320
+City Outskirts,customers,established,binned,−2,500_1000,1051,147,151,1051,912
+City Outskirts,customers,all qualifying openings,binned,−1 (reference),500_1000,1585,168,205,1585,1374
+City Outskirts,customers,established,binned,−1 (reference),500_1000,1064,155,150,1064,923
+City Outskirts,customers,all qualifying openings,binned,0,500_1000,1656,176,208,1656,1433
+City Outskirts,customers,established,binned,0,500_1000,1080,160,149,1080,934
+City Outskirts,customers,all qualifying openings,binned,+1 to +3,500_1000,1761,196,206,4804,3286
+City Outskirts,customers,established,binned,+1 to +3,500_1000,1099,175,149,2992,2036
+City Outskirts,customers,all qualifying openings,binned,+4 to +6,500_1000,1615,191,190,4484,3079
+City Outskirts,customers,established,binned,+4 to +6,500_1000,932,168,145,2561,1780
+City Outskirts,customers,all qualifying openings,binned,+7 to +12,500_1000,1496,194,175,8237,4327
+City Outskirts,customers,established,binned,+7 to +12,500_1000,771,167,135,4095,2268
+City Outskirts,customers,all qualifying openings,binned,+13 to +18,500_1000,1347,189,160,7670,4002
+City Outskirts,customers,established,binned,+13 to +18,500_1000,620,158,123,3408,1876
+City Outskirts,customers,all qualifying openings,binned,+19 to +24,500_1000,1255,190,151,7185,3638
+City Outskirts,customers,established,binned,+19 to +24,500_1000,507,148,98,2909,1500
+City Outskirts,customers,all qualifying openings,binned,+25 months onward,500_1000,1242,213,143,30429,4437
+City Outskirts,customers,established,binned,+25 months onward,500_1000,453,140,83,9045,1573
+Far / Outer Areas,sales,all qualifying openings,monthly,-12,0_100,4,4,3,4,4
+Far / Outer Areas,sales,all qualifying openings,monthly,-11,0_100,4,4,3,4,4
+Far / Outer Areas,sales,all qualifying openings,monthly,-10,0_100,4,4,3,4,4
+Far / Outer Areas,sales,all qualifying openings,monthly,-9,0_100,4,4,3,4,4
+Far / Outer Areas,sales,all qualifying openings,monthly,-8,0_100,4,4,3,4,4
+Far / Outer Areas,sales,all qualifying openings,monthly,-7,0_100,5,5,4,5,5
+Far / Outer Areas,sales,all qualifying openings,monthly,-6,0_100,6,6,5,6,6
+Far / Outer Areas,sales,all qualifying openings,monthly,-5,0_100,6,6,5,6,6
+Far / Outer Areas,sales,all qualifying openings,monthly,-4,0_100,6,6,5,6,6
+Far / Outer Areas,sales,all qualifying openings,monthly,-3,0_100,7,7,6,7,7
+Far / Outer Areas,sales,all qualifying openings,monthly,-2,0_100,7,7,6,7,7
+Far / Outer Areas,sales,all qualifying openings,monthly,-1,0_100,8,8,7,8,8
+Far / Outer Areas,sales,all qualifying openings,monthly,0,0_100,8,8,7,8,8
+Far / Outer Areas,sales,all qualifying openings,monthly,1,0_100,8,8,7,8,8
+Far / Outer Areas,sales,all qualifying openings,monthly,2,0_100,8,8,8,8,8
+Far / Outer Areas,sales,all qualifying openings,monthly,3,0_100,8,8,8,8,8
+Far / Outer Areas,sales,all qualifying openings,monthly,4,0_100,8,8,8,8,8
+Far / Outer Areas,sales,all qualifying openings,monthly,5,0_100,8,8,8,8,8
+Far / Outer Areas,sales,all qualifying openings,monthly,6,0_100,7,7,7,7,7
+Far / Outer Areas,sales,all qualifying openings,monthly,7,0_100,7,7,7,7,7
+Far / Outer Areas,sales,all qualifying openings,monthly,8,0_100,7,7,7,7,7
+Far / Outer Areas,sales,all qualifying openings,monthly,9,0_100,7,7,7,7,7
+Far / Outer Areas,sales,all qualifying openings,monthly,10,0_100,7,7,7,7,7
+Far / Outer Areas,sales,all qualifying openings,monthly,11,0_100,7,7,7,7,7
+Far / Outer Areas,sales,all qualifying openings,monthly,12,0_100,7,7,7,7,7
+Far / Outer Areas,sales,all qualifying openings,monthly,13,0_100,7,7,7,7,7
+Far / Outer Areas,sales,all qualifying openings,monthly,14,0_100,7,7,7,7,7
+Far / Outer Areas,sales,all qualifying openings,monthly,15,0_100,7,7,7,7,7
+Far / Outer Areas,sales,all qualifying openings,monthly,16,0_100,6,6,6,6,6
+Far / Outer Areas,sales,all qualifying openings,monthly,17,0_100,6,6,6,6,6
+Far / Outer Areas,sales,all qualifying openings,monthly,18,0_100,6,6,6,6,6
+Far / Outer Areas,sales,all qualifying openings,monthly,19,0_100,6,6,6,6,6
+Far / Outer Areas,sales,all qualifying openings,monthly,20,0_100,6,6,6,6,6
+Far / Outer Areas,sales,all qualifying openings,monthly,21,0_100,6,6,6,6,6
+Far / Outer Areas,sales,all qualifying openings,monthly,22,0_100,4,4,4,4,4
+Far / Outer Areas,sales,all qualifying openings,monthly,23,0_100,4,4,4,4,4
+Far / Outer Areas,sales,all qualifying openings,monthly,24,0_100,4,4,4,4,4
+Far / Outer Areas,sales,all qualifying openings,binned,−12 to −7,0_100,5,5,4,25,25
+Far / Outer Areas,sales,established,binned,−12 to −7,0_100,4,4,3,24,24
+Far / Outer Areas,sales,all qualifying openings,binned,−6 to −3,0_100,7,7,6,25,25
+Far / Outer Areas,sales,established,binned,−6 to −3,0_100,4,4,3,16,16
+Far / Outer Areas,sales,all qualifying openings,binned,−2,0_100,7,7,6,7,7
+Far / Outer Areas,sales,established,binned,−2,0_100,4,4,3,4,4
+Far / Outer Areas,sales,all qualifying openings,binned,−1 (reference),0_100,8,8,7,8,8
+Far / Outer Areas,sales,established,binned,−1 (reference),0_100,4,4,3,4,4
+Far / Outer Areas,sales,all qualifying openings,binned,0,0_100,8,8,7,8,8
+Far / Outer Areas,sales,established,binned,0,0_100,4,4,3,4,4
+Far / Outer Areas,sales,all qualifying openings,binned,+1 to +3,0_100,9,9,8,24,24
+Far / Outer Areas,sales,established,binned,+1 to +3,0_100,4,4,3,10,10
+Far / Outer Areas,sales,all qualifying openings,binned,+4 to +6,0_100,8,8,8,23,23
+Far / Outer Areas,sales,established,binned,+4 to +6,0_100,3,3,3,8,8
+Far / Outer Areas,sales,all qualifying openings,binned,+7 to +12,0_100,7,7,7,42,42
+Far / Outer Areas,sales,established,binned,+7 to +12,0_100,2,2,2,12,12
+Far / Outer Areas,sales,all qualifying openings,binned,+13 to +18,0_100,7,7,7,39,39
+Far / Outer Areas,sales,established,binned,+13 to +18,0_100,2,2,2,12,12
+Far / Outer Areas,sales,all qualifying openings,binned,+19 to +24,0_100,6,6,6,30,30
+Far / Outer Areas,sales,established,binned,+19 to +24,0_100,2,2,2,10,10
+Far / Outer Areas,sales,all qualifying openings,binned,+25 months onward,0_100,4,4,4,83,83
+Far / Outer Areas,sales,established,binned,+25 months onward,0_100,1,1,1,11,11
+Far / Outer Areas,sales,all qualifying openings,monthly,-12,100_250,45,34,40,45,45
+Far / Outer Areas,sales,all qualifying openings,monthly,-11,100_250,46,35,41,46,46
+Far / Outer Areas,sales,all qualifying openings,monthly,-10,100_250,46,35,41,46,46
+Far / Outer Areas,sales,all qualifying openings,monthly,-9,100_250,46,35,41,46,46
+Far / Outer Areas,sales,all qualifying openings,monthly,-8,100_250,46,35,41,46,46
+Far / Outer Areas,sales,all qualifying openings,monthly,-7,100_250,46,35,41,46,46
+Far / Outer Areas,sales,all qualifying openings,monthly,-6,100_250,48,37,41,48,48
+Far / Outer Areas,sales,all qualifying openings,monthly,-5,100_250,52,40,44,52,51
+Far / Outer Areas,sales,all qualifying openings,monthly,-4,100_250,53,40,45,53,52
+Far / Outer Areas,sales,all qualifying openings,monthly,-3,100_250,54,41,46,54,53
+Far / Outer Areas,sales,all qualifying openings,monthly,-2,100_250,56,42,48,56,55
+Far / Outer Areas,sales,all qualifying openings,monthly,-1,100_250,60,45,52,60,59
+Far / Outer Areas,sales,all qualifying openings,monthly,0,100_250,62,47,53,62,61
+Far / Outer Areas,sales,all qualifying openings,monthly,1,100_250,57,44,49,57,56
+Far / Outer Areas,sales,all qualifying openings,monthly,2,100_250,51,41,43,51,50
+Far / Outer Areas,sales,all qualifying openings,monthly,3,100_250,48,39,39,48,47
+Far / Outer Areas,sales,all qualifying openings,monthly,4,100_250,46,38,37,46,45
+Far / Outer Areas,sales,all qualifying openings,monthly,5,100_250,44,35,35,44,43
+Far / Outer Areas,sales,all qualifying openings,monthly,6,100_250,42,34,35,42,41
+Far / Outer Areas,sales,all qualifying openings,monthly,7,100_250,44,36,36,44,43
+Far / Outer Areas,sales,all qualifying openings,monthly,8,100_250,45,36,37,45,44
+Far / Outer Areas,sales,all qualifying openings,monthly,9,100_250,44,35,36,44,43
+Far / Outer Areas,sales,all qualifying openings,monthly,10,100_250,42,33,34,42,41
+Far / Outer Areas,sales,all qualifying openings,monthly,11,100_250,42,33,34,42,41
+Far / Outer Areas,sales,all qualifying openings,monthly,12,100_250,43,34,34,43,42
+Far / Outer Areas,sales,all qualifying openings,monthly,13,100_250,39,33,31,39,38
+Far / Outer Areas,sales,all qualifying openings,monthly,14,100_250,39,33,31,39,38
+Far / Outer Areas,sales,all qualifying openings,monthly,15,100_250,39,33,31,39,38
+Far / Outer Areas,sales,all qualifying openings,monthly,16,100_250,37,31,29,37,36
+Far / Outer Areas,sales,all qualifying openings,monthly,17,100_250,37,31,29,37,36
+Far / Outer Areas,sales,all qualifying openings,monthly,18,100_250,36,30,28,36,35
+Far / Outer Areas,sales,all qualifying openings,monthly,19,100_250,35,30,28,35,34
+Far / Outer Areas,sales,all qualifying openings,monthly,20,100_250,34,29,27,34,33
+Far / Outer Areas,sales,all qualifying openings,monthly,21,100_250,34,29,27,34,33
+Far / Outer Areas,sales,all qualifying openings,monthly,22,100_250,34,29,27,34,33
+Far / Outer Areas,sales,all qualifying openings,monthly,23,100_250,31,27,24,31,30
+Far / Outer Areas,sales,all qualifying openings,monthly,24,100_250,31,27,24,31,30
+Far / Outer Areas,sales,all qualifying openings,binned,−12 to −7,100_250,46,35,41,275,263
+Far / Outer Areas,sales,established,binned,−12 to −7,100_250,36,25,33,216,209
+Far / Outer Areas,sales,all qualifying openings,binned,−6 to −3,100_250,54,41,46,207,198
+Far / Outer Areas,sales,established,binned,−6 to −3,100_250,39,28,34,154,148
+Far / Outer Areas,sales,all qualifying openings,binned,−2,100_250,56,42,48,56,55
+Far / Outer Areas,sales,established,binned,−2,100_250,39,28,34,39,38
+Far / Outer Areas,sales,all qualifying openings,binned,−1 (reference),100_250,60,45,52,60,59
+Far / Outer Areas,sales,established,binned,−1 (reference),100_250,39,28,34,39,38
+Far / Outer Areas,sales,all qualifying openings,binned,0,100_250,62,47,53,62,61
+Far / Outer Areas,sales,established,binned,0,100_250,39,28,34,39,38
+Far / Outer Areas,sales,all qualifying openings,binned,+1 to +3,100_250,59,46,49,156,152
+Far / Outer Areas,sales,established,binned,+1 to +3,100_250,37,27,31,97,93
+Far / Outer Areas,sales,all qualifying openings,binned,+4 to +6,100_250,48,39,39,132,129
+Far / Outer Areas,sales,established,binned,+4 to +6,100_250,27,21,22,73,70
+Far / Outer Areas,sales,all qualifying openings,binned,+7 to +12,100_250,46,37,37,260,249
+Far / Outer Areas,sales,established,binned,+7 to +12,100_250,24,19,19,132,124
+Far / Outer Areas,sales,all qualifying openings,binned,+13 to +18,100_250,39,33,31,227,216
+Far / Outer Areas,sales,established,binned,+13 to +18,100_250,18,16,13,102,94
+Far / Outer Areas,sales,all qualifying openings,binned,+19 to +24,100_250,35,30,28,199,190
+Far / Outer Areas,sales,established,binned,+19 to +24,100_250,15,13,11,86,80
+Far / Outer Areas,sales,all qualifying openings,binned,+25 months onward,100_250,29,25,22,576,478
+Far / Outer Areas,sales,established,binned,+25 months onward,100_250,13,11,9,200,165
+Far / Outer Areas,sales,all qualifying openings,monthly,-12,250_500,129,73,80,129,126
+Far / Outer Areas,sales,all qualifying openings,monthly,-11,250_500,134,75,82,134,131
+Far / Outer Areas,sales,all qualifying openings,monthly,-10,250_500,138,76,82,138,135
+Far / Outer Areas,sales,all qualifying openings,monthly,-9,250_500,142,77,84,142,139
+Far / Outer Areas,sales,all qualifying openings,monthly,-8,250_500,144,79,85,144,141
+Far / Outer Areas,sales,all qualifying openings,monthly,-7,250_500,147,79,86,147,144
+Far / Outer Areas,sales,all qualifying openings,monthly,-6,250_500,150,80,87,150,147
+Far / Outer Areas,sales,all qualifying openings,monthly,-5,250_500,152,81,88,152,149
+Far / Outer Areas,sales,all qualifying openings,monthly,-4,250_500,162,85,91,162,158
+Far / Outer Areas,sales,all qualifying openings,monthly,-3,250_500,167,86,92,167,163
+Far / Outer Areas,sales,all qualifying openings,monthly,-2,250_500,172,89,94,172,168
+Far / Outer Areas,sales,all qualifying openings,monthly,-1,250_500,177,91,96,177,173
+Far / Outer Areas,sales,all qualifying openings,monthly,0,250_500,182,93,98,182,178
+Far / Outer Areas,sales,all qualifying openings,monthly,1,250_500,180,94,96,180,176
+Far / Outer Areas,sales,all qualifying openings,monthly,2,250_500,175,91,95,175,172
+Far / Outer Areas,sales,all qualifying openings,monthly,3,250_500,160,89,92,160,156
+Far / Outer Areas,sales,all qualifying openings,monthly,4,250_500,156,85,91,156,152
+Far / Outer Areas,sales,all qualifying openings,monthly,5,250_500,147,82,87,147,143
+Far / Outer Areas,sales,all qualifying openings,monthly,6,250_500,138,80,80,138,134
+Far / Outer Areas,sales,all qualifying openings,monthly,7,250_500,133,79,80,133,129
+Far / Outer Areas,sales,all qualifying openings,monthly,8,250_500,134,79,79,134,130
+Far / Outer Areas,sales,all qualifying openings,monthly,9,250_500,133,78,78,133,129
+Far / Outer Areas,sales,all qualifying openings,monthly,10,250_500,128,75,77,128,124
+Far / Outer Areas,sales,all qualifying openings,monthly,11,250_500,124,73,76,124,120
+Far / Outer Areas,sales,all qualifying openings,monthly,12,250_500,123,73,75,123,119
+Far / Outer Areas,sales,all qualifying openings,monthly,13,250_500,123,74,75,123,119
+Far / Outer Areas,sales,all qualifying openings,monthly,14,250_500,120,72,73,120,116
+Far / Outer Areas,sales,all qualifying openings,monthly,15,250_500,119,72,74,119,115
+Far / Outer Areas,sales,all qualifying openings,monthly,16,250_500,112,68,72,112,109
+Far / Outer Areas,sales,all qualifying openings,monthly,17,250_500,112,68,72,112,109
+Far / Outer Areas,sales,all qualifying openings,monthly,18,250_500,106,67,68,106,103
+Far / Outer Areas,sales,all qualifying openings,monthly,19,250_500,102,65,66,102,99
+Far / Outer Areas,sales,all qualifying openings,monthly,20,250_500,103,66,66,103,100
+Far / Outer Areas,sales,all qualifying openings,monthly,21,250_500,103,66,66,103,100
+Far / Outer Areas,sales,all qualifying openings,monthly,22,250_500,103,66,64,103,100
+Far / Outer Areas,sales,all qualifying openings,monthly,23,250_500,95,61,58,95,93
+Far / Outer Areas,sales,all qualifying openings,monthly,24,250_500,95,61,58,95,93
+Far / Outer Areas,sales,all qualifying openings,binned,−12 to −7,250_500,148,79,87,834,742
+Far / Outer Areas,sales,established,binned,−12 to −7,250_500,103,60,66,609,548
+Far / Outer Areas,sales,all qualifying openings,binned,−6 to −3,250_500,167,86,92,631,582
+Far / Outer Areas,sales,established,binned,−6 to −3,250_500,105,62,65,413,383
+Far / Outer Areas,sales,all qualifying openings,binned,−2,250_500,172,89,94,172,168
+Far / Outer Areas,sales,established,binned,−2,250_500,106,63,65,106,102
+Far / Outer Areas,sales,all qualifying openings,binned,−1 (reference),250_500,177,91,96,177,173
+Far / Outer Areas,sales,established,binned,−1 (reference),250_500,107,64,65,107,103
+Far / Outer Areas,sales,all qualifying openings,binned,0,250_500,182,93,98,182,178
+Far / Outer Areas,sales,established,binned,0,250_500,108,65,65,108,104
+Far / Outer Areas,sales,all qualifying openings,binned,+1 to +3,250_500,188,99,97,515,485
+Far / Outer Areas,sales,established,binned,+1 to +3,250_500,110,67,63,294,272
+Far / Outer Areas,sales,all qualifying openings,binned,+4 to +6,250_500,160,89,91,441,418
+Far / Outer Areas,sales,established,binned,+4 to +6,250_500,85,55,53,234,216
+Far / Outer Areas,sales,all qualifying openings,binned,+7 to +12,250_500,136,81,80,775,704
+Far / Outer Areas,sales,established,binned,+7 to +12,250_500,67,46,44,370,317
+Far / Outer Areas,sales,all qualifying openings,binned,+13 to +18,250_500,124,75,75,692,625
+Far / Outer Areas,sales,established,binned,+13 to +18,250_500,55,40,34,294,245
+Far / Outer Areas,sales,all qualifying openings,binned,+19 to +24,250_500,106,68,67,601,540
+Far / Outer Areas,sales,established,binned,+19 to +24,250_500,40,31,23,229,186
+Far / Outer Areas,sales,all qualifying openings,binned,+25 months onward,250_500,90,58,55,1819,1103
+Far / Outer Areas,sales,established,binned,+25 months onward,250_500,29,22,15,551,259
+Far / Outer Areas,sales,all qualifying openings,monthly,-12,500_1000,336,103,123,336,325
+Far / Outer Areas,sales,all qualifying openings,monthly,-11,500_1000,351,105,124,351,339
+Far / Outer Areas,sales,all qualifying openings,monthly,-10,500_1000,363,108,125,363,349
+Far / Outer Areas,sales,all qualifying openings,monthly,-9,500_1000,373,109,126,373,359
+Far / Outer Areas,sales,all qualifying openings,monthly,-8,500_1000,374,111,126,374,361
+Far / Outer Areas,sales,all qualifying openings,monthly,-7,500_1000,384,115,127,384,371
+Far / Outer Areas,sales,all qualifying openings,monthly,-6,500_1000,392,117,128,392,379
+Far / Outer Areas,sales,all qualifying openings,monthly,-5,500_1000,402,119,130,402,387
+Far / Outer Areas,sales,all qualifying openings,monthly,-4,500_1000,420,124,133,420,402
+Far / Outer Areas,sales,all qualifying openings,monthly,-3,500_1000,440,132,136,440,420
+Far / Outer Areas,sales,all qualifying openings,monthly,-2,500_1000,454,137,141,454,434
+Far / Outer Areas,sales,all qualifying openings,monthly,-1,500_1000,475,145,147,475,455
+Far / Outer Areas,sales,all qualifying openings,monthly,0,500_1000,487,150,147,487,466
+Far / Outer Areas,sales,all qualifying openings,monthly,1,500_1000,468,150,144,468,446
+Far / Outer Areas,sales,all qualifying openings,monthly,2,500_1000,445,145,136,445,423
+Far / Outer Areas,sales,all qualifying openings,monthly,3,500_1000,436,141,127,436,412
+Far / Outer Areas,sales,all qualifying openings,monthly,4,500_1000,432,139,122,432,406
+Far / Outer Areas,sales,all qualifying openings,monthly,5,500_1000,414,135,121,414,390
+Far / Outer Areas,sales,all qualifying openings,monthly,6,500_1000,408,138,119,408,384
+Far / Outer Areas,sales,all qualifying openings,monthly,7,500_1000,400,138,117,400,375
+Far / Outer Areas,sales,all qualifying openings,monthly,8,500_1000,403,139,116,403,378
+Far / Outer Areas,sales,all qualifying openings,monthly,9,500_1000,398,137,114,398,373
+Far / Outer Areas,sales,all qualifying openings,monthly,10,500_1000,378,134,110,378,353
+Far / Outer Areas,sales,all qualifying openings,monthly,11,500_1000,371,132,107,371,346
+Far / Outer Areas,sales,all qualifying openings,monthly,12,500_1000,370,133,105,370,346
+Far / Outer Areas,sales,all qualifying openings,monthly,13,500_1000,360,133,98,360,334
+Far / Outer Areas,sales,all qualifying openings,monthly,14,500_1000,354,131,96,354,328
+Far / Outer Areas,sales,all qualifying openings,monthly,15,500_1000,345,130,94,345,319
+Far / Outer Areas,sales,all qualifying openings,monthly,16,500_1000,321,126,89,321,298
+Far / Outer Areas,sales,all qualifying openings,monthly,17,500_1000,318,123,87,318,295
+Far / Outer Areas,sales,all qualifying openings,monthly,18,500_1000,311,121,84,311,288
+Far / Outer Areas,sales,all qualifying openings,monthly,19,500_1000,305,118,82,305,282
+Far / Outer Areas,sales,all qualifying openings,monthly,20,500_1000,309,119,82,309,286
+Far / Outer Areas,sales,all qualifying openings,monthly,21,500_1000,313,122,83,313,289
+Far / Outer Areas,sales,all qualifying openings,monthly,22,500_1000,308,120,79,308,284
+Far / Outer Areas,sales,all qualifying openings,monthly,23,500_1000,288,115,75,288,267
+Far / Outer Areas,sales,all qualifying openings,monthly,24,500_1000,291,116,75,291,270
+Far / Outer Areas,sales,all qualifying openings,binned,−12 to −7,500_1000,389,116,128,2181,1691
+Far / Outer Areas,sales,established,binned,−12 to −7,500_1000,267,97,101,1565,1216
+Far / Outer Areas,sales,all qualifying openings,binned,−6 to −3,500_1000,444,132,139,1654,1382
+Far / Outer Areas,sales,established,binned,−6 to −3,500_1000,273,103,97,1064,890
+Far / Outer Areas,sales,all qualifying openings,binned,−2,500_1000,454,137,141,454,434
+Far / Outer Areas,sales,established,binned,−2,500_1000,270,104,94,270,259
+Far / Outer Areas,sales,all qualifying openings,binned,−1 (reference),500_1000,475,145,147,475,455
+Far / Outer Areas,sales,established,binned,−1 (reference),500_1000,277,108,95,277,266
+Far / Outer Areas,sales,all qualifying openings,binned,0,500_1000,487,150,147,487,466
+Far / Outer Areas,sales,established,binned,0,500_1000,276,109,95,276,266
+Far / Outer Areas,sales,all qualifying openings,binned,+1 to +3,500_1000,493,157,144,1349,1161
+Far / Outer Areas,sales,established,binned,+1 to +3,500_1000,273,113,92,744,650
+Far / Outer Areas,sales,all qualifying openings,binned,+4 to +6,500_1000,445,147,122,1254,1063
+Far / Outer Areas,sales,established,binned,+4 to +6,500_1000,238,101,80,665,573
+Far / Outer Areas,sales,all qualifying openings,binned,+7 to +12,500_1000,414,147,117,2320,1689
+Far / Outer Areas,sales,established,binned,+7 to +12,500_1000,205,94,73,1134,854
+Far / Outer Areas,sales,all qualifying openings,binned,+13 to +18,500_1000,364,136,98,2009,1417
+Far / Outer Areas,sales,established,binned,+13 to +18,500_1000,171,84,57,892,634
+Far / Outer Areas,sales,all qualifying openings,binned,+19 to +24,500_1000,314,123,83,1814,1248
+Far / Outer Areas,sales,established,binned,+19 to +24,500_1000,128,69,38,738,499
+Far / Outer Areas,sales,all qualifying openings,binned,+25 months onward,500_1000,273,117,71,6043,1750
+Far / Outer Areas,sales,established,binned,+25 months onward,500_1000,99,59,28,1902,523
+Far / Outer Areas,customers,all qualifying openings,monthly,-12,0_100,4,4,3,4,4
+Far / Outer Areas,customers,all qualifying openings,monthly,-11,0_100,4,4,3,4,4
+Far / Outer Areas,customers,all qualifying openings,monthly,-10,0_100,4,4,3,4,4
+Far / Outer Areas,customers,all qualifying openings,monthly,-9,0_100,4,4,3,4,4
+Far / Outer Areas,customers,all qualifying openings,monthly,-8,0_100,4,4,3,4,4
+Far / Outer Areas,customers,all qualifying openings,monthly,-7,0_100,5,5,4,5,5
+Far / Outer Areas,customers,all qualifying openings,monthly,-6,0_100,6,6,5,6,6
+Far / Outer Areas,customers,all qualifying openings,monthly,-5,0_100,6,6,5,6,6
+Far / Outer Areas,customers,all qualifying openings,monthly,-4,0_100,6,6,5,6,6
+Far / Outer Areas,customers,all qualifying openings,monthly,-3,0_100,7,7,6,7,7
+Far / Outer Areas,customers,all qualifying openings,monthly,-2,0_100,7,7,6,7,7
+Far / Outer Areas,customers,all qualifying openings,monthly,-1,0_100,8,8,7,8,8
+Far / Outer Areas,customers,all qualifying openings,monthly,0,0_100,8,8,7,8,8
+Far / Outer Areas,customers,all qualifying openings,monthly,1,0_100,8,8,7,8,8
+Far / Outer Areas,customers,all qualifying openings,monthly,2,0_100,8,8,8,8,8
+Far / Outer Areas,customers,all qualifying openings,monthly,3,0_100,8,8,8,8,8
+Far / Outer Areas,customers,all qualifying openings,monthly,4,0_100,8,8,8,8,8
+Far / Outer Areas,customers,all qualifying openings,monthly,5,0_100,8,8,8,8,8
+Far / Outer Areas,customers,all qualifying openings,monthly,6,0_100,7,7,7,7,7
+Far / Outer Areas,customers,all qualifying openings,monthly,7,0_100,7,7,7,7,7
+Far / Outer Areas,customers,all qualifying openings,monthly,8,0_100,7,7,7,7,7
+Far / Outer Areas,customers,all qualifying openings,monthly,9,0_100,7,7,7,7,7
+Far / Outer Areas,customers,all qualifying openings,monthly,10,0_100,7,7,7,7,7
+Far / Outer Areas,customers,all qualifying openings,monthly,11,0_100,7,7,7,7,7
+Far / Outer Areas,customers,all qualifying openings,monthly,12,0_100,7,7,7,7,7
+Far / Outer Areas,customers,all qualifying openings,monthly,13,0_100,7,7,7,7,7
+Far / Outer Areas,customers,all qualifying openings,monthly,14,0_100,7,7,7,7,7
+Far / Outer Areas,customers,all qualifying openings,monthly,15,0_100,7,7,7,7,7
+Far / Outer Areas,customers,all qualifying openings,monthly,16,0_100,6,6,6,6,6
+Far / Outer Areas,customers,all qualifying openings,monthly,17,0_100,6,6,6,6,6
+Far / Outer Areas,customers,all qualifying openings,monthly,18,0_100,6,6,6,6,6
+Far / Outer Areas,customers,all qualifying openings,monthly,19,0_100,6,6,6,6,6
+Far / Outer Areas,customers,all qualifying openings,monthly,20,0_100,6,6,6,6,6
+Far / Outer Areas,customers,all qualifying openings,monthly,21,0_100,6,6,6,6,6
+Far / Outer Areas,customers,all qualifying openings,monthly,22,0_100,4,4,4,4,4
+Far / Outer Areas,customers,all qualifying openings,monthly,23,0_100,4,4,4,4,4
+Far / Outer Areas,customers,all qualifying openings,monthly,24,0_100,4,4,4,4,4
+Far / Outer Areas,customers,all qualifying openings,binned,−12 to −7,0_100,5,5,4,25,25
+Far / Outer Areas,customers,established,binned,−12 to −7,0_100,4,4,3,24,24
+Far / Outer Areas,customers,all qualifying openings,binned,−6 to −3,0_100,7,7,6,25,25
+Far / Outer Areas,customers,established,binned,−6 to −3,0_100,4,4,3,16,16
+Far / Outer Areas,customers,all qualifying openings,binned,−2,0_100,7,7,6,7,7
+Far / Outer Areas,customers,established,binned,−2,0_100,4,4,3,4,4
+Far / Outer Areas,customers,all qualifying openings,binned,−1 (reference),0_100,8,8,7,8,8
+Far / Outer Areas,customers,established,binned,−1 (reference),0_100,4,4,3,4,4
+Far / Outer Areas,customers,all qualifying openings,binned,0,0_100,8,8,7,8,8
+Far / Outer Areas,customers,established,binned,0,0_100,4,4,3,4,4
+Far / Outer Areas,customers,all qualifying openings,binned,+1 to +3,0_100,9,9,8,24,24
+Far / Outer Areas,customers,established,binned,+1 to +3,0_100,4,4,3,10,10
+Far / Outer Areas,customers,all qualifying openings,binned,+4 to +6,0_100,8,8,8,23,23
+Far / Outer Areas,customers,established,binned,+4 to +6,0_100,3,3,3,8,8
+Far / Outer Areas,customers,all qualifying openings,binned,+7 to +12,0_100,7,7,7,42,42
+Far / Outer Areas,customers,established,binned,+7 to +12,0_100,2,2,2,12,12
+Far / Outer Areas,customers,all qualifying openings,binned,+13 to +18,0_100,7,7,7,39,39
+Far / Outer Areas,customers,established,binned,+13 to +18,0_100,2,2,2,12,12
+Far / Outer Areas,customers,all qualifying openings,binned,+19 to +24,0_100,6,6,6,30,30
+Far / Outer Areas,customers,established,binned,+19 to +24,0_100,2,2,2,10,10
+Far / Outer Areas,customers,all qualifying openings,binned,+25 months onward,0_100,4,4,4,83,83
+Far / Outer Areas,customers,established,binned,+25 months onward,0_100,1,1,1,11,11
+Far / Outer Areas,customers,all qualifying openings,monthly,-12,100_250,45,34,40,45,45
+Far / Outer Areas,customers,all qualifying openings,monthly,-11,100_250,46,35,41,46,46
+Far / Outer Areas,customers,all qualifying openings,monthly,-10,100_250,46,35,41,46,46
+Far / Outer Areas,customers,all qualifying openings,monthly,-9,100_250,46,35,41,46,46
+Far / Outer Areas,customers,all qualifying openings,monthly,-8,100_250,46,35,41,46,46
+Far / Outer Areas,customers,all qualifying openings,monthly,-7,100_250,46,35,41,46,46
+Far / Outer Areas,customers,all qualifying openings,monthly,-6,100_250,48,37,41,48,48
+Far / Outer Areas,customers,all qualifying openings,monthly,-5,100_250,52,40,44,52,51
+Far / Outer Areas,customers,all qualifying openings,monthly,-4,100_250,53,40,45,53,52
+Far / Outer Areas,customers,all qualifying openings,monthly,-3,100_250,54,41,46,54,53
+Far / Outer Areas,customers,all qualifying openings,monthly,-2,100_250,56,42,48,56,55
+Far / Outer Areas,customers,all qualifying openings,monthly,-1,100_250,60,45,52,60,59
+Far / Outer Areas,customers,all qualifying openings,monthly,0,100_250,62,47,53,62,61
+Far / Outer Areas,customers,all qualifying openings,monthly,1,100_250,57,44,49,57,56
+Far / Outer Areas,customers,all qualifying openings,monthly,2,100_250,51,41,43,51,50
+Far / Outer Areas,customers,all qualifying openings,monthly,3,100_250,48,39,39,48,47
+Far / Outer Areas,customers,all qualifying openings,monthly,4,100_250,46,38,37,46,45
+Far / Outer Areas,customers,all qualifying openings,monthly,5,100_250,44,35,35,44,43
+Far / Outer Areas,customers,all qualifying openings,monthly,6,100_250,42,34,35,42,41
+Far / Outer Areas,customers,all qualifying openings,monthly,7,100_250,44,36,36,44,43
+Far / Outer Areas,customers,all qualifying openings,monthly,8,100_250,45,36,37,45,44
+Far / Outer Areas,customers,all qualifying openings,monthly,9,100_250,44,35,36,44,43
+Far / Outer Areas,customers,all qualifying openings,monthly,10,100_250,42,33,34,42,41
+Far / Outer Areas,customers,all qualifying openings,monthly,11,100_250,42,33,34,42,41
+Far / Outer Areas,customers,all qualifying openings,monthly,12,100_250,43,34,34,43,42
+Far / Outer Areas,customers,all qualifying openings,monthly,13,100_250,39,33,31,39,38
+Far / Outer Areas,customers,all qualifying openings,monthly,14,100_250,39,33,31,39,38
+Far / Outer Areas,customers,all qualifying openings,monthly,15,100_250,39,33,31,39,38
+Far / Outer Areas,customers,all qualifying openings,monthly,16,100_250,37,31,29,37,36
+Far / Outer Areas,customers,all qualifying openings,monthly,17,100_250,37,31,29,37,36
+Far / Outer Areas,customers,all qualifying openings,monthly,18,100_250,36,30,28,36,35
+Far / Outer Areas,customers,all qualifying openings,monthly,19,100_250,35,30,28,35,34
+Far / Outer Areas,customers,all qualifying openings,monthly,20,100_250,34,29,27,34,33
+Far / Outer Areas,customers,all qualifying openings,monthly,21,100_250,34,29,27,34,33
+Far / Outer Areas,customers,all qualifying openings,monthly,22,100_250,34,29,27,34,33
+Far / Outer Areas,customers,all qualifying openings,monthly,23,100_250,31,27,24,31,30
+Far / Outer Areas,customers,all qualifying openings,monthly,24,100_250,31,27,24,31,30
+Far / Outer Areas,customers,all qualifying openings,binned,−12 to −7,100_250,46,35,41,275,263
+Far / Outer Areas,customers,established,binned,−12 to −7,100_250,36,25,33,216,209
+Far / Outer Areas,customers,all qualifying openings,binned,−6 to −3,100_250,54,41,46,207,198
+Far / Outer Areas,customers,established,binned,−6 to −3,100_250,39,28,34,154,148
+Far / Outer Areas,customers,all qualifying openings,binned,−2,100_250,56,42,48,56,55
+Far / Outer Areas,customers,established,binned,−2,100_250,39,28,34,39,38
+Far / Outer Areas,customers,all qualifying openings,binned,−1 (reference),100_250,60,45,52,60,59
+Far / Outer Areas,customers,established,binned,−1 (reference),100_250,39,28,34,39,38
+Far / Outer Areas,customers,all qualifying openings,binned,0,100_250,62,47,53,62,61
+Far / Outer Areas,customers,established,binned,0,100_250,39,28,34,39,38
+Far / Outer Areas,customers,all qualifying openings,binned,+1 to +3,100_250,59,46,49,156,152
+Far / Outer Areas,customers,established,binned,+1 to +3,100_250,37,27,31,97,93
+Far / Outer Areas,customers,all qualifying openings,binned,+4 to +6,100_250,48,39,39,132,129
+Far / Outer Areas,customers,established,binned,+4 to +6,100_250,27,21,22,73,70
+Far / Outer Areas,customers,all qualifying openings,binned,+7 to +12,100_250,46,37,37,260,249
+Far / Outer Areas,customers,established,binned,+7 to +12,100_250,24,19,19,132,124
+Far / Outer Areas,customers,all qualifying openings,binned,+13 to +18,100_250,39,33,31,227,216
+Far / Outer Areas,customers,established,binned,+13 to +18,100_250,18,16,13,102,94
+Far / Outer Areas,customers,all qualifying openings,binned,+19 to +24,100_250,35,30,28,199,190
+Far / Outer Areas,customers,established,binned,+19 to +24,100_250,15,13,11,86,80
+Far / Outer Areas,customers,all qualifying openings,binned,+25 months onward,100_250,29,25,22,576,478
+Far / Outer Areas,customers,established,binned,+25 months onward,100_250,13,11,9,200,165
+Far / Outer Areas,customers,all qualifying openings,monthly,-12,250_500,129,73,80,129,126
+Far / Outer Areas,customers,all qualifying openings,monthly,-11,250_500,134,75,82,134,131
+Far / Outer Areas,customers,all qualifying openings,monthly,-10,250_500,138,76,82,138,135
+Far / Outer Areas,customers,all qualifying openings,monthly,-9,250_500,142,77,84,142,139
+Far / Outer Areas,customers,all qualifying openings,monthly,-8,250_500,144,79,85,144,141
+Far / Outer Areas,customers,all qualifying openings,monthly,-7,250_500,147,79,86,147,144
+Far / Outer Areas,customers,all qualifying openings,monthly,-6,250_500,150,80,87,150,147
+Far / Outer Areas,customers,all qualifying openings,monthly,-5,250_500,152,81,88,152,149
+Far / Outer Areas,customers,all qualifying openings,monthly,-4,250_500,162,85,91,162,158
+Far / Outer Areas,customers,all qualifying openings,monthly,-3,250_500,167,86,92,167,163
+Far / Outer Areas,customers,all qualifying openings,monthly,-2,250_500,172,89,94,172,168
+Far / Outer Areas,customers,all qualifying openings,monthly,-1,250_500,177,91,96,177,173
+Far / Outer Areas,customers,all qualifying openings,monthly,0,250_500,182,93,98,182,178
+Far / Outer Areas,customers,all qualifying openings,monthly,1,250_500,180,94,96,180,176
+Far / Outer Areas,customers,all qualifying openings,monthly,2,250_500,175,91,95,175,172
+Far / Outer Areas,customers,all qualifying openings,monthly,3,250_500,160,89,92,160,156
+Far / Outer Areas,customers,all qualifying openings,monthly,4,250_500,156,85,91,156,152
+Far / Outer Areas,customers,all qualifying openings,monthly,5,250_500,147,82,87,147,143
+Far / Outer Areas,customers,all qualifying openings,monthly,6,250_500,138,80,80,138,134
+Far / Outer Areas,customers,all qualifying openings,monthly,7,250_500,133,79,80,133,129
+Far / Outer Areas,customers,all qualifying openings,monthly,8,250_500,134,79,79,134,130
+Far / Outer Areas,customers,all qualifying openings,monthly,9,250_500,133,78,78,133,129
+Far / Outer Areas,customers,all qualifying openings,monthly,10,250_500,128,75,77,128,124
+Far / Outer Areas,customers,all qualifying openings,monthly,11,250_500,124,73,76,124,120
+Far / Outer Areas,customers,all qualifying openings,monthly,12,250_500,123,73,75,123,119
+Far / Outer Areas,customers,all qualifying openings,monthly,13,250_500,123,74,75,123,119
+Far / Outer Areas,customers,all qualifying openings,monthly,14,250_500,120,72,73,120,116
+Far / Outer Areas,customers,all qualifying openings,monthly,15,250_500,119,72,74,119,115
+Far / Outer Areas,customers,all qualifying openings,monthly,16,250_500,112,68,72,112,109
+Far / Outer Areas,customers,all qualifying openings,monthly,17,250_500,112,68,72,112,109
+Far / Outer Areas,customers,all qualifying openings,monthly,18,250_500,106,67,68,106,103
+Far / Outer Areas,customers,all qualifying openings,monthly,19,250_500,102,65,66,102,99
+Far / Outer Areas,customers,all qualifying openings,monthly,20,250_500,103,66,66,103,100
+Far / Outer Areas,customers,all qualifying openings,monthly,21,250_500,103,66,66,103,100
+Far / Outer Areas,customers,all qualifying openings,monthly,22,250_500,103,66,64,103,100
+Far / Outer Areas,customers,all qualifying openings,monthly,23,250_500,95,61,58,95,93
+Far / Outer Areas,customers,all qualifying openings,monthly,24,250_500,95,61,58,95,93
+Far / Outer Areas,customers,all qualifying openings,binned,−12 to −7,250_500,148,79,87,834,742
+Far / Outer Areas,customers,established,binned,−12 to −7,250_500,103,60,66,609,548
+Far / Outer Areas,customers,all qualifying openings,binned,−6 to −3,250_500,167,86,92,631,582
+Far / Outer Areas,customers,established,binned,−6 to −3,250_500,105,62,65,413,383
+Far / Outer Areas,customers,all qualifying openings,binned,−2,250_500,172,89,94,172,168
+Far / Outer Areas,customers,established,binned,−2,250_500,106,63,65,106,102
+Far / Outer Areas,customers,all qualifying openings,binned,−1 (reference),250_500,177,91,96,177,173
+Far / Outer Areas,customers,established,binned,−1 (reference),250_500,107,64,65,107,103
+Far / Outer Areas,customers,all qualifying openings,binned,0,250_500,182,93,98,182,178
+Far / Outer Areas,customers,established,binned,0,250_500,108,65,65,108,104
+Far / Outer Areas,customers,all qualifying openings,binned,+1 to +3,250_500,188,99,97,515,485
+Far / Outer Areas,customers,established,binned,+1 to +3,250_500,110,67,63,294,272
+Far / Outer Areas,customers,all qualifying openings,binned,+4 to +6,250_500,160,89,91,441,418
+Far / Outer Areas,customers,established,binned,+4 to +6,250_500,85,55,53,234,216
+Far / Outer Areas,customers,all qualifying openings,binned,+7 to +12,250_500,136,81,80,775,704
+Far / Outer Areas,customers,established,binned,+7 to +12,250_500,67,46,44,370,317
+Far / Outer Areas,customers,all qualifying openings,binned,+13 to +18,250_500,124,75,75,692,625
+Far / Outer Areas,customers,established,binned,+13 to +18,250_500,55,40,34,294,245
+Far / Outer Areas,customers,all qualifying openings,binned,+19 to +24,250_500,106,68,67,601,540
+Far / Outer Areas,customers,established,binned,+19 to +24,250_500,40,31,23,229,186
+Far / Outer Areas,customers,all qualifying openings,binned,+25 months onward,250_500,90,58,55,1819,1103
+Far / Outer Areas,customers,established,binned,+25 months onward,250_500,29,22,15,551,259
+Far / Outer Areas,customers,all qualifying openings,monthly,-12,500_1000,336,103,123,336,325
+Far / Outer Areas,customers,all qualifying openings,monthly,-11,500_1000,351,105,124,351,339
+Far / Outer Areas,customers,all qualifying openings,monthly,-10,500_1000,363,108,125,363,349
+Far / Outer Areas,customers,all qualifying openings,monthly,-9,500_1000,373,109,126,373,359
+Far / Outer Areas,customers,all qualifying openings,monthly,-8,500_1000,374,111,126,374,361
+Far / Outer Areas,customers,all qualifying openings,monthly,-7,500_1000,384,115,127,384,371
+Far / Outer Areas,customers,all qualifying openings,monthly,-6,500_1000,392,117,128,392,379
+Far / Outer Areas,customers,all qualifying openings,monthly,-5,500_1000,402,119,130,402,387
+Far / Outer Areas,customers,all qualifying openings,monthly,-4,500_1000,420,124,133,420,402
+Far / Outer Areas,customers,all qualifying openings,monthly,-3,500_1000,440,132,136,440,420
+Far / Outer Areas,customers,all qualifying openings,monthly,-2,500_1000,454,137,141,454,434
+Far / Outer Areas,customers,all qualifying openings,monthly,-1,500_1000,475,145,147,475,455
+Far / Outer Areas,customers,all qualifying openings,monthly,0,500_1000,487,150,147,487,466
+Far / Outer Areas,customers,all qualifying openings,monthly,1,500_1000,468,150,144,468,446
+Far / Outer Areas,customers,all qualifying openings,monthly,2,500_1000,445,145,136,445,423
+Far / Outer Areas,customers,all qualifying openings,monthly,3,500_1000,436,141,127,436,412
+Far / Outer Areas,customers,all qualifying openings,monthly,4,500_1000,432,139,122,432,406
+Far / Outer Areas,customers,all qualifying openings,monthly,5,500_1000,414,135,121,414,390
+Far / Outer Areas,customers,all qualifying openings,monthly,6,500_1000,408,138,119,408,384
+Far / Outer Areas,customers,all qualifying openings,monthly,7,500_1000,400,138,117,400,375
+Far / Outer Areas,customers,all qualifying openings,monthly,8,500_1000,403,139,116,403,378
+Far / Outer Areas,customers,all qualifying openings,monthly,9,500_1000,398,137,114,398,373
+Far / Outer Areas,customers,all qualifying openings,monthly,10,500_1000,378,134,110,378,353
+Far / Outer Areas,customers,all qualifying openings,monthly,11,500_1000,371,132,107,371,346
+Far / Outer Areas,customers,all qualifying openings,monthly,12,500_1000,370,133,105,370,346
+Far / Outer Areas,customers,all qualifying openings,monthly,13,500_1000,360,133,98,360,334
+Far / Outer Areas,customers,all qualifying openings,monthly,14,500_1000,354,131,96,354,328
+Far / Outer Areas,customers,all qualifying openings,monthly,15,500_1000,345,130,94,345,319
+Far / Outer Areas,customers,all qualifying openings,monthly,16,500_1000,321,126,89,321,298
+Far / Outer Areas,customers,all qualifying openings,monthly,17,500_1000,318,123,87,318,295
+Far / Outer Areas,customers,all qualifying openings,monthly,18,500_1000,311,121,84,311,288
+Far / Outer Areas,customers,all qualifying openings,monthly,19,500_1000,305,118,82,305,282
+Far / Outer Areas,customers,all qualifying openings,monthly,20,500_1000,309,119,82,309,286
+Far / Outer Areas,customers,all qualifying openings,monthly,21,500_1000,313,122,83,313,289
+Far / Outer Areas,customers,all qualifying openings,monthly,22,500_1000,308,120,79,308,284
+Far / Outer Areas,customers,all qualifying openings,monthly,23,500_1000,288,115,75,288,267
+Far / Outer Areas,customers,all qualifying openings,monthly,24,500_1000,291,116,75,291,270
+Far / Outer Areas,customers,all qualifying openings,binned,−12 to −7,500_1000,389,116,128,2181,1691
+Far / Outer Areas,customers,established,binned,−12 to −7,500_1000,267,97,101,1565,1216
+Far / Outer Areas,customers,all qualifying openings,binned,−6 to −3,500_1000,444,132,139,1654,1382
+Far / Outer Areas,customers,established,binned,−6 to −3,500_1000,273,103,97,1064,890
+Far / Outer Areas,customers,all qualifying openings,binned,−2,500_1000,454,137,141,454,434
+Far / Outer Areas,customers,established,binned,−2,500_1000,270,104,94,270,259
+Far / Outer Areas,customers,all qualifying openings,binned,−1 (reference),500_1000,475,145,147,475,455
+Far / Outer Areas,customers,established,binned,−1 (reference),500_1000,277,108,95,277,266
+Far / Outer Areas,customers,all qualifying openings,binned,0,500_1000,487,150,147,487,466
+Far / Outer Areas,customers,established,binned,0,500_1000,276,109,95,276,266
+Far / Outer Areas,customers,all qualifying openings,binned,+1 to +3,500_1000,493,157,144,1349,1161
+Far / Outer Areas,customers,established,binned,+1 to +3,500_1000,273,113,92,744,650
+Far / Outer Areas,customers,all qualifying openings,binned,+4 to +6,500_1000,445,147,122,1254,1063
+Far / Outer Areas,customers,established,binned,+4 to +6,500_1000,238,101,80,665,573
+Far / Outer Areas,customers,all qualifying openings,binned,+7 to +12,500_1000,414,147,117,2320,1689
+Far / Outer Areas,customers,established,binned,+7 to +12,500_1000,205,94,73,1134,854
+Far / Outer Areas,customers,all qualifying openings,binned,+13 to +18,500_1000,364,136,98,2009,1417
+Far / Outer Areas,customers,established,binned,+13 to +18,500_1000,171,84,57,892,634
+Far / Outer Areas,customers,all qualifying openings,binned,+19 to +24,500_1000,314,123,83,1814,1248
+Far / Outer Areas,customers,established,binned,+19 to +24,500_1000,128,69,38,738,499
+Far / Outer Areas,customers,all qualifying openings,binned,+25 months onward,500_1000,273,117,71,6043,1750
+Far / Outer Areas,customers,established,binned,+25 months onward,500_1000,99,59,28,1902,523
+Rural,sales,all qualifying openings,monthly,-12,0_100,0,0,0,0,0
+Rural,sales,all qualifying openings,monthly,-11,0_100,0,0,0,0,0
+Rural,sales,all qualifying openings,monthly,-10,0_100,0,0,0,0,0
+Rural,sales,all qualifying openings,monthly,-9,0_100,0,0,0,0,0
+Rural,sales,all qualifying openings,monthly,-8,0_100,0,0,0,0,0
+Rural,sales,all qualifying openings,monthly,-7,0_100,0,0,0,0,0
+Rural,sales,all qualifying openings,monthly,-6,0_100,0,0,0,0,0
+Rural,sales,all qualifying openings,monthly,-5,0_100,0,0,0,0,0
+Rural,sales,all qualifying openings,monthly,-4,0_100,0,0,0,0,0
+Rural,sales,all qualifying openings,monthly,-3,0_100,0,0,0,0,0
+Rural,sales,all qualifying openings,monthly,-2,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,-1,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,0,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,1,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,2,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,3,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,4,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,5,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,6,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,7,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,8,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,9,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,10,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,11,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,12,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,13,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,14,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,15,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,16,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,17,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,18,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,19,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,20,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,21,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,22,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,23,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,monthly,24,0_100,3,3,3,3,3
+Rural,sales,all qualifying openings,binned,−12 to −7,0_100,0,0,0,0,0
+Rural,sales,established,binned,−12 to −7,0_100,0,0,0,0,0
+Rural,sales,all qualifying openings,binned,−6 to −3,0_100,0,0,0,0,0
+Rural,sales,established,binned,−6 to −3,0_100,0,0,0,0,0
+Rural,sales,all qualifying openings,binned,−2,0_100,3,3,3,3,3
+Rural,sales,established,binned,−2,0_100,0,0,0,0,0
+Rural,sales,all qualifying openings,binned,−1 (reference),0_100,3,3,3,3,3
+Rural,sales,established,binned,−1 (reference),0_100,0,0,0,0,0
+Rural,sales,all qualifying openings,binned,0,0_100,3,3,3,3,3
+Rural,sales,established,binned,0,0_100,0,0,0,0,0
+Rural,sales,all qualifying openings,binned,+1 to +3,0_100,3,3,3,9,9
+Rural,sales,established,binned,+1 to +3,0_100,0,0,0,0,0
+Rural,sales,all qualifying openings,binned,+4 to +6,0_100,3,3,3,9,9
+Rural,sales,established,binned,+4 to +6,0_100,0,0,0,0,0
+Rural,sales,all qualifying openings,binned,+7 to +12,0_100,3,3,3,18,18
+Rural,sales,established,binned,+7 to +12,0_100,0,0,0,0,0
+Rural,sales,all qualifying openings,binned,+13 to +18,0_100,3,3,3,18,18
+Rural,sales,established,binned,+13 to +18,0_100,0,0,0,0,0
+Rural,sales,all qualifying openings,binned,+19 to +24,0_100,3,3,3,18,18
+Rural,sales,established,binned,+19 to +24,0_100,0,0,0,0,0
+Rural,sales,all qualifying openings,binned,+25 months onward,0_100,3,3,3,34,34
+Rural,sales,established,binned,+25 months onward,0_100,0,0,0,0,0
+Rural,sales,all qualifying openings,monthly,-12,100_250,4,4,4,4,4
+Rural,sales,all qualifying openings,monthly,-11,100_250,4,4,4,4,4
+Rural,sales,all qualifying openings,monthly,-10,100_250,4,4,4,4,4
+Rural,sales,all qualifying openings,monthly,-9,100_250,4,4,4,4,4
+Rural,sales,all qualifying openings,monthly,-8,100_250,4,4,4,4,4
+Rural,sales,all qualifying openings,monthly,-7,100_250,4,4,4,4,4
+Rural,sales,all qualifying openings,monthly,-6,100_250,4,4,4,4,4
+Rural,sales,all qualifying openings,monthly,-5,100_250,4,4,4,4,4
+Rural,sales,all qualifying openings,monthly,-4,100_250,6,6,6,6,6
+Rural,sales,all qualifying openings,monthly,-3,100_250,7,7,7,7,7
+Rural,sales,all qualifying openings,monthly,-2,100_250,7,7,7,7,7
+Rural,sales,all qualifying openings,monthly,-1,100_250,7,7,7,7,7
+Rural,sales,all qualifying openings,monthly,0,100_250,9,9,9,9,9
+Rural,sales,all qualifying openings,monthly,1,100_250,9,9,9,9,9
+Rural,sales,all qualifying openings,monthly,2,100_250,8,8,8,8,8
+Rural,sales,all qualifying openings,monthly,3,100_250,8,8,8,8,8
+Rural,sales,all qualifying openings,monthly,4,100_250,8,8,8,8,8
+Rural,sales,all qualifying openings,monthly,5,100_250,7,7,7,7,7
+Rural,sales,all qualifying openings,monthly,6,100_250,7,7,7,7,7
+Rural,sales,all qualifying openings,monthly,7,100_250,7,7,7,7,7
+Rural,sales,all qualifying openings,monthly,8,100_250,7,7,7,7,7
+Rural,sales,all qualifying openings,monthly,9,100_250,7,7,7,7,7
+Rural,sales,all qualifying openings,monthly,10,100_250,7,7,7,7,7
+Rural,sales,all qualifying openings,monthly,11,100_250,7,7,7,7,7
+Rural,sales,all qualifying openings,monthly,12,100_250,7,7,7,7,7
+Rural,sales,all qualifying openings,monthly,13,100_250,7,7,7,7,7
+Rural,sales,all qualifying openings,monthly,14,100_250,7,7,7,7,7
+Rural,sales,all qualifying openings,monthly,15,100_250,6,6,6,6,6
+Rural,sales,all qualifying openings,monthly,16,100_250,6,6,6,6,6
+Rural,sales,all qualifying openings,monthly,17,100_250,6,6,6,6,6
+Rural,sales,all qualifying openings,monthly,18,100_250,6,6,6,6,6
+Rural,sales,all qualifying openings,monthly,19,100_250,5,5,5,5,5
+Rural,sales,all qualifying openings,monthly,20,100_250,4,4,4,4,4
+Rural,sales,all qualifying openings,monthly,21,100_250,2,2,2,2,2
+Rural,sales,all qualifying openings,monthly,22,100_250,1,1,1,1,1
+Rural,sales,all qualifying openings,monthly,23,100_250,1,1,1,1,1
+Rural,sales,all qualifying openings,monthly,24,100_250,1,1,1,1,1
+Rural,sales,all qualifying openings,binned,−12 to −7,100_250,4,4,4,24,24
+Rural,sales,established,binned,−12 to −7,100_250,1,1,1,6,6
+Rural,sales,all qualifying openings,binned,−6 to −3,100_250,7,7,7,21,21
+Rural,sales,established,binned,−6 to −3,100_250,1,1,1,4,4
+Rural,sales,all qualifying openings,binned,−2,100_250,7,7,7,7,7
+Rural,sales,established,binned,−2,100_250,1,1,1,1,1
+Rural,sales,all qualifying openings,binned,−1 (reference),100_250,7,7,7,7,7
+Rural,sales,established,binned,−1 (reference),100_250,1,1,1,1,1
+Rural,sales,all qualifying openings,binned,0,100_250,9,9,9,9,9
+Rural,sales,established,binned,0,100_250,1,1,1,1,1
+Rural,sales,all qualifying openings,binned,+1 to +3,100_250,9,9,9,25,25
+Rural,sales,established,binned,+1 to +3,100_250,1,1,1,3,3
+Rural,sales,all qualifying openings,binned,+4 to +6,100_250,8,8,8,22,22
+Rural,sales,established,binned,+4 to +6,100_250,1,1,1,3,3
+Rural,sales,all qualifying openings,binned,+7 to +12,100_250,7,7,7,42,42
+Rural,sales,established,binned,+7 to +12,100_250,1,1,1,6,6
+Rural,sales,all qualifying openings,binned,+13 to +18,100_250,7,7,7,38,38
+Rural,sales,established,binned,+13 to +18,100_250,1,1,1,2,2
+Rural,sales,all qualifying openings,binned,+19 to +24,100_250,5,5,5,14,14
+Rural,sales,established,binned,+19 to +24,100_250,0,0,0,0,0
+Rural,sales,all qualifying openings,binned,+25 months onward,100_250,1,1,1,14,14
+Rural,sales,established,binned,+25 months onward,100_250,0,0,0,0,0
+Rural,sales,all qualifying openings,monthly,-12,250_500,6,5,6,6,6
+Rural,sales,all qualifying openings,monthly,-11,250_500,6,5,6,6,6
+Rural,sales,all qualifying openings,monthly,-10,250_500,6,5,6,6,6
+Rural,sales,all qualifying openings,monthly,-9,250_500,7,6,7,7,7
+Rural,sales,all qualifying openings,monthly,-8,250_500,8,7,8,8,8
+Rural,sales,all qualifying openings,monthly,-7,250_500,9,8,9,9,9
+Rural,sales,all qualifying openings,monthly,-6,250_500,11,10,11,11,11
+Rural,sales,all qualifying openings,monthly,-5,250_500,11,10,11,11,11
+Rural,sales,all qualifying openings,monthly,-4,250_500,13,11,13,13,13
+Rural,sales,all qualifying openings,monthly,-3,250_500,14,12,14,14,14
+Rural,sales,all qualifying openings,monthly,-2,250_500,16,13,16,16,16
+Rural,sales,all qualifying openings,monthly,-1,250_500,18,14,17,18,18
+Rural,sales,all qualifying openings,monthly,0,250_500,19,15,18,19,19
+Rural,sales,all qualifying openings,monthly,1,250_500,19,15,18,19,19
+Rural,sales,all qualifying openings,monthly,2,250_500,19,15,18,19,19
+Rural,sales,all qualifying openings,monthly,3,250_500,19,15,18,19,19
+Rural,sales,all qualifying openings,monthly,4,250_500,18,14,17,18,18
+Rural,sales,all qualifying openings,monthly,5,250_500,15,12,14,15,15
+Rural,sales,all qualifying openings,monthly,6,250_500,15,12,14,15,15
+Rural,sales,all qualifying openings,monthly,7,250_500,15,12,14,15,15
+Rural,sales,all qualifying openings,monthly,8,250_500,14,11,13,14,14
+Rural,sales,all qualifying openings,monthly,9,250_500,14,11,13,14,14
+Rural,sales,all qualifying openings,monthly,10,250_500,14,11,13,14,14
+Rural,sales,all qualifying openings,monthly,11,250_500,14,11,13,14,14
+Rural,sales,all qualifying openings,monthly,12,250_500,14,11,13,14,14
+Rural,sales,all qualifying openings,monthly,13,250_500,14,11,13,14,14
+Rural,sales,all qualifying openings,monthly,14,250_500,14,11,13,14,14
+Rural,sales,all qualifying openings,monthly,15,250_500,13,10,12,13,13
+Rural,sales,all qualifying openings,monthly,16,250_500,11,9,10,11,11
+Rural,sales,all qualifying openings,monthly,17,250_500,10,8,9,10,10
+Rural,sales,all qualifying openings,monthly,18,250_500,10,8,9,10,10
+Rural,sales,all qualifying openings,monthly,19,250_500,10,8,9,10,10
+Rural,sales,all qualifying openings,monthly,20,250_500,9,7,9,9,9
+Rural,sales,all qualifying openings,monthly,21,250_500,8,6,8,8,8
+Rural,sales,all qualifying openings,monthly,22,250_500,7,5,7,7,7
+Rural,sales,all qualifying openings,monthly,23,250_500,6,4,6,6,6
+Rural,sales,all qualifying openings,monthly,24,250_500,6,4,6,6,6
+Rural,sales,all qualifying openings,binned,−12 to −7,250_500,9,8,9,42,42
+Rural,sales,established,binned,−12 to −7,250_500,0,0,0,0,0
+Rural,sales,all qualifying openings,binned,−6 to −3,250_500,14,12,14,49,49
+Rural,sales,established,binned,−6 to −3,250_500,0,0,0,0,0
+Rural,sales,all qualifying openings,binned,−2,250_500,16,13,16,16,16
+Rural,sales,established,binned,−2,250_500,0,0,0,0,0
+Rural,sales,all qualifying openings,binned,−1 (reference),250_500,18,14,17,18,18
+Rural,sales,established,binned,−1 (reference),250_500,0,0,0,0,0
+Rural,sales,all qualifying openings,binned,0,250_500,19,15,18,19,19
+Rural,sales,established,binned,0,250_500,0,0,0,0,0
+Rural,sales,all qualifying openings,binned,+1 to +3,250_500,19,15,18,57,57
+Rural,sales,established,binned,+1 to +3,250_500,0,0,0,0,0
+Rural,sales,all qualifying openings,binned,+4 to +6,250_500,18,14,17,48,48
+Rural,sales,established,binned,+4 to +6,250_500,0,0,0,0,0
+Rural,sales,all qualifying openings,binned,+7 to +12,250_500,15,12,14,85,82
+Rural,sales,established,binned,+7 to +12,250_500,0,0,0,0,0
+Rural,sales,all qualifying openings,binned,+13 to +18,250_500,14,11,13,72,69
+Rural,sales,established,binned,+13 to +18,250_500,0,0,0,0,0
+Rural,sales,all qualifying openings,binned,+19 to +24,250_500,10,8,9,46,45
+Rural,sales,established,binned,+19 to +24,250_500,0,0,0,0,0
+Rural,sales,all qualifying openings,binned,+25 months onward,250_500,6,4,6,51,51
+Rural,sales,established,binned,+25 months onward,250_500,0,0,0,0,0
+Rural,sales,all qualifying openings,monthly,-12,500_1000,18,14,16,18,18
+Rural,sales,all qualifying openings,monthly,-11,500_1000,19,14,16,19,19
+Rural,sales,all qualifying openings,monthly,-10,500_1000,20,15,17,20,20
+Rural,sales,all qualifying openings,monthly,-9,500_1000,24,18,19,24,24
+Rural,sales,all qualifying openings,monthly,-8,500_1000,25,19,20,25,25
+Rural,sales,all qualifying openings,monthly,-7,500_1000,27,20,22,27,27
+Rural,sales,all qualifying openings,monthly,-6,500_1000,33,24,26,33,33
+Rural,sales,all qualifying openings,monthly,-5,500_1000,33,24,26,33,33
+Rural,sales,all qualifying openings,monthly,-4,500_1000,38,29,27,38,37
+Rural,sales,all qualifying openings,monthly,-3,500_1000,44,32,33,44,43
+Rural,sales,all qualifying openings,monthly,-2,500_1000,49,36,36,49,48
+Rural,sales,all qualifying openings,monthly,-1,500_1000,50,37,37,50,49
+Rural,sales,all qualifying openings,monthly,0,500_1000,52,39,38,52,51
+Rural,sales,all qualifying openings,monthly,1,500_1000,52,39,38,52,51
+Rural,sales,all qualifying openings,monthly,2,500_1000,49,37,36,49,48
+Rural,sales,all qualifying openings,monthly,3,500_1000,47,36,35,47,46
+Rural,sales,all qualifying openings,monthly,4,500_1000,47,36,35,47,46
+Rural,sales,all qualifying openings,monthly,5,500_1000,43,33,33,43,42
+Rural,sales,all qualifying openings,monthly,6,500_1000,42,32,33,42,41
+Rural,sales,all qualifying openings,monthly,7,500_1000,41,31,32,41,40
+Rural,sales,all qualifying openings,monthly,8,500_1000,40,30,31,40,39
+Rural,sales,all qualifying openings,monthly,9,500_1000,40,30,31,40,39
+Rural,sales,all qualifying openings,monthly,10,500_1000,40,30,31,40,39
+Rural,sales,all qualifying openings,monthly,11,500_1000,35,27,26,35,34
+Rural,sales,all qualifying openings,monthly,12,500_1000,30,24,23,30,29
+Rural,sales,all qualifying openings,monthly,13,500_1000,28,23,21,28,27
+Rural,sales,all qualifying openings,monthly,14,500_1000,28,23,21,28,27
+Rural,sales,all qualifying openings,monthly,15,500_1000,25,21,18,25,24
+Rural,sales,all qualifying openings,monthly,16,500_1000,24,20,17,24,23
+Rural,sales,all qualifying openings,monthly,17,500_1000,23,19,16,23,22
+Rural,sales,all qualifying openings,monthly,18,500_1000,21,18,14,21,20
+Rural,sales,all qualifying openings,monthly,19,500_1000,21,18,14,21,20
+Rural,sales,all qualifying openings,monthly,20,500_1000,18,15,13,18,17
+Rural,sales,all qualifying openings,monthly,21,500_1000,16,13,11,16,15
+Rural,sales,all qualifying openings,monthly,22,500_1000,12,10,8,12,11
+Rural,sales,all qualifying openings,monthly,23,500_1000,12,10,8,12,11
+Rural,sales,all qualifying openings,monthly,24,500_1000,8,7,5,8,8
+Rural,sales,all qualifying openings,binned,−12 to −7,500_1000,27,20,22,133,130
+Rural,sales,established,binned,−12 to −7,500_1000,9,6,9,54,54
+Rural,sales,all qualifying openings,binned,−6 to −3,500_1000,44,32,33,148,138
+Rural,sales,established,binned,−6 to −3,500_1000,9,6,9,36,36
+Rural,sales,all qualifying openings,binned,−2,500_1000,49,36,36,49,48
+Rural,sales,established,binned,−2,500_1000,9,6,9,9,9
+Rural,sales,all qualifying openings,binned,−1 (reference),500_1000,50,37,37,50,49
+Rural,sales,established,binned,−1 (reference),500_1000,9,6,9,9,9
+Rural,sales,all qualifying openings,binned,0,500_1000,52,39,38,52,51
+Rural,sales,established,binned,0,500_1000,9,6,9,9,9
+Rural,sales,all qualifying openings,binned,+1 to +3,500_1000,52,39,38,148,138
+Rural,sales,established,binned,+1 to +3,500_1000,9,6,9,23,23
+Rural,sales,all qualifying openings,binned,+4 to +6,500_1000,47,36,35,132,122
+Rural,sales,established,binned,+4 to +6,500_1000,6,4,6,12,12
+Rural,sales,all qualifying openings,binned,+7 to +12,500_1000,41,31,32,226,189
+Rural,sales,established,binned,+7 to +12,500_1000,3,2,3,14,14
+Rural,sales,all qualifying openings,binned,+13 to +18,500_1000,29,24,22,149,118
+Rural,sales,established,binned,+13 to +18,500_1000,0,0,0,0,0
+Rural,sales,all qualifying openings,binned,+19 to +24,500_1000,21,18,14,87,65
+Rural,sales,established,binned,+19 to +24,500_1000,0,0,0,0,0
+Rural,sales,all qualifying openings,binned,+25 months onward,500_1000,7,6,4,109,67
+Rural,sales,established,binned,+25 months onward,500_1000,0,0,0,0,0
+Rural,customers,all qualifying openings,monthly,-12,0_100,0,0,0,0,0
+Rural,customers,all qualifying openings,monthly,-11,0_100,0,0,0,0,0
+Rural,customers,all qualifying openings,monthly,-10,0_100,0,0,0,0,0
+Rural,customers,all qualifying openings,monthly,-9,0_100,0,0,0,0,0
+Rural,customers,all qualifying openings,monthly,-8,0_100,0,0,0,0,0
+Rural,customers,all qualifying openings,monthly,-7,0_100,0,0,0,0,0
+Rural,customers,all qualifying openings,monthly,-6,0_100,0,0,0,0,0
+Rural,customers,all qualifying openings,monthly,-5,0_100,0,0,0,0,0
+Rural,customers,all qualifying openings,monthly,-4,0_100,0,0,0,0,0
+Rural,customers,all qualifying openings,monthly,-3,0_100,0,0,0,0,0
+Rural,customers,all qualifying openings,monthly,-2,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,-1,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,0,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,1,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,2,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,3,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,4,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,5,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,6,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,7,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,8,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,9,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,10,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,11,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,12,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,13,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,14,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,15,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,16,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,17,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,18,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,19,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,20,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,21,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,22,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,23,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,monthly,24,0_100,3,3,3,3,3
+Rural,customers,all qualifying openings,binned,−12 to −7,0_100,0,0,0,0,0
+Rural,customers,established,binned,−12 to −7,0_100,0,0,0,0,0
+Rural,customers,all qualifying openings,binned,−6 to −3,0_100,0,0,0,0,0
+Rural,customers,established,binned,−6 to −3,0_100,0,0,0,0,0
+Rural,customers,all qualifying openings,binned,−2,0_100,3,3,3,3,3
+Rural,customers,established,binned,−2,0_100,0,0,0,0,0
+Rural,customers,all qualifying openings,binned,−1 (reference),0_100,3,3,3,3,3
+Rural,customers,established,binned,−1 (reference),0_100,0,0,0,0,0
+Rural,customers,all qualifying openings,binned,0,0_100,3,3,3,3,3
+Rural,customers,established,binned,0,0_100,0,0,0,0,0
+Rural,customers,all qualifying openings,binned,+1 to +3,0_100,3,3,3,9,9
+Rural,customers,established,binned,+1 to +3,0_100,0,0,0,0,0
+Rural,customers,all qualifying openings,binned,+4 to +6,0_100,3,3,3,9,9
+Rural,customers,established,binned,+4 to +6,0_100,0,0,0,0,0
+Rural,customers,all qualifying openings,binned,+7 to +12,0_100,3,3,3,18,18
+Rural,customers,established,binned,+7 to +12,0_100,0,0,0,0,0
+Rural,customers,all qualifying openings,binned,+13 to +18,0_100,3,3,3,18,18
+Rural,customers,established,binned,+13 to +18,0_100,0,0,0,0,0
+Rural,customers,all qualifying openings,binned,+19 to +24,0_100,3,3,3,18,18
+Rural,customers,established,binned,+19 to +24,0_100,0,0,0,0,0
+Rural,customers,all qualifying openings,binned,+25 months onward,0_100,3,3,3,34,34
+Rural,customers,established,binned,+25 months onward,0_100,0,0,0,0,0
+Rural,customers,all qualifying openings,monthly,-12,100_250,4,4,4,4,4
+Rural,customers,all qualifying openings,monthly,-11,100_250,4,4,4,4,4
+Rural,customers,all qualifying openings,monthly,-10,100_250,4,4,4,4,4
+Rural,customers,all qualifying openings,monthly,-9,100_250,4,4,4,4,4
+Rural,customers,all qualifying openings,monthly,-8,100_250,4,4,4,4,4
+Rural,customers,all qualifying openings,monthly,-7,100_250,4,4,4,4,4
+Rural,customers,all qualifying openings,monthly,-6,100_250,4,4,4,4,4
+Rural,customers,all qualifying openings,monthly,-5,100_250,4,4,4,4,4
+Rural,customers,all qualifying openings,monthly,-4,100_250,6,6,6,6,6
+Rural,customers,all qualifying openings,monthly,-3,100_250,7,7,7,7,7
+Rural,customers,all qualifying openings,monthly,-2,100_250,7,7,7,7,7
+Rural,customers,all qualifying openings,monthly,-1,100_250,7,7,7,7,7
+Rural,customers,all qualifying openings,monthly,0,100_250,9,9,9,9,9
+Rural,customers,all qualifying openings,monthly,1,100_250,9,9,9,9,9
+Rural,customers,all qualifying openings,monthly,2,100_250,8,8,8,8,8
+Rural,customers,all qualifying openings,monthly,3,100_250,8,8,8,8,8
+Rural,customers,all qualifying openings,monthly,4,100_250,8,8,8,8,8
+Rural,customers,all qualifying openings,monthly,5,100_250,7,7,7,7,7
+Rural,customers,all qualifying openings,monthly,6,100_250,7,7,7,7,7
+Rural,customers,all qualifying openings,monthly,7,100_250,7,7,7,7,7
+Rural,customers,all qualifying openings,monthly,8,100_250,7,7,7,7,7
+Rural,customers,all qualifying openings,monthly,9,100_250,7,7,7,7,7
+Rural,customers,all qualifying openings,monthly,10,100_250,7,7,7,7,7
+Rural,customers,all qualifying openings,monthly,11,100_250,7,7,7,7,7
+Rural,customers,all qualifying openings,monthly,12,100_250,7,7,7,7,7
+Rural,customers,all qualifying openings,monthly,13,100_250,7,7,7,7,7
+Rural,customers,all qualifying openings,monthly,14,100_250,7,7,7,7,7
+Rural,customers,all qualifying openings,monthly,15,100_250,6,6,6,6,6
+Rural,customers,all qualifying openings,monthly,16,100_250,6,6,6,6,6
+Rural,customers,all qualifying openings,monthly,17,100_250,6,6,6,6,6
+Rural,customers,all qualifying openings,monthly,18,100_250,6,6,6,6,6
+Rural,customers,all qualifying openings,monthly,19,100_250,5,5,5,5,5
+Rural,customers,all qualifying openings,monthly,20,100_250,4,4,4,4,4
+Rural,customers,all qualifying openings,monthly,21,100_250,2,2,2,2,2
+Rural,customers,all qualifying openings,monthly,22,100_250,1,1,1,1,1
+Rural,customers,all qualifying openings,monthly,23,100_250,1,1,1,1,1
+Rural,customers,all qualifying openings,monthly,24,100_250,1,1,1,1,1
+Rural,customers,all qualifying openings,binned,−12 to −7,100_250,4,4,4,24,24
+Rural,customers,established,binned,−12 to −7,100_250,1,1,1,6,6
+Rural,customers,all qualifying openings,binned,−6 to −3,100_250,7,7,7,21,21
+Rural,customers,established,binned,−6 to −3,100_250,1,1,1,4,4
+Rural,customers,all qualifying openings,binned,−2,100_250,7,7,7,7,7
+Rural,customers,established,binned,−2,100_250,1,1,1,1,1
+Rural,customers,all qualifying openings,binned,−1 (reference),100_250,7,7,7,7,7
+Rural,customers,established,binned,−1 (reference),100_250,1,1,1,1,1
+Rural,customers,all qualifying openings,binned,0,100_250,9,9,9,9,9
+Rural,customers,established,binned,0,100_250,1,1,1,1,1
+Rural,customers,all qualifying openings,binned,+1 to +3,100_250,9,9,9,25,25
+Rural,customers,established,binned,+1 to +3,100_250,1,1,1,3,3
+Rural,customers,all qualifying openings,binned,+4 to +6,100_250,8,8,8,22,22
+Rural,customers,established,binned,+4 to +6,100_250,1,1,1,3,3
+Rural,customers,all qualifying openings,binned,+7 to +12,100_250,7,7,7,42,42
+Rural,customers,established,binned,+7 to +12,100_250,1,1,1,6,6
+Rural,customers,all qualifying openings,binned,+13 to +18,100_250,7,7,7,38,38
+Rural,customers,established,binned,+13 to +18,100_250,1,1,1,2,2
+Rural,customers,all qualifying openings,binned,+19 to +24,100_250,5,5,5,14,14
+Rural,customers,established,binned,+19 to +24,100_250,0,0,0,0,0
+Rural,customers,all qualifying openings,binned,+25 months onward,100_250,1,1,1,14,14
+Rural,customers,established,binned,+25 months onward,100_250,0,0,0,0,0
+Rural,customers,all qualifying openings,monthly,-12,250_500,6,5,6,6,6
+Rural,customers,all qualifying openings,monthly,-11,250_500,6,5,6,6,6
+Rural,customers,all qualifying openings,monthly,-10,250_500,6,5,6,6,6
+Rural,customers,all qualifying openings,monthly,-9,250_500,7,6,7,7,7
+Rural,customers,all qualifying openings,monthly,-8,250_500,8,7,8,8,8
+Rural,customers,all qualifying openings,monthly,-7,250_500,9,8,9,9,9
+Rural,customers,all qualifying openings,monthly,-6,250_500,11,10,11,11,11
+Rural,customers,all qualifying openings,monthly,-5,250_500,11,10,11,11,11
+Rural,customers,all qualifying openings,monthly,-4,250_500,13,11,13,13,13
+Rural,customers,all qualifying openings,monthly,-3,250_500,14,12,14,14,14
+Rural,customers,all qualifying openings,monthly,-2,250_500,16,13,16,16,16
+Rural,customers,all qualifying openings,monthly,-1,250_500,18,14,17,18,18
+Rural,customers,all qualifying openings,monthly,0,250_500,19,15,18,19,19
+Rural,customers,all qualifying openings,monthly,1,250_500,19,15,18,19,19
+Rural,customers,all qualifying openings,monthly,2,250_500,19,15,18,19,19
+Rural,customers,all qualifying openings,monthly,3,250_500,19,15,18,19,19
+Rural,customers,all qualifying openings,monthly,4,250_500,18,14,17,18,18
+Rural,customers,all qualifying openings,monthly,5,250_500,15,12,14,15,15
+Rural,customers,all qualifying openings,monthly,6,250_500,15,12,14,15,15
+Rural,customers,all qualifying openings,monthly,7,250_500,15,12,14,15,15
+Rural,customers,all qualifying openings,monthly,8,250_500,14,11,13,14,14
+Rural,customers,all qualifying openings,monthly,9,250_500,14,11,13,14,14
+Rural,customers,all qualifying openings,monthly,10,250_500,14,11,13,14,14
+Rural,customers,all qualifying openings,monthly,11,250_500,14,11,13,14,14
+Rural,customers,all qualifying openings,monthly,12,250_500,14,11,13,14,14
+Rural,customers,all qualifying openings,monthly,13,250_500,14,11,13,14,14
+Rural,customers,all qualifying openings,monthly,14,250_500,14,11,13,14,14
+Rural,customers,all qualifying openings,monthly,15,250_500,13,10,12,13,13
+Rural,customers,all qualifying openings,monthly,16,250_500,11,9,10,11,11
+Rural,customers,all qualifying openings,monthly,17,250_500,10,8,9,10,10
+Rural,customers,all qualifying openings,monthly,18,250_500,10,8,9,10,10
+Rural,customers,all qualifying openings,monthly,19,250_500,10,8,9,10,10
+Rural,customers,all qualifying openings,monthly,20,250_500,9,7,9,9,9
+Rural,customers,all qualifying openings,monthly,21,250_500,8,6,8,8,8
+Rural,customers,all qualifying openings,monthly,22,250_500,7,5,7,7,7
+Rural,customers,all qualifying openings,monthly,23,250_500,6,4,6,6,6
+Rural,customers,all qualifying openings,monthly,24,250_500,6,4,6,6,6
+Rural,customers,all qualifying openings,binned,−12 to −7,250_500,9,8,9,42,42
+Rural,customers,established,binned,−12 to −7,250_500,0,0,0,0,0
+Rural,customers,all qualifying openings,binned,−6 to −3,250_500,14,12,14,49,49
+Rural,customers,established,binned,−6 to −3,250_500,0,0,0,0,0
+Rural,customers,all qualifying openings,binned,−2,250_500,16,13,16,16,16
+Rural,customers,established,binned,−2,250_500,0,0,0,0,0
+Rural,customers,all qualifying openings,binned,−1 (reference),250_500,18,14,17,18,18
+Rural,customers,established,binned,−1 (reference),250_500,0,0,0,0,0
+Rural,customers,all qualifying openings,binned,0,250_500,19,15,18,19,19
+Rural,customers,established,binned,0,250_500,0,0,0,0,0
+Rural,customers,all qualifying openings,binned,+1 to +3,250_500,19,15,18,57,57
+Rural,customers,established,binned,+1 to +3,250_500,0,0,0,0,0
+Rural,customers,all qualifying openings,binned,+4 to +6,250_500,18,14,17,48,48
+Rural,customers,established,binned,+4 to +6,250_500,0,0,0,0,0
+Rural,customers,all qualifying openings,binned,+7 to +12,250_500,15,12,14,85,82
+Rural,customers,established,binned,+7 to +12,250_500,0,0,0,0,0
+Rural,customers,all qualifying openings,binned,+13 to +18,250_500,14,11,13,72,69
+Rural,customers,established,binned,+13 to +18,250_500,0,0,0,0,0
+Rural,customers,all qualifying openings,binned,+19 to +24,250_500,10,8,9,46,45
+Rural,customers,established,binned,+19 to +24,250_500,0,0,0,0,0
+Rural,customers,all qualifying openings,binned,+25 months onward,250_500,6,4,6,51,51
+Rural,customers,established,binned,+25 months onward,250_500,0,0,0,0,0
+Rural,customers,all qualifying openings,monthly,-12,500_1000,18,14,16,18,18
+Rural,customers,all qualifying openings,monthly,-11,500_1000,19,14,16,19,19
+Rural,customers,all qualifying openings,monthly,-10,500_1000,20,15,17,20,20
+Rural,customers,all qualifying openings,monthly,-9,500_1000,24,18,19,24,24
+Rural,customers,all qualifying openings,monthly,-8,500_1000,25,19,20,25,25
+Rural,customers,all qualifying openings,monthly,-7,500_1000,27,20,22,27,27
+Rural,customers,all qualifying openings,monthly,-6,500_1000,33,24,26,33,33
+Rural,customers,all qualifying openings,monthly,-5,500_1000,33,24,26,33,33
+Rural,customers,all qualifying openings,monthly,-4,500_1000,38,29,27,38,37
+Rural,customers,all qualifying openings,monthly,-3,500_1000,44,32,33,44,43
+Rural,customers,all qualifying openings,monthly,-2,500_1000,49,36,36,49,48
+Rural,customers,all qualifying openings,monthly,-1,500_1000,50,37,37,50,49
+Rural,customers,all qualifying openings,monthly,0,500_1000,52,39,38,52,51
+Rural,customers,all qualifying openings,monthly,1,500_1000,52,39,38,52,51
+Rural,customers,all qualifying openings,monthly,2,500_1000,49,37,36,49,48
+Rural,customers,all qualifying openings,monthly,3,500_1000,47,36,35,47,46
+Rural,customers,all qualifying openings,monthly,4,500_1000,47,36,35,47,46
+Rural,customers,all qualifying openings,monthly,5,500_1000,43,33,33,43,42
+Rural,customers,all qualifying openings,monthly,6,500_1000,42,32,33,42,41
+Rural,customers,all qualifying openings,monthly,7,500_1000,41,31,32,41,40
+Rural,customers,all qualifying openings,monthly,8,500_1000,40,30,31,40,39
+Rural,customers,all qualifying openings,monthly,9,500_1000,40,30,31,40,39
+Rural,customers,all qualifying openings,monthly,10,500_1000,40,30,31,40,39
+Rural,customers,all qualifying openings,monthly,11,500_1000,35,27,26,35,34
+Rural,customers,all qualifying openings,monthly,12,500_1000,30,24,23,30,29
+Rural,customers,all qualifying openings,monthly,13,500_1000,28,23,21,28,27
+Rural,customers,all qualifying openings,monthly,14,500_1000,28,23,21,28,27
+Rural,customers,all qualifying openings,monthly,15,500_1000,25,21,18,25,24
+Rural,customers,all qualifying openings,monthly,16,500_1000,24,20,17,24,23
+Rural,customers,all qualifying openings,monthly,17,500_1000,23,19,16,23,22
+Rural,customers,all qualifying openings,monthly,18,500_1000,21,18,14,21,20
+Rural,customers,all qualifying openings,monthly,19,500_1000,21,18,14,21,20
+Rural,customers,all qualifying openings,monthly,20,500_1000,18,15,13,18,17
+Rural,customers,all qualifying openings,monthly,21,500_1000,16,13,11,16,15
+Rural,customers,all qualifying openings,monthly,22,500_1000,12,10,8,12,11
+Rural,customers,all qualifying openings,monthly,23,500_1000,12,10,8,12,11
+Rural,customers,all qualifying openings,monthly,24,500_1000,8,7,5,8,8
+Rural,customers,all qualifying openings,binned,−12 to −7,500_1000,27,20,22,133,130
+Rural,customers,established,binned,−12 to −7,500_1000,9,6,9,54,54
+Rural,customers,all qualifying openings,binned,−6 to −3,500_1000,44,32,33,148,138
+Rural,customers,established,binned,−6 to −3,500_1000,9,6,9,36,36
+Rural,customers,all qualifying openings,binned,−2,500_1000,49,36,36,49,48
+Rural,customers,established,binned,−2,500_1000,9,6,9,9,9
+Rural,customers,all qualifying openings,binned,−1 (reference),500_1000,50,37,37,50,49
+Rural,customers,established,binned,−1 (reference),500_1000,9,6,9,9,9
+Rural,customers,all qualifying openings,binned,0,500_1000,52,39,38,52,51
+Rural,customers,established,binned,0,500_1000,9,6,9,9,9
+Rural,customers,all qualifying openings,binned,+1 to +3,500_1000,52,39,38,148,138
+Rural,customers,established,binned,+1 to +3,500_1000,9,6,9,23,23
+Rural,customers,all qualifying openings,binned,+4 to +6,500_1000,47,36,35,132,122
+Rural,customers,established,binned,+4 to +6,500_1000,6,4,6,12,12
+Rural,customers,all qualifying openings,binned,+7 to +12,500_1000,41,31,32,226,189
+Rural,customers,established,binned,+7 to +12,500_1000,3,2,3,14,14
+Rural,customers,all qualifying openings,binned,+13 to +18,500_1000,29,24,22,149,118
+Rural,customers,established,binned,+13 to +18,500_1000,0,0,0,0,0
+Rural,customers,all qualifying openings,binned,+19 to +24,500_1000,21,18,14,87,65
+Rural,customers,established,binned,+19 to +24,500_1000,0,0,0,0,0
+Rural,customers,all qualifying openings,binned,+25 months onward,500_1000,7,6,4,109,67
+Rural,customers,established,binned,+25 months onward,500_1000,0,0,0,0,0

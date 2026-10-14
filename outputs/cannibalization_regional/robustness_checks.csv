@@ -1,0 +1,31 @@
+region,outcome,robustness_specification,model_type,status,observations,stores,pretrend_joint_p_value,failure_reason,coefficient_count
+All Regions,sales,Alternative distance: combine 0-100m and 100-250m,robustness_alt_distance,estimated,22213,698,,,3
+All Regions,sales,Single-opening stores only,robustness_single_event_stores,estimated,4487,245,,,3
+All Regions,sales,Asinh outcome; all qualifying openings,robustness_asinh,estimated,22215,698,,,4
+All Regions,customers,Alternative distance: combine 0-100m and 100-250m,robustness_alt_distance,estimated,22213,698,,,3
+All Regions,customers,Single-opening stores only,robustness_single_event_stores,estimated,4487,245,,,3
+All Regions,customers,Asinh outcome; all qualifying openings,robustness_asinh,estimated,22215,698,,,4
+City Center,sales,Alternative distance: combine 0-100m and 100-250m,robustness_alt_distance,estimated,4122,110,,,3
+City Center,sales,Single-opening stores only,robustness_single_event_stores,failed,0,0,,,0
+City Center,sales,Asinh outcome; all qualifying openings,robustness_asinh,estimated,4122,110,,,4
+City Center,customers,Alternative distance: combine 0-100m and 100-250m,robustness_alt_distance,estimated,4122,110,,,3
+City Center,customers,Single-opening stores only,robustness_single_event_stores,failed,0,0,,,0
+City Center,customers,Asinh outcome; all qualifying openings,robustness_asinh,estimated,4122,110,,,4
+City Outskirts,sales,Alternative distance: combine 0-100m and 100-250m,robustness_alt_distance,estimated,8032,213,,,3
+City Outskirts,sales,Single-opening stores only,robustness_single_event_stores,estimated,135,16,,,2
+City Outskirts,sales,Asinh outcome; all qualifying openings,robustness_asinh,estimated,8033,213,,,4
+City Outskirts,customers,Alternative distance: combine 0-100m and 100-250m,robustness_alt_distance,estimated,8032,213,,,3
+City Outskirts,customers,Single-opening stores only,robustness_single_event_stores,estimated,135,16,,,2
+City Outskirts,customers,Asinh outcome; all qualifying openings,robustness_asinh,estimated,8033,213,,,4
+Far / Outer Areas,sales,Alternative distance: combine 0-100m and 100-250m,robustness_alt_distance,estimated,7529,248,,,3
+Far / Outer Areas,sales,Single-opening stores only,robustness_single_event_stores,estimated,2442,120,,,3
+Far / Outer Areas,sales,Asinh outcome; all qualifying openings,robustness_asinh,estimated,7529,248,,,4
+Far / Outer Areas,customers,Alternative distance: combine 0-100m and 100-250m,robustness_alt_distance,estimated,7529,248,,,3
+Far / Outer Areas,customers,Single-opening stores only,robustness_single_event_stores,estimated,2442,120,,,3
+Far / Outer Areas,customers,Asinh outcome; all qualifying openings,robustness_asinh,estimated,7529,248,,,4
+Rural,sales,Alternative distance: combine 0-100m and 100-250m,robustness_alt_distance,estimated,2530,127,,,3
+Rural,sales,Single-opening stores only,robustness_single_event_stores,estimated,1902,106,,,3
+Rural,sales,Asinh outcome; all qualifying openings,robustness_asinh,estimated,2531,127,,,4
+Rural,customers,Alternative distance: combine 0-100m and 100-250m,robustness_alt_distance,estimated,2530,127,,,3
+Rural,customers,Single-opening stores only,robustness_single_event_stores,estimated,1902,106,,,3
+Rural,customers,Asinh outcome; all qualifying openings,robustness_asinh,estimated,2531,127,,,4

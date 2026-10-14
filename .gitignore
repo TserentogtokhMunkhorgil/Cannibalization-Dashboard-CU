@@ -21,13 +21,3 @@ Thumbs.db
 # Temporary files and logs
 *.log
 *.tmp
-
-# Local data and model outputs
-data/
-outputs/
-*.parquet
-*.csv
-*.xlsx
-*.xls
-*.db
-*.sqlite
