@@ -7,6 +7,11 @@ import pandas as pd
 import numpy as np
 
 
+
+password_text = r'C:\Users\munkhorgil.ts\OneDrive - Premium Corporation\Power BI Data - Power BI Data\clickhouse_password.txt'
+with open(password_text, 'r') as f:
+    password = f.read().strip()
+
 # ==========================================================
 # 2. CONNECT TO CLICKHOUSE
 # ==========================================================
@@ -15,7 +20,7 @@ client = clickhouse_connect.get_client(
     host='10.10.90.134',
     port=8123,
     username='sales_analyst1',
-    password='S9p6P06s',
+    password=password,
     database='BI_DB'
 )
 
