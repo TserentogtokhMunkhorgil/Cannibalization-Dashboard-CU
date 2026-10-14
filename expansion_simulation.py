@@ -9,7 +9,8 @@ from __future__ import annotations
 
 import json
 import math
-from dataclasses import asdict, dataclass
+import argparse
+from dataclasses import dataclass, replace
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Sequence
@@ -40,10 +41,11 @@ NUMERIC_FEATURES = (
 @dataclass(frozen=True)
 class SimulationConfig:
     forecast_year: int = 2027
-    targets: tuple[int, ...] = (180, 400)
+    targets: tuple[int, ...] = (0, 180, 400)
     schedule: str = "monthly_even"
     opening_day: int = 15
     cannibalization_scale: float = 1.0
+    demand_scenario: str = "central"
 
 
 def haversine_distances(
@@ -102,7 +104,7 @@ def schedule_weights(schedule: str) -> np.ndarray:
         return np.ones(12, dtype=float)
     if schedule == "quarterly_even":
         weights = np.zeros(12, dtype=float)
-        weights[[1, 4, 7, 10]] = 1.0
+        weights[[0, 3, 6, 9]] = 1.0
         return weights
     raise ValueError(
         "Schedule must be 'monthly_even', 'quarterly_even', or custom weights."
@@ -589,7 +591,9 @@ def _fit_demand_models(
         candidate_predictions[f"predicted_APSD_{outcome}_lower_95"] = predictions[
             outcome
         ]["lower"]
-        candidate_predictions[f"predicted_APSD_{outcome}_upper_95"        ]
+        candidate_predictions[f"predicted_APSD_{outcome}_upper_95"] = predictions[
+            outcome
+        ]["upper"]
     training_features = _feature_matrix(training)
     candidate_model_features = _feature_matrix(candidate_features)
     feature_support = pd.DataFrame(
@@ -618,9 +622,7 @@ def _fit_demand_models(
         | candidate_predictions["prediction_clipped_to_training_support"],
         "Extrapolative / clipped to historical outcome range",
         "Within training feature and outcome range",
-    ) = predictions[
-            outcome
-        ]["upper"]
+    )
     return (
         candidate_predictions,
         pd.DataFrame(validation_rows),
@@ -1418,14 +1420,14 @@ def _scenario_outputs(
     baseline_existing_revenue = np.nansum(
         sales_matrix * active_days[:, None], axis=1
     )
-    simulated_existing_revenue = np.nansum(
-        simulated_sales_apsd * active_days[:, None], axis=1
+    existing_revenue_change = np.nansum(
+        (simulated_sales_apsd - sales_matrix) * active_days[:, None], axis=1
     )
-    baseline_customer_equiv = np.nansum(
-        baseline["customers"] * active_days[:, None], axis=1
-    )
-    simulated_existing_customer_equiv = np.nansum(
-        simulated_customers_apsd * active_days[:, None], axis=1
+    simulated_existing_revenue = baseline_existing_revenue + existing_revenue_change
+    existing_customer_change = np.nansum(
+        (simulated_customers_apsd - baseline["customers"])
+        * active_days[:, None],
+        axis=1,
     )
     for month in range(12):
         monthly_rows.append(
@@ -1435,29 +1437,21 @@ def _scenario_outputs(
                 "selected_open_stores_to_date": int(selected_month[month]),
                 "baseline_existing_sales_mnt": baseline_existing_revenue[month],
                 "simulated_existing_sales_mnt": simulated_existing_revenue[month],
-                "existing_sales_change_mnt": (
-                    simulated_existing_revenue[month]
-                    - baseline_existing_revenue[month]
-                ),
+                "existing_sales_change_mnt": existing_revenue_change[month],
                 "new_store_sales_mnt": candidate_revenue[month],
                 "baseline_network_sales_mnt": baseline_existing_revenue[month],
                 "simulated_network_sales_mnt": (
                     simulated_existing_revenue[month] + candidate_revenue[month]
                 ),
                 "network_sales_change_mnt": (
-                    simulated_existing_revenue[month]
-                    - baseline_existing_revenue[month]
-                    + candidate_revenue[month]
+                    existing_revenue_change[month] + candidate_revenue[month]
                 ),
-                "existing_customer_equivalent_change": (
-                    simulated_existing_customer_equiv[month]
-                    - baseline_customer_equiv[month]
-                ),
+                "existing_customer_equivalent_change": existing_customer_change[
+                    month
+                ],
                 "new_store_customer_equivalents": candidate_customer_equiv[month],
                 "network_customer_equivalent_change": (
-                    simulated_existing_customer_equiv[month]
-                    - baseline_customer_equiv[month]
-                    + candidate_customer_equiv[month]
+                    existing_customer_change[month] + candidate_customer_equiv[month]
                 ),
             }
         )
@@ -1633,6 +1627,7 @@ def _pair_impact_rows(
     selected: list[int],
     dates: list[pd.Timestamp],
     existing_bands: np.ndarray,
+    existing_distances: pd.DataFrame,
     baseline: dict[str, np.ndarray],
     active_days: np.ndarray,
     beta_models: dict[str, dict[str, Any]],
@@ -1652,6 +1647,9 @@ def _pair_impact_rows(
     current_log_sales = np.zeros((12, len(existing)), dtype=float)
     current_log_customers = np.zeros((12, len(existing)), dtype=float)
     rows: list[pd.DataFrame] = []
+    distance_lookup = existing_distances.set_index(
+        ["potential_store_id", "existing_store_id"]
+    )["distance_m"]
     for candidate, opening_date in zip(selected, dates):
         open_month = opening_date.month - 1
         affected = np.flatnonzero(existing_bands[candidate] >= 0)
@@ -1673,26 +1671,33 @@ def _pair_impact_rows(
                 current_log_customers[month, affected]
             )
             days = active_days[month]
+            candidate_id = str(candidates.iloc[candidate]["potential_store_id"])
+            affected_ids = existing.iloc[affected]["store_id"].astype(str)
+            pair_keys = pd.MultiIndex.from_arrays(
+                [
+                    np.repeat(candidate_id, len(affected_ids)),
+                    affected_ids.to_numpy(),
+                ],
+                names=["potential_store_id", "existing_store_id"],
+            )
             rows.append(
                 pd.DataFrame(
                     {
                         "scenario_target": target,
-                        "potential_store_id": candidates.iloc[candidate][
-                            "potential_store_id"
-                        ],
-                        "existing_store_id": existing.iloc[affected][
-                            "store_id"
-                        ].astype(str).to_numpy(),
+                        "potential_store_id": candidate_id,
+                        "existing_store_id": affected_ids.to_numpy(),
                         "assumed_opening_date": opening_date,
                         "month": pd.Timestamp(forecast_year, month + 1, 1),
                         "event_time_month": event_time,
-                        "distance_m": np.nan,
-                        "distance_band": [
-                            "0-100m",
-                            "100-250m",
-                            "250-500m",
-                            "500-1,000m",
-                        ][band_codes],
+                        "distance_m": distance_lookup.reindex(pair_keys).to_numpy(),
+                        "distance_band": np.asarray(
+                            [
+                                "0-100m",
+                                "100-250m",
+                                "250-500m",
+                                "500-1,000m",
+                            ]
+                        )[band_codes],
                         "log_APSD_income_effect": sales_beta,
                         "APSD_income_percent_effect": 100.0 * np.expm1(sales_beta),
                         "APSD_income_change": sales_before * np.expm1(sales_beta),
@@ -1810,8 +1815,17 @@ def run_expansion_simulation(
     config: SimulationConfig = SimulationConfig(),
     custom_weights: Sequence[float] | None = None,
     export: bool = True,
+    include_sensitivity: bool = False,
 ) -> dict[str, pd.DataFrame | dict[str, Any]]:
     """Build candidate forecasts and independently optimize each requested portfolio."""
+    if config.demand_scenario not in {"central", "lower", "upper"}:
+        raise ValueError("Demand scenario must be 'central', 'lower', or 'upper'.")
+    if not np.isfinite(config.cannibalization_scale) or config.cannibalization_scale < 0:
+        raise ValueError("Cannibalization scale must be finite and nonnegative.")
+    if any(target < 0 for target in config.targets):
+        raise ValueError("Scenario store targets cannot be negative.")
+    if len(set(config.targets)) != len(config.targets):
+        raise ValueError("Scenario store targets must be unique.")
     base = Path(base_dir).resolve()
     output_dir = base / "outputs" / "expansion_simulation"
     model_output_dir = base / "outputs" / "cannibalization_regional"
@@ -1934,11 +1948,16 @@ def run_expansion_simulation(
             for band, _, _ in DISTANCE_BANDS
         ]
     )
+    demand_suffix = (
+        ""
+        if config.demand_scenario == "central"
+        else f"_{config.demand_scenario}_95"
+    )
     sales_predictions = candidate_predictions[
-        "predicted_APSD_sales"
+        f"predicted_APSD_sales{demand_suffix}"
     ].to_numpy(dtype=float)
     customer_predictions = candidate_predictions[
-        "predicted_APSD_customers"
+        f"predicted_APSD_customers{demand_suffix}"
     ].to_numpy(dtype=float)
     predictions = {"sales": sales_predictions, "customers": customer_predictions}
 
@@ -2157,6 +2176,17 @@ def run_expansion_simulation(
         ),
         "opening_day": config.opening_day,
         "cannibalization_scale": config.cannibalization_scale,
+        "demand_scenario": config.demand_scenario,
+        "sensitivity_cases": (
+            [
+                "Demand lower 95% bound",
+                "Demand upper 95% bound",
+                "Weaker cannibalization (0.5x)",
+                "Stronger cannibalization (1.5x)",
+            ]
+            if include_sensitivity
+            else []
+        ),
         "candidate_source": "Data/raw/New Store GPS.xlsx",
         "historical_source": "store_master_data.xlsx",
         "distance_source": "store_to_store_distance.xlsx",
@@ -2232,6 +2262,98 @@ def run_expansion_simulation(
             ]
         ),
     }
+    if include_sensitivity:
+        sensitivity_specs = (
+            ("Demand lower 95% bound", "lower", 1.0),
+            ("Demand upper 95% bound", "upper", 1.0),
+            ("Weaker cannibalization (0.5x)", "central", 0.5),
+            ("Stronger cannibalization (1.5x)", "central", 1.5),
+        )
+        sensitivity_targets = tuple(
+            target for target in config.targets if target > 0
+        )
+        sensitivity_rows = [
+            {
+                **row,
+                "sensitivity_case": "Central estimate",
+                "demand_scenario": config.demand_scenario,
+                "cannibalization_scale": config.cannibalization_scale,
+            }
+            for row in scenario_summaries
+        ]
+        selected_by_case: dict[tuple[int, str], set[str]] = {}
+        for target in sensitivity_targets:
+            central_selection = selection_by_target.get(target, pd.DataFrame())
+            selected_by_case[(target, "Central estimate")] = set(
+                central_selection.get(
+                    "potential_store_id", pd.Series(dtype="string")
+                ).astype(str)
+            )
+        for case_name, demand_case, cannibalization_scale in (
+            sensitivity_specs if sensitivity_targets else ()
+        ):
+            variant_config = replace(
+                config,
+                targets=sensitivity_targets,
+                demand_scenario=demand_case,
+                cannibalization_scale=cannibalization_scale,
+            )
+            variant = run_expansion_simulation(
+                base,
+                variant_config,
+                custom_weights=custom_weights,
+                export=False,
+                include_sensitivity=False,
+            )
+            variant_summaries = variant["scenario_summaries"]
+            if isinstance(variant_summaries, pd.DataFrame):
+                sensitivity_rows.extend(
+                    {
+                        **row,
+                        "sensitivity_case": case_name,
+                        "demand_scenario": demand_case,
+                        "cannibalization_scale": cannibalization_scale,
+                    }
+                    for row in variant_summaries.to_dict(orient="records")
+                )
+            for target in sensitivity_targets:
+                selection = variant.get(f"selected_stores_{target}", pd.DataFrame())
+                selected_by_case[(target, case_name)] = set(
+                    selection.get(
+                        "potential_store_id", pd.Series(dtype="string")
+                    ).astype(str)
+                )
+        sensitivity_summary = pd.DataFrame(sensitivity_rows)
+        robustness_rows: list[dict[str, Any]] = []
+        case_names = ["Central estimate", *(spec[0] for spec in sensitivity_specs)]
+        candidate_ids = candidate_predictions["potential_store_id"].astype(str)
+        for target in sensitivity_targets:
+            selected_cases = {
+                case_name: selected_by_case.get((target, case_name), set())
+                for case_name in case_names
+            }
+            robustness_rows.extend(
+                {
+                    "potential_store_id": candidate_id,
+                    "scenario_target": target,
+                    "selected_sensitivity_cases": sum(
+                        candidate_id in selected_cases[case_name]
+                        for case_name in case_names
+                    ),
+                    "total_sensitivity_cases": len(case_names),
+                    "selection_frequency": sum(
+                        candidate_id in selected_cases[case_name]
+                        for case_name in case_names
+                    )
+                    / len(case_names),
+                    "selected_in_central_case": (
+                        candidate_id in selected_cases["Central estimate"]
+                    ),
+                }
+                for candidate_id in candidate_ids
+            )
+        result["scenario_sensitivity"] = sensitivity_summary
+        result["candidate_robustness"] = pd.DataFrame(robustness_rows)
     if export:
         output_dir.mkdir(parents=True, exist_ok=True)
         for key, filename in (
@@ -2249,6 +2371,8 @@ def run_expansion_simulation(
             ("data_quality_report", "data_quality_report.csv"),
             ("scenario_summaries", "scenario_summaries.csv"),
             ("maturation_profiles", "maturation_profiles.csv"),
+            ("scenario_sensitivity", "scenario_sensitivity.csv"),
+            ("candidate_robustness", "candidate_robustness.csv"),
         ):
             frame = result[key]
             if isinstance(frame, pd.DataFrame):
@@ -2257,12 +2381,102 @@ def run_expansion_simulation(
             json.dumps(assumptions, indent=2, ensure_ascii=True, default=_safe_value),
             encoding="utf-8",
         )
+        demand_artifact = {
+            "model_version": MODEL_VERSION,
+            "created_at_utc": assumptions["run_timestamp_utc"],
+            "features": list(_feature_matrix(training).columns),
+            "outcomes": {
+                outcome: {
+                    "medians": model["model"]["medians"].to_dict(),
+                    "means": model["model"]["means"].to_dict(),
+                    "scales": model["model"]["scales"].to_dict(),
+                    "coefficients": model["model"]["coefficients"].tolist(),
+                    "support_lower": model["support_lower"],
+                    "support_upper": model["support_upper"],
+                    "validation_log_residual_sd": model[
+                        "validation_log_residual_sd"
+                    ],
+                }
+                for outcome, model in demand_models.items()
+            },
+        }
+        (output_dir / "demand_model_artifacts.json").write_text(
+            json.dumps(demand_artifact, indent=2, ensure_ascii=True, default=_safe_value),
+            encoding="utf-8",
+        )
+        import plotly.express as px
+
+        monthly_plot = px.line(
+            monthly_network,
+            x="month",
+            y="network_sales_change_mnt",
+            color="scenario_target",
+            title="CU network sales impact scenarios, 2027 (MNT)",
+        )
+        monthly_plot.write_html(
+            output_dir / "network_sales_scenarios.html",
+            include_plotlyjs="cdn",
+        )
+        ranking_plot = px.scatter(
+            ranking,
+            x="predicted_APSD_sales",
+            y="standalone_net_network_sales_2027_mnt_jan_open",
+            color="area_type",
+            hover_name="potential_store_id",
+            title="Standalone candidate demand and modeled network value",
+            labels={
+                "predicted_APSD_sales": "Predicted opening APSD sales (MNT/day)",
+                "standalone_net_network_sales_2027_mnt_jan_open": (
+                    "Standalone modeled network sales, 2027 (MNT)"
+                ),
+            },
+        )
+        ranking_plot.write_html(
+            output_dir / "candidate_value_scatter.html",
+            include_plotlyjs="cdn",
+        )
     return result
 
 
 def main() -> None:
     base_dir = Path(__file__).resolve().parent
-    results = run_expansion_simulation(base_dir)
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--forecast-year", type=int, default=2027)
+    parser.add_argument("--targets", type=int, nargs="+", default=[0, 180, 400])
+    parser.add_argument(
+        "--schedule",
+        choices=("monthly_even", "quarterly_even", "custom"),
+        default="monthly_even",
+    )
+    parser.add_argument("--opening-day", type=int, default=15)
+    parser.add_argument("--cannibalization-scale", type=float, default=1.0)
+    parser.add_argument(
+        "--monthly-weights",
+        help="12 comma-separated nonnegative opening weights, used with --schedule custom.",
+    )
+    arguments = parser.parse_args()
+    weights = (
+        [float(value) for value in arguments.monthly_weights.split(",")]
+        if arguments.monthly_weights
+        else None
+    )
+    if arguments.schedule == "custom" and weights is None:
+        parser.error("--schedule custom requires --monthly-weights.")
+    if arguments.schedule != "custom" and weights is not None:
+        parser.error("--monthly-weights can only be used with --schedule custom.")
+    config = SimulationConfig(
+        forecast_year=arguments.forecast_year,
+        targets=tuple(arguments.targets),
+        schedule=arguments.schedule,
+        opening_day=arguments.opening_day,
+        cannibalization_scale=arguments.cannibalization_scale,
+    )
+    results = run_expansion_simulation(
+        base_dir,
+        config,
+        custom_weights=weights,
+        include_sensitivity=True,
+    )
     summaries = results["scenario_summaries"]
     print("Expansion simulation outputs:", base_dir / "outputs" / "expansion_simulation")
     if isinstance(summaries, pd.DataFrame):

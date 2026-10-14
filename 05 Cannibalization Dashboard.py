@@ -3152,7 +3152,347 @@ def download_table(data: pd.DataFrame, label: str, file_name: str) -> None:
     )
 
 
+@st.cache_data(show_spinner=False)
+def read_expansion_output(name: str, modified_ns: int) -> pd.DataFrame:
+    path = BASE_DIR / "outputs" / "expansion_simulation" / name
+    if not path.is_file():
+        return pd.DataFrame()
+    return pd.read_csv(path)
 
+
+def expansion_simulation_page(master: pd.DataFrame) -> None:
+    st.header("Expansion Simulation")
+    st.caption(
+        "Forward-looking 2027 scenarios using historical demand validation and "
+        "saved cannibalization estimates. These are conditional model estimates, "
+        "not guaranteed forecasts, profit, or ROI."
+    )
+    def read_output(name: str) -> pd.DataFrame:
+        path = BASE_DIR / "outputs" / "expansion_simulation" / name
+        modified_ns = path.stat().st_mtime_ns if path.is_file() else 0
+        return read_expansion_output(name, modified_ns)
+
+    summaries = read_output("scenario_summaries.csv")
+    rankings = read_output("potential_store_rankings.csv")
+    monthly = read_output("monthly_network_simulation_2027.csv")
+    existing_impact = read_output("existing_store_impact_2027.csv")
+    regional = read_output("regional_scenario_comparison.csv")
+    validation = read_output("model_validation_report.csv")
+    sensitivity = read_output("scenario_sensitivity.csv")
+    robustness = read_output("candidate_robustness.csv")
+
+    if summaries.empty or rankings.empty:
+        st.info(
+            "No expansion simulation outputs are available yet. Run "
+            "`python expansion_simulation.py` from the project root, then "
+            "refresh this page."
+        )
+        return
+
+    targets = sorted(pd.to_numeric(summaries["scenario_target"], errors="coerce").dropna().astype(int).unique())
+    target = st.selectbox(
+        "Expansion scenario",
+        targets,
+        format_func=lambda value: "Baseline — no new stores" if value == 0 else f"{value} selected stores",
+    )
+    summary_rows = summaries.loc[
+        pd.to_numeric(summaries["scenario_target"], errors="coerce").eq(target)
+    ]
+    if summary_rows.empty:
+        st.warning(f"No saved results are available for the {target}-store scenario.")
+        return
+    summary = summary_rows.iloc[0]
+    metric_columns = st.columns(4)
+    metric_columns[0].metric("Selected locations", f"{int(summary['selected_count']):,}")
+    metric_columns[1].metric(
+        "New-store sales, 2027",
+        f"{summary['new_store_sales_2027_mnt']:,.0f} MNT",
+        help="APSD demand multiplied by forecast active days; opening-month days are prorated.",
+    )
+    metric_columns[2].metric(
+        "Existing-store sales change",
+        f"{summary['existing_sales_change_2027_mnt']:,.0f} MNT",
+    )
+    metric_columns[3].metric(
+        "Net network sales change",
+        f"{summary['network_sales_change_2027_mnt']:,.0f} MNT",
+        help="Scenario sales change relative to the no-expansion baseline; not profit or ROI.",
+    )
+    st.caption(
+        f"Assumptions: {summary['opening_schedule']} opening schedule, day "
+        f"{int(summary['opening_day'])} of each month, {int(summary['forecast_year'])}. "
+        f"Candidate shortfall: {int(summary['shortfall'])}."
+    )
+
+    scenario_monthly = monthly.loc[
+        pd.to_numeric(monthly["scenario_target"], errors="coerce").eq(target)
+    ].copy()
+    candidate_col = f"selected_{target}"
+    if candidate_col in rankings:
+        rankings[candidate_col] = rankings[candidate_col].astype(str).str.casefold().eq("true")
+    selected_tab, impact_tab, region_tab, validation_tab, sensitivity_tab = st.tabs(
+        [
+            "Locations",
+            "Existing-store impact",
+            "Regional comparison",
+            "Validation",
+            "Sensitivity",
+        ]
+    )
+    with selected_tab:
+        map_candidates = rankings.loc[
+            pd.to_numeric(rankings.get("latitude"), errors="coerce").between(-90, 90)
+            & pd.to_numeric(rankings.get("longitude"), errors="coerce").between(-180, 180)
+        ].copy()
+        map_filters = st.columns(3)
+        area_values = sorted(
+            map_candidates.get("Area Type", pd.Series(dtype="string"))
+            .dropna()
+            .astype(str)
+            .unique()
+        )
+        selected_areas = map_filters[0].multiselect(
+            "Candidate area",
+            area_values,
+            default=area_values,
+        )
+        map_status = map_filters[1].selectbox(
+            "Candidate status", ["All", "Selected", "Unselected"]
+        )
+        rank_limit = map_filters[2].selectbox(
+            "Candidate ranking",
+            ["All candidates", "Top 100 standalone"],
+        )
+        if "Area Type" in map_candidates:
+            map_candidates = map_candidates.loc[
+                map_candidates["Area Type"].astype(str).isin(selected_areas)
+            ]
+        selected_mask = (
+            map_candidates[candidate_col].astype(bool)
+            if candidate_col in map_candidates
+            else pd.Series(False, index=map_candidates.index)
+        )
+        if map_status == "Selected":
+            map_candidates = map_candidates.loc[selected_mask]
+        elif map_status == "Unselected":
+            map_candidates = map_candidates.loc[~selected_mask]
+        if rank_limit == "Top 100 standalone":
+            map_candidates = map_candidates.loc[
+                pd.to_numeric(
+                    map_candidates["standalone_ranking"], errors="coerce"
+                ).le(100)
+            ]
+        map_candidates["site_type"] = "Unselected candidate"
+        standalone_rank = pd.to_numeric(
+            map_candidates.get("standalone_ranking"), errors="coerce"
+        )
+        map_candidates.loc[
+            standalone_rank.le(20), "site_type"
+        ] = "High standalone potential (top 20)"
+        downside_column = "largest_existing_store_sales_change_2027_mnt"
+        if downside_column in map_candidates:
+            downside = pd.to_numeric(map_candidates[downside_column], errors="coerce")
+            negative_downside = downside.loc[downside.lt(0)]
+            if len(negative_downside):
+                downside_threshold = negative_downside.quantile(0.05)
+                map_candidates.loc[
+                    downside.le(downside_threshold), "site_type"
+                ] = "Highest modeled downside (bottom 5%)"
+        map_candidates.loc[selected_mask.reindex(map_candidates.index, fill_value=False), "site_type"] = (
+            "Selected candidate"
+        )
+        st.caption(
+            "Map layers distinguish selected locations, the top 20 standalone-ranked "
+            "candidates, and the bottom 5% of candidates with negative modeled "
+            "existing-store impact."
+        )
+        map_data = map_candidates.copy()
+        existing_points = master.drop_duplicates("store_id").copy()
+        if {"LATITUDE", "LONGITUDE"}.issubset(existing_points.columns):
+            existing_points["latitude"] = pd.to_numeric(
+                existing_points["LATITUDE"], errors="coerce"
+            )
+            existing_points["longitude"] = pd.to_numeric(
+                existing_points["LONGITUDE"], errors="coerce"
+            )
+            existing_points = existing_points.loc[
+                existing_points["latitude"].between(-90, 90)
+                & existing_points["longitude"].between(-180, 180)
+            ].copy()
+            existing_points["site_type"] = "Existing CU store"
+            existing_points["Potential Point"] = existing_points.get(
+                "store_name", existing_points["store_id"]
+            )
+            existing_points["potential_store_id"] = existing_points["store_id"].astype(str)
+            existing_points["predicted_APSD_sales"] = np.nan
+            map_data = pd.concat(
+                [map_data, existing_points[map_data.columns.intersection(existing_points.columns)]],
+                ignore_index=True,
+                sort=False,
+            )
+        if not map_data.empty:
+            map_figure = px.scatter_map(
+                map_data,
+                lat="latitude",
+                lon="longitude",
+                color="site_type",
+                hover_name="Potential Point" if "Potential Point" in map_data else "potential_store_id",
+                hover_data=[
+                    column
+                    for column in (
+                        "potential_store_id",
+                        "Area Type",
+                        "predicted_APSD_sales",
+                        f"portfolio_rank_{target}",
+                    )
+                    if column in map_data
+                ],
+                zoom=4.2,
+                center={"lat": 46.8, "lon": 103.8},
+                map_style="open-street-map",
+                height=620,
+                title="Existing stores and 2027 candidate portfolio",
+            )
+            st.plotly_chart(map_figure, width="stretch")
+        if not scenario_monthly.empty:
+            chart = px.line(
+                scenario_monthly,
+                x="month",
+                y=[
+                    "new_store_sales_mnt",
+                    "existing_sales_change_mnt",
+                    "network_sales_change_mnt",
+                ],
+                title="2027 monthly sales change (MNT)",
+                labels={"value": "Sales change (MNT)", "month": "Month", "variable": "Component"},
+            )
+            st.plotly_chart(chart, width="stretch")
+        display_columns = [
+            column
+            for column in (
+                "portfolio_rank_" + str(target),
+                "potential_store_id",
+                "Potential Point",
+                "Area Type",
+                "latitude",
+                "longitude",
+                "predicted_APSD_sales",
+                "predicted_APSD_customers",
+                "standalone_net_network_sales_2027_mnt_jan_open",
+                "greedy_marginal_value_" + str(target) + "_mnt",
+                candidate_col,
+            )
+            if column in rankings
+        ]
+        shown = rankings.loc[:, display_columns].sort_values(
+            "greedy_marginal_value_" + str(target) + "_mnt",
+            ascending=False,
+            na_position="last",
+        ) if "greedy_marginal_value_" + str(target) + "_mnt" in display_columns else rankings.loc[:, display_columns]
+        st.dataframe(shown, width="stretch", hide_index=True)
+        download_table(shown, "Download candidate ranking", f"candidate_ranking_{target}.csv")
+
+    with impact_tab:
+        scenario_impact = (
+            existing_impact.loc[
+                pd.to_numeric(
+                    existing_impact["scenario_target"], errors="coerce"
+                ).eq(target)
+            ].sort_values("sales_change_2027_mnt")
+            if "scenario_target" in existing_impact
+            else pd.DataFrame()
+        )
+        impact_columns = [
+            column
+            for column in (
+                "negative_impact_rank",
+                "store_id",
+                "store_name",
+                "analysis_region",
+                "mean_APSD_income_change_2027",
+                "sales_change_2027_mnt",
+                "sales_change_pct_2027",
+                "mean_APSD_customers_change_2027",
+                "customer_equivalent_change_2027",
+            )
+            if column in scenario_impact
+        ]
+        st.dataframe(
+            scenario_impact.loc[:, impact_columns].head(100),
+            width="stretch",
+            hide_index=True,
+        )
+        download_table(
+            scenario_impact.loc[:, impact_columns],
+            "Download existing-store impact",
+            f"existing_store_impact_{target}.csv",
+        )
+
+    with region_tab:
+        if "scenario_target" in regional:
+            regional_scenario = regional.loc[
+                pd.to_numeric(regional["scenario_target"], errors="coerce").eq(
+                    target
+                )
+            ]
+            st.dataframe(regional_scenario, width="stretch", hide_index=True)
+        else:
+            st.info("No regional comparison output was saved.")
+
+    with validation_tab:
+        if validation.empty:
+            st.info("No demand validation report was saved.")
+        else:
+            st.dataframe(validation, width="stretch", hide_index=True)
+        st.warning(
+            "The saved regional event-study diagnostics report significant pre-trends. "
+            "Cannibalization estimates are therefore shown as conditional scenario "
+            "associations rather than cleanly identified causal effects."
+        )
+
+    with sensitivity_tab:
+        if "scenario_target" in sensitivity:
+            scenario_sensitivity = sensitivity.loc[
+                pd.to_numeric(sensitivity["scenario_target"], errors="coerce").eq(
+                    target
+                )
+            ]
+            st.dataframe(
+                scenario_sensitivity,
+                width="stretch",
+                hide_index=True,
+            )
+        else:
+            st.info(
+                "Sensitivity outputs are not available. Re-run "
+                "`python expansion_simulation.py` to generate them."
+            )
+        if "scenario_target" in robustness:
+            scenario_robustness = robustness.loc[
+                pd.to_numeric(robustness["scenario_target"], errors="coerce").eq(
+                    target
+                )
+            ].sort_values(
+                ["selection_frequency", "selected_in_central_case"],
+                ascending=[False, False],
+            )
+            st.subheader("Portfolio selection robustness")
+            st.dataframe(
+                scenario_robustness.merge(
+                    rankings[
+                        [
+                            "potential_store_id",
+                            "Potential Point",
+                            "predicted_APSD_sales",
+                            "predicted_APSD_customers",
+                        ]
+                    ].drop_duplicates("potential_store_id"),
+                    on="potential_store_id",
+                    how="left",
+                ),
+                width="stretch",
+                hide_index=True,
+            )
 
 
 def effect_chart(data: pd.DataFrame, x: str, color: str | None = None) -> None:
@@ -4989,6 +5329,7 @@ def main() -> None:
             "Regional & Distance Statistics",
             "Statistics",
             "Store-Level Exploration",
+            "Expansion Simulation",
 
             "Store Opening Capacity Simulator",
 
@@ -5003,7 +5344,7 @@ def main() -> None:
         "cu_regional_cannibalization_panel.parquet",
     ]
     missing = [name for name in required_files if not (OUTPUT_DIR / name).is_file()]
-    if missing and page != "Statistics":
+    if missing and page not in {"Statistics", "Expansion Simulation"}:
         st.error(
             "Regional analysis outputs are incomplete. Run "
             "`04 Regional Cannibalization.py` first. Missing: "
@@ -5034,6 +5375,8 @@ def main() -> None:
             read_store_master(),
             "APSD_income" if outcome == "sales" else "APSD_customers",
         )
+    elif page == "Expansion Simulation":
+        expansion_simulation_page(read_store_master())
     elif page == "Regional & Distance Statistics":
         regional_distance_statistics_page(
             panel,

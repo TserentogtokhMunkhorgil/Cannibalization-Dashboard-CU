@@ -1,0 +1,4 @@
+scenario_target,selected_count,eligible_candidate_count,shortfall,opening_schedule,opening_day,forecast_year,cannibalization_scale,network_sales_change_2027_mnt,existing_sales_change_2027_mnt,new_store_sales_2027_mnt,customer_equivalent_change_2027,portfolio_net_marginal_values_sum_mnt
+0,0,459,0,monthly_even,15,2027,1.0,0.0,0.0,0.0,0.0,0.0
+180,180,459,0,monthly_even,15,2027,1.0,483631518606.47925,311628205094.69507,172003313511.78424,34528801.910729915,483631518606.4793
+400,400,459,0,monthly_even,15,2027,1.0,871810387361.5664,500452389577.23627,371357997784.3303,61948758.5264681,871810387361.5665

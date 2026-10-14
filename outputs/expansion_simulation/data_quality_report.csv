@@ -1,0 +1,26 @@
+metric,value
+master_rows,22254
+master_unique_stores,704
+master_duplicate_store_month_keys,0
+pair_rows,14299
+pair_unique_existing_new_pairs,14299
+pair_duplicate_existing_new_pairs,0
+candidate_rows,462
+candidate_unique_source_ids,462
+candidate_missing_or_invalid_coordinates,0
+candidate_unique_valid_coordinate_pairs,459
+candidate_duplicate_coordinate_rows,6
+candidate_exact_existing_location_matches,0
+candidate_eligible_unique_locations,459
+candidate_missing_names,0
+candidate_area_types,"{""UB"": 362, ""Rural"": 55, ""\u0425\u043e\u0432\u0434"": 12, ""\u0411\u0430\u044f\u043d-\u04e8\u043b\u0433\u0438\u0439"": 10, ""\u0417\u0430\u0432\u0445\u0430\u043d"": 9, ""\u0423\u0432\u0441"": 9, ""\u0413\u043e\u0432\u044c-\u0430\u043b\u0442\u0430\u0439"": 5}"
+existing_unique_stores,704
+existing_stores_with_valid_coordinates,697
+historical_panel_months,52
+historical_panel_start,2022-07-01
+historical_panel_end,2026-10-01
+demand_training_rows,436
+demand_time_holdout_rows,230
+existing_store_apsd_forecast_basis,Mean of last 12 available positive store-month APSD observations
+new_store_active_day_assumption,Median observed Active_Days by calendar month; opening month prorated by assumed opening day
+regional_candidate_mapping,Area Type UB remains UB; all Rural/province labels map to Rural for demand features; original labels retained.
