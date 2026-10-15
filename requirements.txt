@@ -1,20 +1,11 @@
-<<<<<<< HEAD
-pandas>=2.0
+streamlit>=1.51,<2
+pandas>=2.2,<3
 numpy>=1.26
+scipy>=1.13
+statsmodels>=0.14
 openpyxl>=3.1
 pyarrow>=15
 plotly>=5.24
 pydeck>=0.9
-streamlit>=1.51
-scipy>=1.11
-matplotlib>=3.8
-=======
-pandas>=2.0
-numpy>=1.26
-openpyxl>=3.1
-pyarrow>=15
-plotly>=5.24
-pydeck>=0.9
-streamlit>=1.51
-scipy>=1.11
->>>>>>> f5b4fead00f8d60086fccfac11c03698f72f2655
+scikit-learn>=1.5
+geopy>=2.4
