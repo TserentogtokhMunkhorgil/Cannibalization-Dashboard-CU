@@ -1,0 +1,11 @@
+region,outcome,model_type,model_label,status,observations,stores,calendar_months,exposure_terms,omitted_unsupported_terms,design_rank,within_r_squared,pretrend_joint_f_statistic,pretrend_joint_p_value,pretrend_terms_tested,clustered_by,inference_note,failure_reason
+All Regions,sales,cumulative,Cumulative distance exposure,estimated,22215,700,52,4,,4,0.025145313560507088,,,0,existing_store_id,Store-clustered covariance; common-event dependence across stores may remain.,
+All Regions,customers,cumulative,Cumulative distance exposure,estimated,22215,700,52,4,,4,0.021172536416685372,,,0,existing_store_id,Store-clustered covariance; common-event dependence across stores may remain.,
+City Center,sales,cumulative,Cumulative distance exposure,estimated,4122,110,52,4,,4,0.003497452144817559,,,0,existing_store_id,Store-clustered covariance; common-event dependence across stores may remain.,
+City Center,customers,cumulative,Cumulative distance exposure,estimated,4122,110,52,4,,4,0.008112835037057509,,,0,existing_store_id,Store-clustered covariance; common-event dependence across stores may remain.,
+City Outskirts,sales,cumulative,Cumulative distance exposure,estimated,8035,214,52,4,,4,0.022759492075515086,,,0,existing_store_id,Store-clustered covariance; common-event dependence across stores may remain.,
+City Outskirts,customers,cumulative,Cumulative distance exposure,estimated,8035,214,52,4,,4,0.02071069718025409,,,0,existing_store_id,Store-clustered covariance; common-event dependence across stores may remain.,
+Far / Outer Areas,sales,cumulative,Cumulative distance exposure,estimated,7536,251,52,4,,4,0.03379842362090646,,,0,existing_store_id,Store-clustered covariance; common-event dependence across stores may remain.,
+Far / Outer Areas,customers,cumulative,Cumulative distance exposure,estimated,7536,251,52,4,,4,0.029653975401283672,,,0,existing_store_id,Store-clustered covariance; common-event dependence across stores may remain.,
+Rural,sales,cumulative,Cumulative distance exposure,estimated,2522,125,51,4,,4,0.07148853206799577,,,0,existing_store_id,Store-clustered covariance; common-event dependence across stores may remain.,
+Rural,customers,cumulative,Cumulative distance exposure,estimated,2522,125,51,4,,4,0.058937671085326104,,,0,existing_store_id,Store-clustered covariance; common-event dependence across stores may remain.,

@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 .venv/
 .conda/
+outputs/expansion_optimization_v2/
 venv/
 env/
 

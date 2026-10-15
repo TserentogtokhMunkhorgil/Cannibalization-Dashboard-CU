@@ -1,0 +1,35 @@
+check,value,detail
+income_rows,22257,
+existing_stores,706,
+sales_month_range,2022-07 to 2026-10,
+distance_pair_rows,14299,
+distance_existing_stores,585,
+distinct_new_store_openings,590,Distinct new-store IDs
+duplicate_store_month_keys,0,Extra key rows; fatal if nonzero
+duplicate_existing_new_pairs,0,Extra pair rows; fatal if nonzero
+stores_with_missing_open_date,6,Store IDs
+rows_with_missing_closing_date,21211,Sentinel dates >= year 9000 treated as open-ended
+rows_with_invalid_coordinates,42,Retained; coordinates are not used to recalculate Distance_Zone
+unmapped_region_stores,6,Retained in source panel; excluded only from regional estimates
+conflicting_zone_store_ids,0,Store IDs with multiple non-null Distance_Zone values
+new_opening_pairs_inside_observed_panel,10511,Pair-events
+distance_pairs_within_1km,6935,All preserved existing-store/new-store pairs
+nearby_pairs_where_existing_store_preexists,6934,Pairs eligible as treatments
+nearby_pairs_excluded_existing_not_preexisting,1,New opening on/before existing-store opening or unknown date
+existing_opening_date_mismatch_pairs,2,"When available, store_master_data.ost_dt is authoritative for eligibility and tenure; distance-file date is fallback only."
+pairs_within_1km_opening_in_observed_month_range,5058,Events opening within observed panel months
+APSD_income_missing,0,Outcome rows
+APSD_income_zero,8,Outcome rows
+APSD_income_negative,0,Outcome rows
+APSD_customers_missing,0,Outcome rows
+APSD_customers_zero,17,Outcome rows
+APSD_customers_negative,0,Outcome rows
+store_status_rows_Active,21141,Current source status repeated over monthly rows
+store_status_rows_Inactive,1116,Current source status repeated over monthly rows
+distance_pairs_0_100,49,Very close (0-100 m)
+distance_pairs_100_250,397,Close (100-250 m)
+distance_pairs_250_500,1441,Medium (250-500 m)
+distance_pairs_500_1000,5048,"Farther nearby (500-1,000 m)"
+existing_stores_with_2plus_nearby_openings,458,Qualifying distinct new-store openings within 1 km
+maximum_nearby_openings_for_one_existing_store,58,Qualifying distinct new-store openings within 1 km
+distance_pairs_over_1km_control,7364,Not included as treated exposure; potential comparison group
