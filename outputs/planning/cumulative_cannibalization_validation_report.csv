@@ -1,0 +1,10 @@
+check,passed,detail
+all_primary_pairs_at_or_below_1000m,True,The cutoff is applied before aggregation.
+no_duplicate_primary_pairs,True,One candidate/store pair can contribute once.
+portfolio_180_is_unique,True,The portfolio contains 180 unique candidate IDs.
+portfolio_400_is_unique,True,Optional 400 portfolio is unique when supplied.
+manual_log_aggregation,True,log(.9) plus log(.8) equals a -28% cumulative effect.
+weighted_network_identity_180_negative_only,True,Weighted effect agrees with baseline-weighted scenario APSD change.
+weighted_network_identity_180_raw,True,Weighted effect agrees with baseline-weighted scenario APSD change.
+weighted_network_identity_400_negative_only,True,Weighted effect agrees with baseline-weighted scenario APSD change.
+weighted_network_identity_400_raw,True,Weighted effect agrees with baseline-weighted scenario APSD change.

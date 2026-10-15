@@ -1,12 +1,14 @@
 """CU store cannibalization analysis with repeated nearby-store openings.
 
-Inputs are the two Excel workbooks in this script's directory. Outputs are
-written to outputs/cannibalization_model4; input workbooks are never modified.
+Inputs are the two Excel workbooks in this script's directory. Default cumulative
+outputs go to outputs/national_cumulative; --full-diagnostics reproduces the
+historical suite under outputs/cannibalization_model4. Input workbooks are unchanged.
 """
 
 from __future__ import annotations
 
 import sys
+import argparse
 import warnings
 from pathlib import Path
 from typing import Any
@@ -1145,6 +1147,21 @@ def _explain_model_comparison(comparison: pd.DataFrame) -> None:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--full-diagnostics', action='store_true', help='Run the original A-D and robustness suite.')
+    args = parser.parse_args()
+    if not args.full_diagnostics:
+        income, distances = load_data()
+        income, distances, _ = validate_data(income, distances)
+        panel, _ = prepare_store_month_panel(income, distances)
+        panel, _, _ = create_exposure_variables(panel, distances)
+        summary, coefficients = run_model_2(panel)
+        destination = BASE_DIR / 'outputs' / 'national_cumulative'
+        destination.mkdir(parents=True, exist_ok=True)
+        coefficients.to_csv(destination / 'cumulative_coefficients.csv', index=False)
+        pd.DataFrame([summary]).to_csv(destination / 'model_status.csv', index=False)
+        panel.to_parquet(destination / 'store_month_panel.parquet', index=False)
+        return 0
     progress("Starting Excel-based analysis (no ClickHouse connection or embedded credentials)")
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     income, distances = load_data()

@@ -100,7 +100,7 @@ EVENT_ORDER = [
 
 @st.cache_data(show_spinner=False)
 
-def read_csv(name: str) -> pd.DataFrame:
+def _read_csv(name: str, modified_ns: int) -> pd.DataFrame:
 
     path = OUTPUT_DIR / name
 
@@ -116,7 +116,7 @@ def read_csv(name: str) -> pd.DataFrame:
 
 @st.cache_data(show_spinner=False)
 
-def read_panel() -> pd.DataFrame:
+def _read_panel(modified_ns: int) -> pd.DataFrame:
 
     path = OUTPUT_DIR / "cu_regional_cannibalization_panel.parquet"
 
@@ -138,7 +138,7 @@ def read_panel() -> pd.DataFrame:
 
 @st.cache_data(show_spinner=False)
 
-def read_pair_data() -> pd.DataFrame:
+def _read_pair_data(modified_ns: int) -> pd.DataFrame:
 
     if not DISTANCE_FILE.is_file():
 
@@ -173,7 +173,7 @@ def read_pair_data() -> pd.DataFrame:
 
 
 @st.cache_data(show_spinner=False)
-def read_store_master() -> pd.DataFrame:
+def _read_store_master(modified_ns: int) -> pd.DataFrame:
     if not INCOME_FILE.is_file():
         return pd.DataFrame()
     master = pd.read_excel(INCOME_FILE, sheet_name="Sheet1")
@@ -198,6 +198,26 @@ def read_store_master() -> pd.DataFrame:
         if column in master.columns
     ]
     return master[columns].drop_duplicates().copy()
+
+
+def _modified(path: Path) -> int:
+    return path.stat().st_mtime_ns if path.is_file() else 0
+
+
+def read_csv(name: str) -> pd.DataFrame:
+    return _read_csv(name, _modified(OUTPUT_DIR / name))
+
+
+def read_panel() -> pd.DataFrame:
+    return _read_panel(_modified(OUTPUT_DIR / 'cu_regional_cannibalization_panel.parquet'))
+
+
+def read_pair_data() -> pd.DataFrame:
+    return _read_pair_data(_modified(DISTANCE_FILE))
+
+
+def read_store_master() -> pd.DataFrame:
+    return _read_store_master(_modified(INCOME_FILE))
 
 
 def normalize_store_id(values: pd.Series) -> pd.Series:
@@ -3495,6 +3515,180 @@ def expansion_simulation_page(master: pd.DataFrame) -> None:
             )
 
 
+@st.cache_data(show_spinner=False)
+def read_cumulative_output(name: str, modified_ns: int) -> pd.DataFrame:
+    path = BASE_DIR / "outputs" / "cannibalization_model4" / name
+    return pd.read_csv(path) if path.is_file() else pd.DataFrame()
+
+
+def cumulative_cannibalization_page() -> None:
+    """Dashboard page for saved regional cumulative APSD scenarios."""
+    result_dir = BASE_DIR / "outputs" / "cannibalization_model4"
+
+    def load(name: str) -> pd.DataFrame:
+        path = result_dir / name
+        return read_cumulative_output(name, path.stat().st_mtime_ns if path.is_file() else 0)
+
+    stores = load("cumulative_cannibalization_scenario_store_results.csv")
+    summary = load("cumulative_cannibalization_scenario_summary.csv")
+    regional = load("cumulative_cannibalization_regional_summary.csv")
+    contributions = load("cumulative_cannibalization_contributions.csv")
+    candidates = load("cumulative_cannibalization_candidates.csv")
+    sensitivity = load("cumulative_cannibalization_sensitivity_summary.csv")
+    validation = load("cumulative_cannibalization_validation_report.csv")
+    st.header("Cumulative Cannibalization Impact")
+    if stores.empty or summary.empty:
+        st.info("No saved cumulative outputs were found. Run python cumulative_cannibalization.py, then refresh.")
+        return
+    mode = st.radio('Coefficient calculation', ['negative_only', 'raw'],
+                    format_func=lambda value: 'Negative-only cannibalization assumption' if value == 'negative_only' else 'Raw fixed regression estimates')
+    st.caption('Exact supplied cumulative exposure coefficients. City Outskirts sales use the explicitly documented All Regions fallback. Raw customer estimates preserve +0.0042 in the 500–1,000 m band; negative-only caps each positive pair coefficient at zero.')
+    for frame in (stores, summary, regional, contributions):
+        if 'calculation_mode' in frame:
+            frame.drop(frame.index[frame['calculation_mode'].ne(mode)], inplace=True)
+    st.caption("Direct cannibalization effects are assumed to be zero beyond 1,000 meters. This is a modeling assumption, not an empirically established universal threshold.")
+    st.caption("This is a baseline-APSD-weighted existing-network indicator, not an annual revenue, profit, demand, or ROI forecast.")
+    scenarios = sorted(pd.to_numeric(summary["scenario_stores"], errors="coerce").dropna().astype(int).unique())
+    scenario = st.selectbox("Scenario", scenarios, format_func=lambda value: f"{value} selected new-store candidates")
+    row = summary.loc[pd.to_numeric(summary["scenario_stores"], errors="coerce").eq(scenario)].iloc[0]
+    data = stores.loc[pd.to_numeric(stores["scenario_size"], errors="coerce").eq(scenario)].copy()
+    st.info(f"Fixed baseline period: {row['baseline_month_or_period']}. It is the same for the 180- and 400-store comparison.")
+
+    controls = st.columns(4)
+    available_regions = sorted(data["region"].dropna().astype(str).unique())
+    region = controls[0].selectbox("Region", ["All regions", *available_regions])
+    search = controls[1].text_input("Store ID or name")
+    sort_option = controls[2].selectbox("Sort", ["Percentage decline", "Absolute APSD decline", "Baseline APSD"])
+    compare = controls[3].checkbox("Compare 180 vs 400")
+    if region != "All regions":
+        data = data.loc[data["region"].astype(str).eq(region)]
+    if search:
+        search = search.casefold()
+        data = data.loc[
+            data["existing_store_id"].astype(str).str.casefold().str.contains(search, na=False)
+            | data["store_name"].astype(str).str.casefold().str.contains(search, na=False)
+        ]
+    sort_map = {
+        "Percentage decline": ("cumulative_predicted_APSD_income_effect_pct", True),
+        "Absolute APSD decline": ("cumulative_predicted_APSD_income_change", True),
+        "Baseline APSD": ("baseline_APSD_income", False),
+    }
+    sort_column, sort_ascending = sort_map[sort_option]
+    data = data.sort_values(sort_column, ascending=sort_ascending, na_position="last")
+
+    cards = st.columns(4)
+    cards[0].metric("Selected candidates", f"{int(row['selected_unique_candidates']):,}")
+    cards[1].metric("APSD-weighted network effect", f"{row['APSD_weighted_network_effect_pct']:.2f}%")
+    cards[2].metric("Existing stores affected", f"{int(row['existing_stores_with_nearby_opening']):,}")
+    cards[3].metric("Affected stores", f"{row['pct_existing_stores_with_nearby_opening']:.1f}%")
+    cards = st.columns(4)
+    cards[0].metric("Declines >10%", f"{int(row['stores_decline_gt_10_pct']):,}")
+    cards[1].metric("Declines >20%", f"{int(row['stores_decline_gt_20_pct']):,}")
+    cards[2].metric("Median effect", f"{row['median_store_level_effect_pct']:.2f}%")
+    worst = data.loc[data["cumulative_predicted_APSD_income_effect_pct"].idxmin(), "store_name"] if not data.empty else "N/A"
+    cards[3].metric("Most affected in view", str(worst))
+
+    overview, table_tab, detail_tab, map_tab, compare_tab, sensitivity_tab, validation_tab = st.tabs(
+        ["Distribution & regions", "Existing-store table", "Store detail", "Map", "180 vs 400", "Sensitivity", "Validation"]
+    )
+    with overview:
+        effect = pd.to_numeric(data["cumulative_predicted_APSD_income_effect_pct"], errors="coerce")
+        data["effect_bucket"] = np.select(
+            [effect.gt(0), effect.eq(0), effect.lt(0) & effect.gt(-5), effect.le(-5) & effect.gt(-10), effect.le(-10) & effect.gt(-20), effect.le(-20) & effect.gt(-30), effect.le(-30)],
+            ["Positive effect", "0% effect", "0% to -5%", "-5% to -10%", "-10% to -20%", "-20% to -30%", "Below -30%"],
+            default="Unavailable",
+        )
+        order = ["Positive effect", "0% effect", "0% to -5%", "-5% to -10%", "-10% to -20%", "-20% to -30%", "Below -30%", "Unavailable"]
+        distribution = data["effect_bucket"].value_counts().reindex(order, fill_value=0).rename_axis("Effect bucket").reset_index(name="Existing stores")
+        st.plotly_chart(px.bar(distribution, x="Effect bucket", y="Existing stores", title="Cumulative predicted APSD income-effect distribution"), width="stretch")
+        regional_data = regional.loc[pd.to_numeric(regional["scenario_stores"], errors="coerce").eq(scenario)]
+        st.caption("Regional weighted effects use baseline APSD as weights; mean and median are simple store-level statistics.")
+        st.dataframe(regional_data, width="stretch", hide_index=True)
+        download_table(regional_data, "Download regional summary", f"cumulative_regional_{scenario}.csv")
+
+    columns = [
+        "existing_store_id", "store_name", "region", "baseline_month_or_period",
+        "baseline_APSD_income", "baseline_APSD_customers", "number_within_100m",
+        "number_within_250m", "number_within_500m", "number_within_1000m",
+        "number_of_contributing_candidate_stores", "cumulative_predicted_APSD_income_effect_pct",
+        "cumulative_predicted_APSD_income_change", "predicted_scenario_APSD_income",
+        "cumulative_predicted_APSD_customers_effect_pct", "predicted_scenario_APSD_customers",
+        "rank_by_percentage_decline", "rank_by_absolute_APSD_income_decline",
+        "main_contributing_candidate_locations", "model_estimate_status",
+    ]
+    columns = [column for column in columns if column in data]
+    with table_tab:
+        st.caption("Zero-exposure stores with a valid baseline remain in the table and network denominator; missing data are separately flagged.")
+        view = data[columns].style.background_gradient(
+            subset=["cumulative_predicted_APSD_income_effect_pct"], cmap="RdYlGn", vmin=-30, vmax=10
+        )
+        st.dataframe(view, width="stretch", hide_index=True)
+        download_table(data[columns], "Download filtered store-level results", f"cumulative_stores_{scenario}.csv")
+
+    with detail_tab:
+        choices = {
+            f"{record.existing_store_id} — {record.store_name}": record.existing_store_id
+            for record in data[["existing_store_id", "store_name"]].drop_duplicates().itertuples()
+        }
+        if not choices:
+            st.info("No stores match the filters.")
+        else:
+            store_id = choices[st.selectbox("Existing CU store", list(choices))]
+            detail = data.loc[data["existing_store_id"].astype(str).eq(str(store_id))].iloc[0]
+            st.json({
+                "store": detail["store_name"], "region": detail["region"],
+                "baseline_APSD_income": detail["baseline_APSD_income"],
+                "cumulative_effect_pct": detail["cumulative_predicted_APSD_income_effect_pct"],
+                "scenario_APSD_income": detail["predicted_scenario_APSD_income"],
+                "cumulative_log_effect": detail["cumulative_income_log_effect"],
+                "model_status": detail["model_estimate_status"],
+            })
+            detail_pairs = contributions.loc[
+                pd.to_numeric(contributions["scenario_size"], errors="coerce").eq(scenario)
+                & contributions["existing_store_id"].astype(str).eq(str(store_id))
+            ].sort_values("regional_income_log_coefficient")
+            if detail_pairs.empty:
+                st.info("No selected candidate is within 1 km for this existing store.")
+            else:
+                st.plotly_chart(px.bar(detail_pairs, x="candidate_name", y="direct_APSD_income_effect_pct", color="distance_band", title="Every selected pair-level contribution"), width="stretch")
+                st.dataframe(detail_pairs[[
+                    column for column in ["candidate_id", "candidate_name", "selection_order", "distance_m", "distance_band", "regional_income_log_coefficient", "direct_APSD_income_effect_pct", "income_model_status"] if column in detail_pairs
+                ]], width="stretch", hide_index=True)
+
+    with map_tab:
+        mapped = data.loc[
+            pd.to_numeric(data["latitude"], errors="coerce").between(-90, 90)
+            & pd.to_numeric(data["longitude"], errors="coerce").between(-180, 180)
+        ]
+        selected_flag = candidates.get(f"in_scenario_{scenario}", pd.Series(False, index=candidates.index))
+        selected_candidates = candidates.loc[selected_flag.astype(str).str.casefold().eq("true") | selected_flag.eq(True)]
+        if not mapped.empty:
+            figure = px.scatter_map(mapped, lat="latitude", lon="longitude", color="cumulative_predicted_APSD_income_effect_pct", color_continuous_scale="RdYlGn", hover_name="store_name", hover_data=["existing_store_id", "region", "number_of_contributing_candidate_stores"], zoom=9, center={"lat": mapped["latitude"].mean(), "lon": mapped["longitude"].mean()}, map_style="open-street-map", height=650, title="Existing stores colored by modeled cumulative effect")
+            if not selected_candidates.empty:
+                candidates_figure = px.scatter_map(selected_candidates, lat="latitude", lon="longitude", hover_name="candidate_name", hover_data=["candidate_id", "selection_order"], map_style="open-street-map")
+                for trace in candidates_figure.data:
+                    trace.name = "Selected candidate"
+                    trace.marker.color = "#1f77b4"
+                    trace.marker.size = 11
+                    figure.add_trace(trace)
+            st.plotly_chart(figure, width="stretch")
+        st.caption("No pair farther than 1,000 m is represented as a direct modeled effect.")
+
+    with compare_tab:
+        st.dataframe(summary.loc[pd.to_numeric(summary["scenario_stores"], errors="coerce").isin([180, 400])], width="stretch", hide_index=True)
+        if compare:
+            comparison_data = stores.loc[pd.to_numeric(stores["scenario_size"], errors="coerce").isin([180, 400])]
+            st.plotly_chart(px.box(comparison_data, x="scenario_size", y="cumulative_predicted_APSD_income_effect_pct", points=False, title="Store-level cumulative effect distribution"), width="stretch")
+
+    with sensitivity_tab:
+        st.caption("The 1 km scenario is primary. A 1.5 km estimate is not fabricated when the saved model lacks a 1,000-1,500 m coefficient.")
+        st.dataframe(sensitivity, width="stretch", hide_index=True)
+
+    with validation_tab:
+        st.dataframe(validation, width="stretch", hide_index=True)
+        st.caption("The regional estimates are associational model outputs, not guaranteed causal effects or forecasts.")
+
+
 def effect_chart(data: pd.DataFrame, x: str, color: str | None = None) -> None:
 
     if data.empty:
@@ -5330,6 +5524,7 @@ def main() -> None:
             "Statistics",
             "Store-Level Exploration",
             "Expansion Simulation",
+            "Cumulative Cannibalization Impact",
 
             "Store Opening Capacity Simulator",
 
@@ -5344,7 +5539,7 @@ def main() -> None:
         "cu_regional_cannibalization_panel.parquet",
     ]
     missing = [name for name in required_files if not (OUTPUT_DIR / name).is_file()]
-    if missing and page not in {"Statistics", "Expansion Simulation"}:
+    if missing and page not in {"Statistics", "Expansion Simulation", "Cumulative Cannibalization Impact"}:
         st.error(
             "Regional analysis outputs are incomplete. Run "
             "`04 Regional Cannibalization.py` first. Missing: "
@@ -5377,6 +5572,8 @@ def main() -> None:
         )
     elif page == "Expansion Simulation":
         expansion_simulation_page(read_store_master())
+    elif page == "Cumulative Cannibalization Impact":
+        cumulative_cannibalization_page()
     elif page == "Regional & Distance Statistics":
         regional_distance_statistics_page(
             panel,
@@ -6068,5 +6265,9 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-
-    main()
+    import os
+    if os.environ.get('CU_ANALYST_MODE') == '1':
+        main()
+    else:
+        from business_dashboard import main as business_main
+        business_main()

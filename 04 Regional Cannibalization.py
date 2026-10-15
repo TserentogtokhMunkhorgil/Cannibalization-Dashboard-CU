@@ -1,12 +1,14 @@
 """Regional and long-horizon CU cannibalization analysis.
 
-Reads the existing Excel workbooks and writes separate results to
-outputs/cannibalization_regional. No database connection is required.
+Reads the existing Excel workbooks. Default cumulative evidence goes to
+outputs/cumulative_evidence; --full-diagnostics reproduces the historical suite
+under outputs/cannibalization_regional. No database connection is required.
 """
 
 from __future__ import annotations
 
 import json
+import argparse
 import sys
 import warnings
 from pathlib import Path
@@ -1321,6 +1323,7 @@ def _model_regressors(
 
 def run_regional_models(
     panel: pd.DataFrame,
+    model_types: tuple[str, ...] = ('cumulative', 'monthly_event_study', 'binned_event_study'),
 ) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     """Run cumulative, monthly and binned repeated-event models by region/outcome."""
     progress("Estimating regional fixed-effects model families")
@@ -1336,6 +1339,8 @@ def run_regional_models(
                 ("monthly_event_study", "Monthly event study, -12 to +24"),
                 ("binned_event_study", "Binned event study, -12 to 25+"),
             ):
+                if model_type not in model_types:
+                    continue
                 regressors, term_metadata, leads = _model_regressors(
                     model_type, list(DISTANCE_BANDS)
                 )
@@ -2153,6 +2158,28 @@ def _print_region_readiness(regional_summary: pd.DataFrame, support: pd.DataFram
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--full-diagnostics', action='store_true', help='Reproduce the original complete model suite and outputs.')
+    args = parser.parse_args()
+    if not args.full_diagnostics:
+        # Keep historical model artifacts intact; primary-only refresh is separate.
+        destination = BASE_DIR / 'outputs' / 'cumulative_evidence'
+        income, distances = load_data()
+        income, distances, validation, info, mapping = validate_data(income, distances)
+        panel = prepare_store_month_panel(income, distances)
+        events = prepare_pair_level_events(distances, panel)
+        panel, _ = construct_monthly_exposure(panel, events)
+        comparison, coefficients, _ = run_regional_models(panel, model_types=('cumulative',))
+        destination.mkdir(parents=True, exist_ok=True)
+        for outcome, name in [('sales', 'regional_sales_coefficients.csv'), ('customers', 'regional_customer_coefficients.csv')]:
+            coefficients.loc[coefficients['outcome'].eq(outcome)].to_csv(destination / name, index=False)
+        coefficients.to_csv(destination / 'cumulative_coefficients.csv', index=False)
+        comparison.to_csv(destination / 'model_status.csv', index=False)
+        validation.to_csv(destination / 'data_validation_summary.csv', index=False)
+        mapping.to_csv(destination / 'region_mapping.csv', index=False)
+        panel.to_parquet(destination / 'store_month_panel.parquet', index=False)
+        print(f'Saved primary cumulative evidence to {destination}')
+        return 0
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     income, distances = load_data()
     income, distances, validation, info, mapping = validate_data(income, distances)

@@ -21,6 +21,22 @@ MAX_OPTIMIZATION_CANDIDATES = 500_000
 MAX_EXACT_FLOAT_INTEGER = 2**53 - 1
 
 
+def weighted_network_effect(baselines, effects_pct) -> float:
+    """Average supported percentage effects, retaining valid zero exposures.
+
+    Inputs are APSD weights and percentage-point effects, not revenue totals.
+    Missing effects are unavailable, not zero. Raises for an empty population.
+    """
+    weights = pd.Series(baselines, dtype=float).reset_index(drop=True)
+    effects = pd.Series(effects_pct, dtype=float).reset_index(drop=True)
+    if len(weights) != len(effects):
+        raise ValueError('Baseline and effect lengths must match.')
+    valid = weights.map(math.isfinite) & weights.gt(0) & effects.map(math.isfinite)
+    if not valid.any():
+        raise ValueError('No supported positive APSD weights.')
+    return float((weights[valid] * effects[valid]).sum() / weights[valid].sum())
+
+
 @dataclass(frozen=True)
 class CoefficientEstimate:
     beta: float | None

@@ -1,0 +1,7 @@
+metric,value
+baseline_stores,653.0
+valid_income_baselines,653.0
+unmapped_regions,2.0
+pairs_missing_regional_income_estimate,0.0
+candidates_excluded_for_missing_income_estimate,0.0
+direct_cannibalization_cutoff_m,1000.0

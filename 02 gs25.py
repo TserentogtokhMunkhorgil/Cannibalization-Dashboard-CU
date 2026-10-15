@@ -1,156 +1,165 @@
-import geopandas as gpd
-import pandas as pd
-import os
+"""Manual preparation entry point; importing this module performs no IO."""
+from project_config import ROOT, store_metadata_path, clickhouse_settings
 
-# ==========================================================
-# 1. FILE SETTINGS
-# ==========================================================
 
-kmz_file = r"Data\raw\GS25 260903 7.kmz"
+def main():
+    import geopandas as gpd
+    import pandas as pd
+    import os
 
-output_folder = r"Data\cleaned\GS25"
-os.makedirs(output_folder, exist_ok=True)
+    # ==========================================================
+    # 1. FILE SETTINGS
+    # ==========================================================
 
-output_file = os.path.join(
-    output_folder,
-    "GS25_store_coordinates.csv"
-)
+    kmz_file = str(ROOT / "Data" / "raw" / "GS25 260903 7.kmz")
 
-# ==========================================================
-# 2. GET ALL LAYERS
-# ==========================================================
+    output_folder = str(ROOT / "Data" / "cleaned" / "GS25")
+    os.makedirs(output_folder, exist_ok=True)
 
-layers = gpd.list_layers(kmz_file)
-
-print("\nAvailable layers:")
-print(layers)
-
-# ==========================================================
-# 3. READ ALL LAYERS
-# ==========================================================
-
-all_data = []
-
-for layer_name in layers["name"]:
-
-    print(f"\nReading: {layer_name}")
-
-    gdf = gpd.read_file(
-        kmz_file,
-        layer=layer_name,
-        driver="LIBKML"
+    output_file = os.path.join(
+        output_folder,
+        "GS25_store_coordinates.csv"
     )
 
-    # ------------------------------------------------------
-    # Extract longitude and latitude from geometry
-    # ------------------------------------------------------
+    # ==========================================================
+    # 2. GET ALL LAYERS
+    # ==========================================================
 
-    gdf["longitude"] = gdf.geometry.x
-    gdf["latitude"] = gdf.geometry.y
+    layers = gpd.list_layers(kmz_file)
 
-    # ------------------------------------------------------
-    # Keep only required columns
-    # ------------------------------------------------------
+    print("\nAvailable layers:")
+    print(layers)
 
-    temp = gdf[
-        [
-            "Name",
+    # ==========================================================
+    # 3. READ ALL LAYERS
+    # ==========================================================
+
+    all_data = []
+
+    for layer_name in layers["name"]:
+
+        print(f"\nReading: {layer_name}")
+
+        gdf = gpd.read_file(
+            kmz_file,
+            layer=layer_name,
+            driver="LIBKML"
+        )
+
+        # ------------------------------------------------------
+        # Extract longitude and latitude from geometry
+        # ------------------------------------------------------
+
+        gdf["longitude"] = gdf.geometry.x
+        gdf["latitude"] = gdf.geometry.y
+
+        # ------------------------------------------------------
+        # Keep only required columns
+        # ------------------------------------------------------
+
+        temp = gdf[
+            [
+                "Name",
+                "latitude",
+                "longitude"
+            ]
+        ].copy()
+
+        # Rename store name
+        temp = temp.rename(
+            columns={
+                "Name": "store_name"
+            }
+        )
+
+        # Add source layer
+        temp["source_layer"] = layer_name
+
+        all_data.append(temp)
+
+        print(f"Rows: {len(temp):,}")
+
+    # ==========================================================
+    # 4. COMBINE ALL LAYERS
+    # ==========================================================
+
+    df = pd.concat(
+        all_data,
+        ignore_index=True
+    )
+
+    # ==========================================================
+    # 5. CLEAN DATA
+    # ==========================================================
+
+    df["store_name"] = (
+        df["store_name"]
+        .astype("string")
+        .str.strip()
+    )
+
+    df["latitude"] = pd.to_numeric(
+        df["latitude"],
+        errors="coerce"
+    )
+
+    df["longitude"] = pd.to_numeric(
+        df["longitude"],
+        errors="coerce"
+    )
+
+    # Remove rows without coordinates
+    df = df.dropna(
+        subset=["latitude", "longitude"]
+    )
+
+    # ==========================================================
+    # 6. REMOVE DUPLICATES
+    # ==========================================================
+
+    df = df.drop_duplicates(
+        subset=[
+            "store_name",
             "latitude",
             "longitude"
         ]
-    ].copy()
-
-    # Rename store name
-    temp = temp.rename(
-        columns={
-            "Name": "store_name"
-        }
     )
 
-    # Add source layer
-    temp["source_layer"] = layer_name
+    # ==========================================================
+    # 7. SORT
+    # ==========================================================
 
-    all_data.append(temp)
+    df = df.sort_values(
+        by=["store_name"]
+    ).reset_index(drop=True)
 
-    print(f"Rows: {len(temp):,}")
+    # ==========================================================
+    # 8. SAVE CSV
+    # ==========================================================
 
-# ==========================================================
-# 4. COMBINE ALL LAYERS
-# ==========================================================
+    df.to_csv(
+        output_file,
+        index=False,
+        encoding="utf-8-sig"
+    )
 
-df = pd.concat(
-    all_data,
-    ignore_index=True
-)
+    # ==========================================================
+    # 9. SUMMARY
+    # ==========================================================
 
-# ==========================================================
-# 5. CLEAN DATA
-# ==========================================================
+    print("\n" + "=" * 60)
+    print("FINISHED")
+    print("=" * 60)
 
-df["store_name"] = (
-    df["store_name"]
-    .astype("string")
-    .str.strip()
-)
+    print(f"Total stores: {len(df):,}")
+    print(f"Output file: {output_file}")
 
-df["latitude"] = pd.to_numeric(
-    df["latitude"],
-    errors="coerce"
-)
+    print("\nColumns:")
+    print(df.columns.tolist())
 
-df["longitude"] = pd.to_numeric(
-    df["longitude"],
-    errors="coerce"
-)
+    print("\nFirst 10 rows:")
+    print(df.head(10).to_string(index=False))
 
-# Remove rows without coordinates
-df = df.dropna(
-    subset=["latitude", "longitude"]
-)
 
-# ==========================================================
-# 6. REMOVE DUPLICATES
-# ==========================================================
-
-df = df.drop_duplicates(
-    subset=[
-        "store_name",
-        "latitude",
-        "longitude"
-    ]
-)
-
-# ==========================================================
-# 7. SORT
-# ==========================================================
-
-df = df.sort_values(
-    by=["store_name"]
-).reset_index(drop=True)
-
-# ==========================================================
-# 8. SAVE CSV
-# ==========================================================
-
-df.to_csv(
-    output_file,
-    index=False,
-    encoding="utf-8-sig"
-)
-
-# ==========================================================
-# 9. SUMMARY
-# ==========================================================
-
-print("\n" + "=" * 60)
-print("FINISHED")
-print("=" * 60)
-
-print(f"Total stores: {len(df):,}")
-print(f"Output file: {output_file}")
-
-print("\nColumns:")
-print(df.columns.tolist())
-
-print("\nFirst 10 rows:")
-print(df.head(10).to_string(index=False))
+if __name__ == "__main__":
+    main()

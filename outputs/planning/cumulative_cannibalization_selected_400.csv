@@ -1,0 +1,401 @@
+candidate_id,candidate_rank,candidate_name,selection_order,historical_marginal_weighted_network_loss_pct,historical_portfolio_weighted_network_loss_pct,historical_selection_method,evaluation_label
+GPS-0001,1,IFC,1,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0002,2,Conrad,2,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0003,3,Monnis,3,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0005,5,Саруул,4,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0004,4,Саруу зах Амтат,5,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0006,6,Наран,6,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0007,7,УБ их дэлгүүр,7,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0008,8,Gerege Tower,8,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0009,9,Monnis PP,9,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0010,10,Их дэлгүүр РР,10,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0011,11,Time classic PP,11,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0012,12,УИД Зүүн,12,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0013,13,Бөмбөгөр урд,13,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0014,14,М Плаза РР,14,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0015,15,Meru tower,15,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0016,16,хаан даатгал,16,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0017,17,Diplomat tower,17,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0018,18,Багшийн дээд,18,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0019,19,Dinosaur,19,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0020,20,Ub Grand hotel,20,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0021,21,Gem palace,21,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0022,22,МУИС 1,22,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0023,23,Бага тойрог,23,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0024,24,ШУТИС,24,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0025,25,Этүгэн,25,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0026,26,Coffee fellow,26,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0027,27,Баруун 4 зам урд,27,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0028,28,Орон зай,28,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0029,29,Урт цагаан,29,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0030,30,Элбэг зоог,30,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0031,31,Цэцэг төв,31,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0032,32,УБ шилэн банк,32,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0033,33,Чингис хааны музей,33,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0034,34,Капитрон банк,34,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0035,35,Канон төв,35,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0036,36,Aeroflot Шинэ барилга,36,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0037,37,Твин тауэр,37,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0038,38,Бишрэлт зочид буудал,38,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0039,39,СТӨ,39,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0040,40,Blue Sky,40,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0041,41,TDB Талбай,41,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0042,42,Талбайн зүүн тал,42,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0043,43,Алтай Центр,43,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0044,44,23-р сургууль,44,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0045,45,Баруун 4 зам,45,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0046,46,Gem Palace шинэ барилга,46,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0048,48,Материал Импекс шинэ барилга,47,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0047,47,25-н буудал,48,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0049,49,Платинум шинэ барилга,49,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0057,57,Дэлгэрцогт,50,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0058,58,Хулд,51,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0059,59,Цогт овоо,52,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0060,60,Баяндалай,53,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0061,61,Ханбогд хороолол,54,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0062,62,Их Тамир сум,55,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0063,63,Тариат сум,56,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0064,64,Луус,57,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0065,65,Цэций ДЗ салдаг уулзвар,58,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0066,66,Цагаан хад,59,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0067,67,Хойд зам,60,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0068,68,Оюу Толгой Camp,61,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0069,69,Орчлон Тауэр,62,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0070,70,1 ТОТО зочид буудал,63,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0074,74,6 86-р сургууль,64,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0050,50,1-р Хороолол,65,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0052,52,Өнөр хорооллын зам дагуу,66,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0051,51,83-р сургууль,67,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0053,53,Шинэ Алтай хотхон,68,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0055,55,СХД 18-р хороо,69,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0054,54,Бумбод,70,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0073,73,5 Hong kong зочид буудал,71,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0076,76,9 Цамбагарав урд,72,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0077,77,10 Титэм төв,73,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0078,78,11 Чандмань зочид буудал,74,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0079,79,12 Золт худалдааны төв,75,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0082,82,20 Хархорин зах,76,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0083,83,21 Мираж зочид буудал,77,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0080,80,13 Эрдэнэс өв,78,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0081,81,19 Их баян төв,79,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0084,84,23 Монос эмийн үйлдвэр,80,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0085,85,Pack 7,81,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0087,87,28 Шинэ Sunday,82,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0088,88,30 BSB,83,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0090,90,33 Мах импекс,84,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0091,91,Нарангийн гол,85,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0092,92,Ochir City,86,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0093,93,Хану жимсний дэлгүүр,87,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0094,94,Хархорин,88,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0086,86,27 Мөнгөр гүүр эмнэлэг,89,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0095,95,БГД,90,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0096,96,Замчдын гудамж,91,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0097,97,Өлзий Караоке,92,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0098,98,Хүнсний 1 зүүн талын буудал,93,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0099,99,Онцгой байдлын газрын шинэ барилга,94,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0100,100,5 сургуулийн буудал,95,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0101,101,46 Арвайхээр төв,96,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0102,102,47 Нарийнтээл сум,97,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0103,103,50 Хаан бууз газар,98,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0106,106,Батцэнгэл сум,99,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0107,107,Бат-Өлзий сум,100,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0108,108,Уянга сум,101,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0124,124,18. Содон төв,102,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0125,125,19. Амо төв,103,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0127,127,22. Шинэ Амгалан,104,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0128,128,23. Хит хаус,105,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0132,132,27. Olympic residence,106,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0133,133,30. Хорго 2,107,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0135,135,31. MPM,108,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0136,136,32. Энто,109,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0109,109,1. Элизабет 2,110,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0110,110,2. Sumber ord,111,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0111,111,3.. Эс март /дүнжингарав урд/,112,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0112,112,4. emirald,113,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0116,116,8. Mint,114,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0113,113,5. tsengeldeh,115,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0114,114,Gerlug Vista,116,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0115,115,7. Хүннү плас,117,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0117,117,9. Токёо таун,118,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0118,118,10 Solaris Plus,119,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0121,121,14. Минисо,120,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0122,122,16. Гүмүда худалдааны төв,121,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0123,123,17. Хархорум төв,122,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0137,137,33. Олимп лаунж,123,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0138,138,34. Элизабет Айви,124,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0139,139,37. Cafe,125,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0140,140,36. Түмэн малл,126,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0141,141,38. 13 2,127,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0142,142,39. Бөхийн өргөө,128,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0143,143,40 Чинбаян төв,129,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0144,144,41. агни,130,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0145,145,42. Глобал төв,131,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0146,146,43. Нарны зам,132,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0147,147,44. Энканто оффис,133,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0148,148,45. Соёолж,134,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0149,149,46. Гал төв,135,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0150,150,47. Дүнжингарав,136,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0151,151,Кинг тауэр шинэ барилга,137,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0152,152,Ханхиллс,138,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0153,153,15-н буудал,139,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0126,126,21. Цагдаа хотхон,140,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0156,156,2. 32,141,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0157,157,3. Бэлх аз төв,142,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0159,159,6. 100айл,143,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0161,161,10. Ama,144,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0162,162,11. Лео маркет,145,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0160,160,9. Кино үйлдвэр,146,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0163,163,12. Поларис хотхон,147,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0134,134,35. Авто угаалга,148,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0164,164,7. 91 city view,149,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0166,166,13. Энэрэл хотхон,150,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0167,167,14. Их засаг,151,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0168,168,16. 32 Рашаант,152,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0169,169,17 Ар гүнт,153,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0170,170,18 2-р эмнэлэг урд,154,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0171,171,19. Баригдаж буй барилга,155,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0172,172,20. seoul bussines,156,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0173,173,21.. Хайлааст,157,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0174,174,22. Хан-Эрдэнэ худалдааны төв,158,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0176,176,24. Санзайн зам 2,159,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0177,177,25. B хаяг реклам,160,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0179,179,27. 97-р сургууль,161,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0181,181,30. Хаш Орд,162,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0182,182,31. Баригдаж буй оффис барилга,163,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0183,183,32. Сайд нарын 2,164,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0184,184,33. Хүчит шонхор,165,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0186,186,Цагаан байр,166,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0188,188,Нарны хороолол дотор,167,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0187,187,Цагаан орд,168,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0189,189,UG Arena туслах зам дагуу,169,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0190,190,11 хорооллын зам дагуу,170,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0191,191,Central Garden,171,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0192,192,Бөхийн өргөө Gs25 хажуу тал,172,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0193,193,Жаргалант төв,173,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0194,194,Central Mall,174,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0195,195,Old City,175,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0196,196,Нарантуул зах,176,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0197,197,"Жаргалант, Орхон",177,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0198,198,"Их-Уул, Хөвсгөл",178,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0199,199,"Хатгал, Хөвсгөл",179,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0201,201,2. Жанжин,180,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0200,200,1. Сэрэнэ2,181,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0202,202,3. Жанжин2,182,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0203,203,4. БЗ,183,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0204,204,5. Өгөөмөр,184,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0205,205,6. 13,185,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0206,206,8. Их орд,186,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0207,207,9. Баригдаж буй барилга,187,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0154,154,Амгалан амаржихын урд шинэ хотхон,188,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0209,209,11. Цагаан хуаран 2,189,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0211,211,14.Сансар,190,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0216,216,19. БЗ зах,191,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0217,217,20. Voge,192,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0218,218,22. City star residence үйлчилгээ,193,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0220,220,24. Samgyobsal,194,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0221,221,25. Гордок,195,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0222,222,26 Хос төв,196,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0223,223,27. Их мандал,197,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0224,224,28. shurt khotkhon /tog/,198,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0225,225,30. удирдлагын академи,199,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0226,226,31. Bayntseel,200,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0227,227,29 Сод эрхэс,201,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0232,232,35 Алтан шар худалдааны зах,202,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0219,219,23. Шар хад,203,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0130,130,25. Эрднэ төв,204,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0233,233,36. sky resort,205,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0234,234,38. Flower plaza,206,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0235,235,37. Тип топ төв,207,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0236,236,39. Буурал ээж,208,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0237,237,40. Миний дэлгүүр,209,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0238,238,41. Сүхбаатар дүүрэг,210,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0239,239,43 69-р сургууль,211,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0214,214,17.Амгалан амаржих,212,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0241,241,45. Grand residence,213,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0215,215,18БЗ эмнэлэг,214,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0228,228,26. Gospital,215,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0155,155,Гялс төв,216,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0243,243,47. Амар төв,217,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0244,244,48 Тэрэлж,218,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0245,245,Хадагтай эмнэлэг,219,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0246,246,3-р сургууль,220,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0247,247,Хүрд,221,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0248,248,Хүмүүнлэгийн шинэ оффис,222,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0249,249,Улаан загалмай,223,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0250,250,АШУИС,224,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0251,251,Pyramid,225,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0252,252,New Life,226,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0255,255,Шинэ зуун айл,227,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0256,256,Crown,228,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0261,261,4. Цэнхар мандал,229,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0262,262,5. Өртөө 240,230,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0263,263,7. Хойд зам,231,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0264,264,8. Бэрх сумруу гардаг,232,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0266,266,11. Түмэнцогт газар,233,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0268,268,13. Оффис барилга,234,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0269,269,14. Үйлчилгээний төв,235,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0270,270,16. Мөнххаан,236,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0272,272,Хувьсгалын гудамж,237,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0274,274,Элбэг,238,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0276,276,Нар,239,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0277,277,Ар Гүнт,240,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0278,278,Баянхошуу дунд,241,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0279,279,Ар Гандан,242,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0280,280,Бумбатын рашаан,243,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0281,281,Ногоон нуур 2,244,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0282,282,Баянбүрд bus stop,245,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0283,283,Шинэ зам хотхон,246,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0284,284,Icon,247,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0285,285,Хоймор дунд,248,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0286,286,4-р дэлгүүр,249,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0287,287,Модны 2 дунд 2,250,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0288,288,Оймон хажууд,251,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0289,289,UB palace,252,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0290,290,Гэмтэл зам дагуу,253,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0273,273,Бичилийн хойно,254,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0291,291,Bichil,255,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0294,294,Хилчин Холбоочдын гудамж 2,256,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0295,295,Найрамдал 2,257,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0296,296,Товчооны замын урд,258,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0297,297,Darkhan gardg,259,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0300,300,Борнуур,260,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0302,302,Орхон дэлгүүр,261,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0303,303,Дархан хонгор сум,262,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0304,304,Шаамар,263,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0305,305,Сайхны хөтөл,264,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0306,306,Дулаанхаан,265,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0307,307,Зүүн салаа,266,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0310,310,Жаргалант сум,267,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0313,313,Нисэхийн эцэс Өлзий төв,268,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0315,315,Sonsgolon Guur,269,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0317,317,Global garden,270,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0311,311,Yarmag Plaza,271,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0320,320,uuliin zam,272,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0321,321,Sky garden,273,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0322,322,Parq One,274,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0323,323,Marko polo,275,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0324,324,Zaisan star,276,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0329,329,Морингийн даваа,277,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0332,332,Гутал оффис,278,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0319,319,Misheel,279,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0333,333,UG arena,280,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0334,334,Parko Riveria,281,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0338,338,Шөлөндөө GS25 дэргэд,282,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0339,339,Хонгор апартмент зүүн тал,283,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0340,340,Дунд голын зам 19 үйлчилгээний төв,284,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0341,341,Ази фарм,285,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0336,336,Зайсан миний дэлгүүр,286,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0343,343,Максвэлл,287,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0314,314,Happy Town,288,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0344,344,Active Garden,289,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0345,345,Ай си молл,290,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0346,346,Шинэ барилга,291,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0331,331,Говьхангай,292,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0353,353,Neo City,293,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0355,355,Vision Tower,294,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0356,356,Hamilton,295,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0357,357,Сити зон,296,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0360,360,Orgil Shiltgeen,297,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0366,366,Сүмбэр тауэр,298,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0367,367,Таванбогд,299,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0362,362,Эрэл,300,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0370,370,Өлзийт эсрэг,301,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0371,371,Elegance,302,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0382,382,Яармаг центр,303,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0312,312,Shiltgeen tsamhag,304,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0350,350,MCU Business Tower,305,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0354,354,Garid tower,306,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0359,359,Horse Motors,307,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0380,380,Carrefour яармаг,308,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0347,347,Хүлэгт таун,309,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0381,381,Дээдсийн өргөө хотхон,310,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0349,349,Яармаг молл,311,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0327,327,Агарта,312,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0383,383,Яармагийн шинэ зам,313,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0388,388,Ану маркет,314,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0390,390,Жаргалан хотхоны баруун талын шинэ барилга,315,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0392,392,Gerlug Palace,316,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0391,391,Galaxy Tower,317,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0394,394,Silk Road,318,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0395,395,Japan Town оффис,319,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0401,401,Tokyo tower,320,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0358,358,River Palace,321,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0397,397,Хунгийн хотхон,322,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0365,365,Зайсан Гэрэлт хотхон,323,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0377,377,Mandal Luxury,324,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0398,398,Зайсан Хүннү дотор,325,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0399,399,Зайсан Хүннү үйлчилгээний хэсэг,326,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0405,405,Munkh Tower,327,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0393,393,Мак шинэ барилга,328,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0406,406,White center,329,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0408,408,River Castle 2,330,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0409,409,Хөсөг трейд,331,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0410,410,Хийморь хотхоны зам,332,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0407,407,Мишээл,333,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0411,411,Багахангай,334,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0412,412,Төв аймаг,335,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0413,413,Сэргэлэн сум,336,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0414,414,Шувуун Фабрик,337,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0415,415,Завхан -Их уул,338,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0416,416,Тосонцэнгэл зам дагуу,339,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0417,417,Тосонцэнгэл төв,340,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0418,418,Тэлмэн сум Завхан,341,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0419,419,Улиастай орох хэсэг,342,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0420,420,Баянбүрд,343,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0421,421,Z lounge,344,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0422,422,Нөмрөг,345,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0423,423,Сонгино,346,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0424,424,Увс 1,347,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0425,425,Увс 3,348,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0426,426,Увс 4,349,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0427,427,Увс 5,350,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0428,428,Увс 6,351,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0429,429,Увс 7,352,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0430,430,Увс 8,353,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0431,431,Увс 9,354,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0432,432,Увс 10,355,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0433,433,Баянхонгор Буу цагаан сум,356,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0434,434,Баянхонгор Бөмбөгөр сум,357,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0435,435,Алтай зах,358,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0436,436,Дарви бакери,359,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0437,437,Минж буудал,360,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0438,438,Ховд Дарви,361,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0439,439,Ховд Зэрэг,362,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0440,440,Зах гэгээ төв,363,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0441,441,Арвин хүч,364,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0442,442,Билгүүн төв,365,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0443,443,Эко гутал,366,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0444,444,Гурван сэцэн,367,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0445,445,Авто вокзал,368,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0446,446,Ховд кофе шоп,369,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0447,447,Төв талбай,370,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0448,448,Давхар дэлгүүр,371,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0449,449,Уна супермаркет,372,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0450,450,Баянөлгий 1,373,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0451,451,Баянөлгий 2,374,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0452,452,Баянөлгий 3,375,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0453,453,Баянөлгий 4,376,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0454,454,Баянөлгий 6,377,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0455,455,Баянөлгий 7,378,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0456,456,Баянөлгий 8,379,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0457,457,Баянөлгий 9,380,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0458,458,Баянөлгий 10,381,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0459,459,Баянөлгий 11,382,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0119,119,12. Буянт баян зах,383,0.0015801887895816,0.0015801887895816,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0254,254,Evergreen,384,-0.0015801887895816,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0129,129,24. Баригдаж буй орон сууц үйлчилгээ,385,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0208,208,10. 032р анги,386,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0210,210,12. 44-р сургууль,387,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0212,212,15.ДА хүрээ зах,388,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0229,229,32. ДХИС харуул алтай,389,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0242,242,46 Хотпот,390,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0120,120,13 Нирун Төв,391,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0253,253,Шинэ Амгалан,392,0.0,0.0,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0131,131,26. 220К,393,4.5782205726357e-05,4.5782205726357e-05,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0230,230,33. Эрдэнэс төв /УБ/,394,0.0013409412874962,0.0013867234932226,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0361,361,Mandala Garden,395,0.0017034822511819,0.0030902057444045,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0348,348,Грийн гарден,396,0.0007493423164784,0.0038395480608829,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0373,373,2-r buudal,397,-0.0024528245676603,0.0013867234932226,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0351,351,ХУД Нэгдсэн эмнэлэг шинэ барилга,398,0.0004598728421727,0.0018465963353953,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0378,378,Шүншиг вилла,399,-0.0004598728421727,0.0013867234932226,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients
+GPS-0379,379,Art villa,400,0.0,0.0013867234932226,greedy_recalculated_marginal_regional_log_effect,Previously selected portfolio evaluated with fixed coefficients

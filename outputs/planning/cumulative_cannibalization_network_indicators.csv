@@ -1,0 +1,5 @@
+scenario_stores,calculation_mode,coefficient_version,baseline_month_or_period,direct_cannibalization_cutoff_m,network_population_stores,APSD_weighted_network_effect_pct,network_APSD_weighted_change_pct,network_effect_validation_difference_pct_points
+180,negative_only,user_fixed_cumulative_v1,2026-09,1000.0,650,-10.201713848264745,-10.201713848264731,-1.4210854715202004e-14
+180,raw,user_fixed_cumulative_v1,2026-09,1000.0,650,-10.201713848264745,-10.201713848264731,-1.4210854715202004e-14
+400,negative_only,user_fixed_cumulative_v1,2026-09,1000.0,650,-17.290409985110365,-17.290409985110365,0.0
+400,raw,user_fixed_cumulative_v1,2026-09,1000.0,650,-17.290409985110365,-17.290409985110365,0.0
