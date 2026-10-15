@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 region,outcome,model_type,joint_f_statistic,joint_p_value,lead_terms_tested,observations,stores,status,warning
 All Regions,sales,monthly_event_study,4.476322968276902,3.972750453727866e-18,44,22213,698,estimated,Joint pre-opening coefficients are not all zero at 5%.
 All Regions,sales,binned_event_study,7.272191118758691,1.201528508245766e-12,12,22213,698,estimated,Joint pre-opening coefficients are not all zero at 5%.
@@ -19,3 +20,26 @@ Rural,sales,monthly_event_study,19.477009540178198,9.53130197546603e-36,34,2530,
 Rural,sales,binned_event_study,3.517533898428227,0.00040357629436971556,10,2530,127,estimated,Joint pre-opening coefficients are not all zero at 5%.
 Rural,customers,monthly_event_study,11.792146698804428,2.1032737815862824e-25,34,2530,127,estimated,Joint pre-opening coefficients are not all zero at 5%.
 Rural,customers,binned_event_study,2.3671023372018247,0.013347840112217452,10,2530,127,estimated,Joint pre-opening coefficients are not all zero at 5%.
+=======
+region,outcome,model_type,joint_f_statistic,joint_p_value,lead_terms_tested,observations,stores,status,warning
+All Regions,sales,monthly_event_study,4.476322968276902,3.972750453727866e-18,44,22213,698,estimated,Joint pre-opening coefficients are not all zero at 5%.
+All Regions,sales,binned_event_study,7.272191118758691,1.201528508245766e-12,12,22213,698,estimated,Joint pre-opening coefficients are not all zero at 5%.
+All Regions,customers,monthly_event_study,4.525265552271515,2.046173741363088e-18,44,22213,698,estimated,Joint pre-opening coefficients are not all zero at 5%.
+All Regions,customers,binned_event_study,6.660221774239955,2.1779713289049696e-11,12,22213,698,estimated,Joint pre-opening coefficients are not all zero at 5%.
+City Center,sales,monthly_event_study,4.649496201535644,3.8302472325738677e-11,44,4122,110,estimated,Joint pre-opening coefficients are not all zero at 5%.
+City Center,sales,binned_event_study,3.2256526913110757,0.0005442659405221725,12,4122,110,estimated,Joint pre-opening coefficients are not all zero at 5%.
+City Center,customers,monthly_event_study,5.19012663754564,1.5067028925125783e-12,44,4122,110,estimated,Joint pre-opening coefficients are not all zero at 5%.
+City Center,customers,binned_event_study,2.382747793909647,0.009048111382199055,12,4122,110,estimated,Joint pre-opening coefficients are not all zero at 5%.
+City Outskirts,sales,monthly_event_study,2.754185959620253,7.09466609692867e-07,44,8032,213,estimated,Joint pre-opening coefficients are not all zero at 5%.
+City Outskirts,sales,binned_event_study,1.941815800281382,0.031111971632633087,12,8032,213,estimated,Joint pre-opening coefficients are not all zero at 5%.
+City Outskirts,customers,monthly_event_study,2.6366961674566043,2.1146127314642217e-06,44,8032,213,estimated,Joint pre-opening coefficients are not all zero at 5%.
+City Outskirts,customers,binned_event_study,2.8075500315881805,0.0013879221546143432,12,8032,213,estimated,Joint pre-opening coefficients are not all zero at 5%.
+Far / Outer Areas,sales,monthly_event_study,3.4164877707978074,5.785095460100179e-10,44,7529,248,estimated,Joint pre-opening coefficients are not all zero at 5%.
+Far / Outer Areas,sales,binned_event_study,2.3135107397665946,0.008160468270985067,12,7529,248,estimated,Joint pre-opening coefficients are not all zero at 5%.
+Far / Outer Areas,customers,monthly_event_study,6.0224838885636895,9.051322341818411e-21,44,7529,248,estimated,Joint pre-opening coefficients are not all zero at 5%.
+Far / Outer Areas,customers,binned_event_study,2.419929285662297,0.005526124944982933,12,7529,248,estimated,Joint pre-opening coefficients are not all zero at 5%.
+Rural,sales,monthly_event_study,19.477009540178198,9.53130197546603e-36,34,2530,127,estimated,Joint pre-opening coefficients are not all zero at 5%.
+Rural,sales,binned_event_study,3.517533898428227,0.00040357629436971556,10,2530,127,estimated,Joint pre-opening coefficients are not all zero at 5%.
+Rural,customers,monthly_event_study,11.792146698804428,2.1032737815862824e-25,34,2530,127,estimated,Joint pre-opening coefficients are not all zero at 5%.
+Rural,customers,binned_event_study,2.3671023372018247,0.013347840112217452,10,2530,127,estimated,Joint pre-opening coefficients are not all zero at 5%.
+>>>>>>> f5b4fead00f8d60086fccfac11c03698f72f2655

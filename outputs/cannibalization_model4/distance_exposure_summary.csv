@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 distance_band,distance_pairs,pair_events_in_panel_period,new_stores_in_band,existing_stores_in_band,existing_stores_with_opening_in_panel_period,store_month_observations_with_exposure,unique_exposed_stores_in_panel
 0-100m,49,34,46,47,33,1279,43
 100-250m,397,312,230,236,218,6937,231
 250-500m,1441,1052,405,395,389,12955,388
 500-1000m,5048,3661,513,512,511,16005,504
 >1000m / control,7364,5452,517,504,501,0,0
+=======
+distance_band,distance_pairs,pair_events_in_panel_period,new_stores_in_band,existing_stores_in_band,existing_stores_with_opening_in_panel_period,store_month_observations_with_exposure,unique_exposed_stores_in_panel
+0-100m,49,34,46,47,33,1279,43
+100-250m,397,312,230,236,218,6937,231
+250-500m,1441,1052,405,395,389,12955,388
+500-1000m,5048,3661,513,512,511,16005,504
+>1000m / control,7364,5452,517,504,501,0,0
+>>>>>>> f5b4fead00f8d60086fccfac11c03698f72f2655

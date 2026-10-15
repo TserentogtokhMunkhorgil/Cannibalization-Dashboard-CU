@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "distance_bands_m": [
     {
@@ -143,4 +144,151 @@
     "APSD_customers_zero": 16,
     "APSD_customers_negative": 0
   }
+=======
+{
+  "distance_bands_m": [
+    {
+      "code": "0_100",
+      "label": "Very close (0-100 m)",
+      "lower_inclusive": 0.0,
+      "upper_exclusive": 100.0
+    },
+    {
+      "code": "100_250",
+      "label": "Close (100-250 m)",
+      "lower_inclusive": 100.0,
+      "upper_exclusive": 250.0
+    },
+    {
+      "code": "250_500",
+      "label": "Medium (250-500 m)",
+      "lower_inclusive": 250.0,
+      "upper_exclusive": 500.0
+    },
+    {
+      "code": "500_1000",
+      "label": "Farther nearby (500-1,000 m)",
+      "lower_inclusive": 500.0,
+      "upper_exclusive": 1000.0
+    }
+  ],
+  "event_time_monthly_diagnostic": [
+    -12,
+    24
+  ],
+  "event_time_reference": -1,
+  "event_time_bins": [
+    {
+      "key": "m12_m7",
+      "label": "\u221212 to \u22127",
+      "lower": -12,
+      "upper": -7
+    },
+    {
+      "key": "m6_m3",
+      "label": "\u22126 to \u22123",
+      "lower": -6,
+      "upper": -3
+    },
+    {
+      "key": "m2",
+      "label": "\u22122",
+      "lower": -2,
+      "upper": -2
+    },
+    {
+      "key": "reference_m1",
+      "label": "\u22121 (reference)",
+      "lower": -1,
+      "upper": -1
+    },
+    {
+      "key": "p0",
+      "label": "0",
+      "lower": 0,
+      "upper": 0
+    },
+    {
+      "key": "p1_p3",
+      "label": "+1 to +3",
+      "lower": 1,
+      "upper": 3
+    },
+    {
+      "key": "p4_p6",
+      "label": "+4 to +6",
+      "lower": 4,
+      "upper": 6
+    },
+    {
+      "key": "p7_p12",
+      "label": "+7 to +12",
+      "lower": 7,
+      "upper": 12
+    },
+    {
+      "key": "p13_p18",
+      "label": "+13 to +18",
+      "lower": 13,
+      "upper": 18
+    },
+    {
+      "key": "p19_p24",
+      "label": "+19 to +24",
+      "lower": 19,
+      "upper": 24
+    },
+    {
+      "key": "p25_plus",
+      "label": "+25 months onward",
+      "lower": 25,
+      "upper": null
+    }
+  ],
+  "region_mapping": {
+    "Core": "City Center",
+    "Inner City": "City Outskirts",
+    "Outer City": "Far / Outer Areas",
+    "Far": "Far / Outer Areas",
+    "Rural": "Rural"
+  },
+  "region_definitions": {
+    "Core": "0 to 1.5 km from Sukhbaatar Square",
+    "Inner City": "1.5 to 3.5 km from Sukhbaatar Square",
+    "Outer City": "3.5 to 7 km from Sukhbaatar Square",
+    "Far": "More than 7 km from Sukhbaatar Square",
+    "Rural": "UB source field equals Rural; explicit override in supplied zone code"
+  },
+  "winter_summer_holiday_models": "Not estimated: no validated winter/summer/holiday date calendar supplied. Seasonal heterogeneity is month-of-year exposure interaction only.",
+  "causal_identification": "Associational fixed-effects design; nearby openings may respond to local demand trends; repeated events overlap.",
+  "estimator": "Two-way store and calendar-month fixed effects; store-clustered standard errors.",
+  "outcome_definitions": {
+    "APSD_income": "Sales_Income_New / Active_Days; MNT per active sales day.",
+    "APSD_customers": "Customers / Active_Days; Customers = Transaction_Count - 2 * Returned_Transaction_Count, not distinct people."
+  },
+  "inference_note": "Store-clustered SE permit serial dependence within store, not arbitrary shared opening-event dependence across stores.",
+  "validation_summary": {
+    "income_rows": 22254,
+    "income_stores": 704,
+    "income_month_min": "2022-07-01",
+    "income_month_max": "2026-10-01",
+    "distance_rows": 14299,
+    "distinct_new_store_openings": 590,
+    "duplicate_store_month_keys": 0,
+    "duplicate_pair_keys": 0,
+    "invalid_coordinate_rows": 41,
+    "missing_open_date_rows": 63,
+    "missing_or_unmapped_region_stores": 6,
+    "distance_events_within_1km": 6935,
+    "qualifying_treatment_pairs": 6934,
+    "panel_start_month": "2022-07",
+    "panel_end_month": "2026-10",
+    "APSD_income_missing": 0,
+    "APSD_income_zero": 7,
+    "APSD_income_negative": 0,
+    "APSD_customers_missing": 0,
+    "APSD_customers_zero": 16,
+    "APSD_customers_negative": 0
+  }
+>>>>>>> f5b4fead00f8d60086fccfac11c03698f72f2655
 }

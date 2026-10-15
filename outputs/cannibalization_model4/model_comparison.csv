@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 model,observations,stores,calendar_months,exposure_terms,absorbed_design_rank,within_r_squared,within_residual_sum_squares,pretrend_joint_f_statistic,pretrend_joint_p_value,pretrend_restrictions,clustered_by,estimator,pair_events_in_sales_period,stores_with_exposure
 A,22246,703,52,0,0,0.0,1373.7848414310115,,,0,existing_store_id,Two-way FE absorbed by alternating projections; OLS with store-clustered covariance,4720,0
 B,22246,703,52,4,4,0.022855848539648838,1342.3858231691988,,,0,existing_store_id,Two-way FE absorbed by alternating projections; OLS with store-clustered covariance,4720,536
 C,22246,703,52,12,12,0.008359479728458963,1362.3007148978047,11.227464210717548,1.9799186917109212e-10,5,existing_store_id,Two-way FE absorbed by alternating projections; OLS with store-clustered covariance,4720,538
 D,22246,703,52,48,48,0.010472151312589495,1359.3983587006041,3.6529359346337693,1.5768239744158684e-07,20,existing_store_id,Two-way FE absorbed by alternating projections; OLS with store-clustered covariance,4720,538
 D_alt_0_250,22246,703,52,36,36,0.010077972884424358,1359.9398750500366,4.067069083813104,3.690663423825431e-07,15,existing_store_id,Two-way FE absorbed by alternating projections; OLS with store-clustered covariance,4720,538
+=======
+model,observations,stores,calendar_months,exposure_terms,absorbed_design_rank,within_r_squared,within_residual_sum_squares,pretrend_joint_f_statistic,pretrend_joint_p_value,pretrend_restrictions,clustered_by,estimator,pair_events_in_sales_period,stores_with_exposure
+A,22246,703,52,0,0,0.0,1373.7848414310115,,,0,existing_store_id,Two-way FE absorbed by alternating projections; OLS with store-clustered covariance,4720,0
+B,22246,703,52,4,4,0.022855848539648838,1342.3858231691988,,,0,existing_store_id,Two-way FE absorbed by alternating projections; OLS with store-clustered covariance,4720,536
+C,22246,703,52,12,12,0.008359479728458963,1362.3007148978047,11.227464210717548,1.9799186917109212e-10,5,existing_store_id,Two-way FE absorbed by alternating projections; OLS with store-clustered covariance,4720,538
+D,22246,703,52,48,48,0.010472151312589495,1359.3983587006041,3.6529359346337693,1.5768239744158684e-07,20,existing_store_id,Two-way FE absorbed by alternating projections; OLS with store-clustered covariance,4720,538
+D_alt_0_250,22246,703,52,36,36,0.010077972884424358,1359.9398750500366,4.067069083813104,3.690663423825431e-07,15,existing_store_id,Two-way FE absorbed by alternating projections; OLS with store-clustered covariance,4720,538
+>>>>>>> f5b4fead00f8d60086fccfac11c03698f72f2655

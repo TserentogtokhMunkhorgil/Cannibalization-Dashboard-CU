@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 source_field,source_value,analysis_region,source_definition,mapping_rule
 Distance_Zone,Core,City Center,0 to 1.5 km from Sukhbaatar Square,Applied the user-provided Distance_Zone derivation
 Distance_Zone,Inner City,City Outskirts,1.5 to 3.5 km from Sukhbaatar Square,Applied the user-provided Distance_Zone derivation
@@ -6,3 +7,13 @@ Distance_Zone,Far,Far / Outer Areas,More than 7 km from Sukhbaatar Square,Applie
 Distance_Zone,Rural,Rural,UB source field equals Rural; explicit override in supplied zone code,Applied the user-provided Distance_Zone derivation
 UB,Rural,Rural,UB source field equals Rural; explicit override in supplied zone code,Overrides distance ring as in supplied zone-construction code
 Distance_Zone,Missing or unmapped,,Not assigned to a requested region,Retained in source panel; excluded from regional fits
+=======
+source_field,source_value,analysis_region,source_definition,mapping_rule
+Distance_Zone,Core,City Center,0 to 1.5 km from Sukhbaatar Square,Applied the user-provided Distance_Zone derivation
+Distance_Zone,Inner City,City Outskirts,1.5 to 3.5 km from Sukhbaatar Square,Applied the user-provided Distance_Zone derivation
+Distance_Zone,Outer City,Far / Outer Areas,3.5 to 7 km from Sukhbaatar Square,Applied the user-provided Distance_Zone derivation
+Distance_Zone,Far,Far / Outer Areas,More than 7 km from Sukhbaatar Square,Applied the user-provided Distance_Zone derivation
+Distance_Zone,Rural,Rural,UB source field equals Rural; explicit override in supplied zone code,Applied the user-provided Distance_Zone derivation
+UB,Rural,Rural,UB source field equals Rural; explicit override in supplied zone code,Overrides distance ring as in supplied zone-construction code
+Distance_Zone,Missing or unmapped,,Not assigned to a requested region,Retained in source panel; excluded from regional fits
+>>>>>>> f5b4fead00f8d60086fccfac11c03698f72f2655

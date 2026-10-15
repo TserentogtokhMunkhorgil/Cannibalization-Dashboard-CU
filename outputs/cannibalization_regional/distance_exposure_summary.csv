@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 region,distance_band,distance_band_label,pair_events,distinct_new_store_openings,existing_stores,established_pair_events
 All Regions,0_100,Very close (0-100 m),49,46,47,29
 All Regions,100_250,Close (100-250 m),397,230,236,249
@@ -19,3 +20,26 @@ Rural,0_100,Very close (0-100 m),3,3,3,0
 Rural,100_250,Close (100-250 m),9,9,9,1
 Rural,250_500,Medium (250-500 m),19,15,18,0
 Rural,500_1000,"Farther nearby (500-1,000 m)",53,40,39,9
+=======
+region,distance_band,distance_band_label,pair_events,distinct_new_store_openings,existing_stores,established_pair_events
+All Regions,0_100,Very close (0-100 m),49,46,47,29
+All Regions,100_250,Close (100-250 m),397,230,236,249
+All Regions,250_500,Medium (250-500 m),1441,405,395,842
+All Regions,500_1000,"Farther nearby (500-1,000 m)",5047,513,512,2930
+City Center,0_100,Very close (0-100 m),20,18,19,11
+City Center,100_250,Close (100-250 m),139,69,68,97
+City Center,250_500,Medium (250-500 m),535,127,98,341
+City Center,500_1000,"Farther nearby (500-1,000 m)",2052,206,110,1272
+City Outskirts,0_100,Very close (0-100 m),16,15,16,13
+City Outskirts,100_250,Close (100-250 m),177,105,101,108
+City Outskirts,250_500,Medium (250-500 m),661,212,175,369
+City Outskirts,500_1000,"Farther nearby (500-1,000 m)",2308,304,209,1298
+Far / Outer Areas,0_100,Very close (0-100 m),9,9,8,4
+Far / Outer Areas,100_250,Close (100-250 m),71,54,57,42
+Far / Outer Areas,250_500,Medium (250-500 m),217,117,103,123
+Far / Outer Areas,500_1000,"Farther nearby (500-1,000 m)",611,203,153,329
+Rural,0_100,Very close (0-100 m),3,3,3,0
+Rural,100_250,Close (100-250 m),9,9,9,1
+Rural,250_500,Medium (250-500 m),19,15,18,0
+Rural,500_1000,"Farther nearby (500-1,000 m)",53,40,39,9
+>>>>>>> f5b4fead00f8d60086fccfac11c03698f72f2655

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿check,value,detail
 source_store_month_rows,22254,
 valid_store_month_rows,22254,
@@ -31,3 +32,38 @@ operating_store_months_without_previous_customers,713,No valid customer observat
 valid_distance_pairs_used,14299,
 new_store_events_with_distance_data,590,
 distance_pair_rows_over_1500m,0,"Not used; distance workbook is expected to contain pairs up to 1,500 m."
+=======
+﻿check,value,detail
+source_store_month_rows,22254,
+valid_store_month_rows,22254,
+missing_store_id_rows,0,
+invalid_sales_month_rows,0,
+duplicate_store_month_rows,0,
+master_metadata_conflicts,0,
+store_count,704,Stores present in the monthly sales workbook.
+sales_month_range,2022-07 to 2026-10,
+duplicate_store_master_records,0,Unique master is reduced from repeated monthly rows after conflict checks.
+store_ids_missing_opening_date,6,
+store_ids_missing_coordinates,7,
+invalid_coordinate_store_ids,0,
+missing_APSD_rows,0,
+negative_APSD_rows,0,
+zero_APSD_rows,7,
+missing_customer_rows,0,Customer metric is unavailable only if the source column is absent.
+source_rows_before_opening,57,4 affected stores.
+source_rows_after_closing,0,0 affected stores.
+inactive_stores_without_closing_date,5,Conservatively excluded from the operating network because history cannot be dated.
+store_month_grid_rows,36608,Complete monthly grid across the observed source date range.
+sales_observations_outside_operating_period,120,APSD and customer metrics are nulled for these store-months.
+distance_pair_rows,14299,
+duplicate_distance_pairs,0,
+missing_or_invalid_distance_rows,0,
+distance_pairs_missing_ids_or_dates,0,
+distance_pairs_not_existing_before_new_opening,0,
+new_store_events_with_APSD_reference_data_250m,163,Events with at least one observed existing-store APSD in the previous complete month.
+operating_store_months_without_previous_APSD,713,No valid APSD observation exists for the immediately previous month.
+operating_store_months_without_previous_customers,713,No valid customer observation exists for the immediately previous month.
+valid_distance_pairs_used,14299,
+new_store_events_with_distance_data,590,
+distance_pair_rows_over_1500m,0,"Not used; distance workbook is expected to contain pairs up to 1,500 m."
+>>>>>>> f5b4fead00f8d60086fccfac11c03698f72f2655
